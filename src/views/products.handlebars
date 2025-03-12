@@ -1,0 +1,16 @@
+{{! View to show a list of products }}
+<h1>Products</h1>
+<ul>
+	{{#each products}}
+		<li class='product-card'>
+			<img src='{{this.thumbnail}}' alt='{{this.title}}' class='product-thumbnail' />
+			<h3>{{this.title}}</h3>
+			<a href='/products/{{this.id}}'>View Details</a>
+			<form action='/products/{{this._id}}?_method=DELETE' method='POST'>
+				<button class='button-delete'>Delete</button>
+			</form>
+		</li>
+	{{/each}}
+</ul>
+<button onclick="window.location.href = '/'">Go Home</button>
+<button onclick="window.location.href = '/newProduct'">Create Product</button>

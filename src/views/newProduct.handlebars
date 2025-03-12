@@ -1,0 +1,63 @@
+<h1>New Product</h1>
+{{! 'multipart/form-data' indicates that the form will contain files }}
+<form class='form-insert' action='/products' method='POST' enctype='multipart/form-data'>
+	<label for='title'>Title</label>
+	<input type='text' name='title' id='title' required />
+	<label for='description'>Description</label>
+	<textarea name='description' id='description' required></textarea>
+	<div class='items-group'>
+		<div>
+			<label for='code'>Code</label>
+			<input type='text' name='code' id='code' required />
+		</div>
+		<div>
+			<label for='price'>Price</label>
+			<input type='number' name='price' id='price' required />
+
+		</div>
+	</div>
+	<div class='items-group'>
+		<div>
+			<label for='stock'>Stock</label>
+			<input type='number' name='stock' id='stock' required />
+
+		</div>
+		<div>
+			<label for='category'>Category</label>
+			<select name='category' id='category' required>
+				<option value='beauty'>Beauty</option>
+				<option value='fragrances'>Fragrances</option>
+				<option value='furniture'>Furniture</option>
+				<option value='groceries'>Groceries</option>
+				<option value='home-decoration'>Home Decoration</option>
+				<option value='kitchen-accessories'>Kitchen Accessories</option>
+				<option value='laptops'>Laptops</option>
+				<option value='mens-shirts'>Mens Shirts</option>
+				<option value='mens-shoes'>Mens Shoes</option>
+				<option value='mens-watches'>Mens Watches</option>
+				<option value='mobile-accessories'>Mobile Accessories</option>
+				<option value='motorcycle'>Motorcycle</option>
+				<option value='skin-care'>Skin Care</option>
+				<option value='smartphones'>Smartphones</option>
+				<option value='sports-accessories'>Sports Accessories</option>
+				<option value='sunglasses'>Sunglasses</option>
+				<option value='tablets'>Tablets</option>
+				<option value='tops'>Tops</option>
+				<option value='vehicle'>Vehicle</option>
+				<option value='womens-bags'>Womens Bags</option>
+				<option value='womens-dresses'>Womens Dresses</option>
+				<option value='womens-jewellery'>Womens Jewellery</option>
+				<option value='womens-shoes'>Womens Shoes</option>
+				<option value='womens-watches'>Womens Watches</option>
+			</select>
+		</div>
+	</div>
+	<label for='file'>File</label>
+	<input type='file' name='file' id='file' />
+	{{! 
+	<label for='thumbnail'>Thumbnail</label>
+	<input type='url' name='thumbnail' id='thumbnail' />
+	<br /> }}
+	<button type='submit'>Insert</button>
+	<button onclick="window.location.href = '/products'">Go Product List</button>
+</form>
