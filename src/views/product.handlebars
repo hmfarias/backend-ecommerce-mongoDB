@@ -1,18 +1,24 @@
 {{! View to show a single product }}
 <div class='product-container'>
-	<h2>{{product.title}}</h2>
-	<p>Id: {{product.id}}</p>
-	<p>{{product.description}}</p>
-	<p>Precio: {{product.price}}</p>
-	<p>Stock: {{product.stock}}</p>
-	<p>Status: {{product.status}}</p>
-	<p>Category: {{product.category}}</p>
-	<img src='{{product.thumbnail}}' alt='Product Thumbnail' />
-	<div class='container'>
-		<button>Add to Cart</button>
-		<p>Add to Cart</p>
-		<button>+</button>
 
+	<img src='{{product.thumbnail}}' alt='Product Thumbnail' />
+
+	<div>
+
+		<h2>{{product.title}}</h2>
+		<p>Id: {{product.id}}</p>
+		<p>{{product.description}}</p>
+		<p>Precio: {{product.price}}</p>
+		<p>Stock: {{product.stock}}</p>
+		<p>Status: {{product.status}}</p>
+		<p>Category: {{product.category}}</p>
+	</div>
+	<div class='container-buttons j-between'>
+		<div>
+			<div class='container'>
+				<button>Add to Cart</button>
+			</div>
+		</div>
+		<button onclick="window.location.href = '/products'">Products List</button>
 	</div>
 </div>
-<button onclick="window.location.href = '/products'">Go Product List</button>

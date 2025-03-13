@@ -10,6 +10,7 @@ import { config } from './config/config.js';
 //import routers
 import viewsRouter from './routes/views.router.js';
 import productRouter from './routes/product.router.js';
+import cartRouter from './routes/cart.router.js';
 
 //create a new express app
 const app = express();
@@ -32,6 +33,7 @@ app.use(methodOverride('_method'));
 // Implement the routers
 app.use('/', viewsRouter);
 app.use('/products', productRouter);
+app.use('/carts', cartRouter);
 
 // Connect to the database
 mongoose
