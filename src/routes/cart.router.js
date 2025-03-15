@@ -10,10 +10,11 @@ import { Router } from 'express';
 import CartModel from '../models/cart.model.js';
 import CartsMongoManager from '../managers/CartsMongoManager.js';
 import CountersMongoManager from '../managers/CountersMongoManager.js';
+import ProductsMongoManager from '../managers/ProductsMongoManager.js';
 
 const router = Router();
 
-// GET ALL CARTS ------------------------------------------------------
+//* GET ALL CARTS **********************************************/
 router.get('/', async (req, res) => {
 	try {
 		const carts = await CartsMongoManager.get();
@@ -44,9 +45,14 @@ router.get('/:cid', async (req, res) => {
 	try {
 		const cart = await CartsMongoManager.getById(req.params.cid);
 		if (!cart) {
-			return res.render('error', {
-				error: 'Cart not found - The cart with the specified ID does not exist',
-				details: 'Please try again with a different ID',
+			// return res.render('error', {
+			// 	error: 'Cart not found - The cart with the specified ID does not exist',
+			// 	details: 'Please try again with a different ID',
+			// });
+			return res.status(404).json({
+				message: 'Cart not found - The cart with the specified ID does not exist',
+				error: true,
+				payload: null,
 			});
 		}
 		return res.status(200).json({
@@ -55,216 +61,204 @@ router.get('/:cid', async (req, res) => {
 			payload: cart,
 		});
 	} catch (error) {
-		return res.render('error', {
-			error: 'Internal Server Error',
-			details: error.message,
+		// return res.render('error', {
+		// 	error: 'Internal Server Error',
+		// 	details: error.message,
+		// });
+		return res.status(500).json({
+			message: `Internal Server Error - ${error}`,
+			error: true,
+			payload: null,
 		});
 	}
 });
 
-//CREATE a new cart -------------------------------------------------------------------------------
-router.post('/', uploader.single('file'), async (req, res) => {
-	const { title, description, code, price, status = true, stock, category } = req.body;
-
-	const thumbnail = req.file
-		? '/img/' + req.file.filename
-		: 'https://prd.place/400?id=14';
-
+//* CREATE a new empty cart ************************************/
+router.post('/', async (req, res) => {
 	try {
 		// Get the next ID for the product from the counter
-		const nextId = await CountersMongoManager.incrementCounter('productId');
+		const nextId = await CountersMongoManager.incrementCounter('cartId');
 
 		// Create the new product with the data from the request plus the ID
-		const product = {
+		const cart = {
 			id: nextId,
-			title,
-			description,
-			code,
-			price,
-			status,
-			stock,
-			category,
-			thumbnail,
+			products: [],
+			total: 0,
 		};
 
-		// Save the product
-		const newProduct = await ProductsMongoManager.create(product);
+		// Save the cart
+		const newCart = await CartsMongoManager.create(cart);
+
+		// Response
+		res.status(201).json({
+			message: 'cart created successfully',
+			error: false,
+			payload: newCart,
+		});
 
 		// show the product in the view	product.handlebars
-		res.render('product', { title: 'Product', product: newProduct });
+		// res.render('product', { title: 'Product', product: newProduct });
 	} catch (error) {
-		if (error.code === 11000) {
-			const duplicateField = Object.keys(error.keyPattern)[0];
+		// if (error.code === 11000) {
+		// 	const duplicateField = Object.keys(error.keyPattern)[0];
 
-			return res.render('error', {
-				error: `A product with this ${duplicateField} already exists`,
-				details: 'Please try again  with a different one',
-			});
-		}
+		// 	return res.render('error', {
+		// 		error: `A cart with this ${duplicateField} already exists`,
+		// 		details: 'Please try again  with a different one',
+		// 	});
+		// }
 
-		res.render('error', {
-			error: 'Internal Server Error',
-			details: error.message,
-		});
-	}
-});
-
-//* POST A CART WITH ONE OR SEVERAL PRODUCTS **********************/
-router.post('/', async (req, res) => {
-	const { products } = req.body;
-
-	// Validate that product is a valid array
-	if (!Array.isArray(products) || products.length === 0) {
-		return res.status(404).json({
-			message: 'Product array is invalid or empty',
+		// res.render('error', {
+		// 	error: 'Internal Server Error',
+		// 	details: error.message,
+		// });
+		return res.status(500).json({
+			message: `Internal Server Error - ${error}`,
 			error: true,
 			payload: null,
 		});
 	}
-
-	// Validate that each product has Idproduct and Quantity as numbers
-	if (
-		products.some(
-			(product) =>
-				typeof product.idProduct !== 'number' || typeof product.quantity !== 'number'
-		)
-	) {
-		return res.status(404).json({
-			message: "Each product must have 'idProduct' and 'quantity' as a numbers",
-			error: true,
-			payload: null,
-		});
-	}
-
-	// read data from file
-	const carts = await fileManagerCarts.getData();
-
-	// Generate a new ID based on the current number of carts
-	const newCartId = carts.length + 1;
-
-	// Create the new cart
-	const newCart = { id: newCartId, products };
-
-	// Add the cart to Array
-	carts.push(newCart);
-
-	// Save the updated array of products to the json file
-	// writeData(fileCarts, carts);
-	fileManagerCarts.saveData(carts);
-
-	return res.status(201).json({
-		message: 'cart created successfully and product added to cart',
-		error: false,
-		payload: newCart,
-	});
 });
 
-//* POST A NEW CART WITH JUST ONE PRODUCT *************************/
-router.post('/product/:pid', async (req, res) => {
-	const productId = parseInt(req.params.pid);
-
-	// read data from file
-	const products = await fileManagerProducts.getData();
-
-	// Find the product
-	const product = products.find((prod) => prod.id === productId);
-	// If the product is not found, return an error
-	if (!product) {
-		return res.status(404).json({
-			message: 'Product not found',
-			error: true,
-			payload: null,
-		});
-	}
-
-	// read data from file
-	const carts = await fileManagerCarts.getData();
-
-	const newCart = {
-		id: carts.length + 1,
-		products: [{ idProduct: productId, quantity: 1 }],
-	};
-
-	// Add the new cart to the array
-	carts.push(newCart);
-
-	// Save the updated array of products to the json file
-	// writeData(fileCarts, carts);
-	fileManagerCarts.saveData(carts);
-
-	return res.status(201).json({
-		message: 'cart created successfully and product added to cart',
-		error: false,
-		payload: newCart,
-	});
-});
-
-//* POST A NEW PRODUCT IN AN EXISTING CART ************************/
+//* POST A PRODUCT IN AN EXISTING CART ************************/
 router.post('/:cid/product/:pid', async (req, res) => {
 	const cartId = parseInt(req.params.cid);
 	const productId = parseInt(req.params.pid);
 
-	// read data from file
-	const products = await fileManagerProducts.getData();
+	try {
+		// Find the product
+		// const product = products.find((prod) => prod.id === productId);
+		const product = await ProductsMongoManager.getById(productId);
 
-	// Find the product
-	const product = products.find((prod) => prod.id === productId);
-	// If the product is not found, return an error
-	if (!product) {
-		return res.status(404).json({
-			message: 'Product not found',
+		// If the product is not found, return an error
+		if (!product) {
+			return res.status(404).json({
+				message: 'Product not found',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// Find the cart
+		// let cart = carts.find((c) => c.id === cartId);
+		let cart = await CartsMongoManager.getById(cartId);
+
+		// If the cart is not found, return an error
+		if (!cart) {
+			return res.status(404).json({
+				message: 'Cart not found',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// If the cart exists, add the product to the cart
+		// Find the product in the cart first
+		const productInCart = cart.products.find(
+			(prod) => String(prod.product._id) === String(product._id)
+		);
+
+		// If the product is already in the cart, increment the quantity
+		if (productInCart) {
+			productInCart.quantity += 1;
+			productInCart.totalProduct = productInCart.quantity * product.price;
+		} else {
+			// If the product is not in the cart, add it
+			cart.products.push({
+				product: product._id,
+				quantity: 1,
+				totalProduct: product.price,
+			});
+		}
+		cart.totalCart = cart.products.reduce((acc, curr) => acc + curr.totalProduct, 0);
+
+		const updatedCart = await CartsMongoManager.update(cart);
+
+		return res.status(201).json({
+			message: 'product successfully added to cart ',
+			error: false,
+			payload: updatedCart,
+		});
+	} catch (error) {
+		return res.status(500).json({
+			message: `Internal Server Error - ${error}`,
 			error: true,
 			payload: null,
 		});
 	}
-	// read data from file
-	const carts = await fileManagerCarts.getData();
+});
 
-	// Find the cart
-	let cart = carts.find((c) => c.id === cartId);
+//* DELETE A PRODUCT IN AN EXISTING CART ************************/
+router.delete('/:cid/product/:pid', async (req, res) => {
+	const { cartId, productId } = req.params;
 
-	// If the cart is not found, create a new one
-	if (!cart) {
-		const newCart = {
-			id: carts.length + 1,
-			products: [{ idProduct: productId, quantity: 1 }],
-		};
+	try {
+		// Find the cart
+		const cart = await CartsMongoManager.getById(req.params.cid);
 
-		// Add the new cart to the array
-		carts.push(newCart);
+		// If the cart is not found, return an error
+		if (!cart) {
+			return res.status(404).json({
+				message: 'Cart not found',
+				error: true,
+				payload: null,
+			});
+		}
 
-		// Save the updated array of products to the json file
-		// writeData(fileCarts, carts);
-		fileManagerCarts.saveData(carts);
+		// Find the product
+		const product = await ProductsMongoManager.getById(req.params.pid);
+
+		// If the product is not found, return an error
+		if (!product) {
+			return res.status(404).json({
+				message: 'Product not found',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// Find the product in the cart
+		const productInCart = cart.products.find(
+			(prod) => String(prod.product._id) === String(product._id)
+		);
+
+		// If the product is not in the cart, return an error
+		if (!productInCart) {
+			return res.status(404).json({
+				message: 'Product not found in cart',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// Reduce the quantity or remove the product in the cart
+		if (productInCart.quantity === 1) {
+			cart.products = cart.products.filter(
+				(prod) => String(prod.product._id) !== String(product._id)
+			);
+		} else {
+			productInCart.quantity -= 1;
+			productInCart.totalProduct = productInCart.quantity * product.price;
+		}
+
+		// Update the total cart
+		cart.totalCart = cart.products.reduce((acc, curr) => acc + curr.totalProduct, 0);
+
+		// Update the cart
+		const updatedCart = await CartsMongoManager.update(cart);
 
 		return res.status(201).json({
-			message: 'cart created successfully and product added to cart',
+			message: 'product successfully subtracted from cart ',
 			error: false,
-			payload: newCart,
+			payload: updatedCart,
+		});
+	} catch (error) {
+		return res.status(500).json({
+			message: `Internal Server Error - ${error}`,
+			error: true,
+			payload: null,
 		});
 	}
-
-	// If the cart exists, add the product to the cart
-	// Find the product in the cart first
-	const productInCart = cart.products.find((prod) => prod.idProduct === productId);
-
-	// If the product is already in the cart, increment the quantity
-	if (productInCart) {
-		productInCart.quantity += 1;
-	} else {
-		// If the product is not in the cart, add it
-		cart.products.push({ idProduct: productId, quantity: 1 });
-	}
-
-	// Save the updated array of products to the json file
-	// writeData(fileCarts, carts);
-	fileManagerCarts.saveData(carts);
-
-	return res.status(201).json({
-		message: 'product successfully added to cart ',
-		error: false,
-		payload: cart,
-	});
 });
 
 export default router;

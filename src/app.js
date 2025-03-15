@@ -4,7 +4,7 @@ import __dirname from './utils.js';
 import mongoose from 'mongoose';
 import methodOverride from 'method-override';
 
-//import config is a variable that contains the environment variables
+//config will contains the environment variables
 import { config } from './config/config.js';
 
 //import routers
@@ -43,7 +43,9 @@ mongoose
 			/(?<=:\/\/)(.*?)(?=@)/,
 			'*****'
 		);
-		console.log(`Connected to the database ${uriWithoutPassword}`);
+		console.log(
+			`Connected to the "${config.DB_NAME}" database, at ${uriWithoutPassword}`
+		);
 	})
 	.catch((err) => {
 		console.error("Couldn't connect to the database", err);

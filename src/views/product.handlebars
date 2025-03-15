@@ -15,10 +15,17 @@
 	</div>
 	<div class='container-buttons j-between'>
 		<div>
+			<p> Add to cart</p>
 			<div class='container'>
-				<button>Add to Cart</button>
+				<button id='subs-to-cart-btn' data-product-id='{{product.id}}'>-</button>
+				<button id='add-to-cart-btn' data-product-id='{{product.id}}'>+</button>
 			</div>
 		</div>
 		<button onclick="window.location.href = '/products'">Products List</button>
 	</div>
 </div>
+
+<script src='/js/product.js'></script>
+
+{{! CDN for the sweetalert2 }}
+<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
