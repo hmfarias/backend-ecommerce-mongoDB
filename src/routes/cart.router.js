@@ -7,7 +7,6 @@
  */
 
 import { Router } from 'express';
-import CartModel from '../models/cart.model.js';
 import CartsMongoManager from '../managers/CartsMongoManager.js';
 import CountersMongoManager from '../managers/CountersMongoManager.js';
 import ProductsMongoManager from '../managers/ProductsMongoManager.js';
@@ -45,21 +44,32 @@ router.get('/:cid', async (req, res) => {
 	try {
 		const cart = await CartsMongoManager.getById(req.params.cid);
 		if (!cart) {
-			// return res.render('error', {
-			// 	error: 'Cart not found - The cart with the specified ID does not exist',
-			// 	details: 'Please try again with a different ID',
-			// });
-			return res.status(404).json({
-				message: 'Cart not found - The cart with the specified ID does not exist',
-				error: true,
-				payload: null,
+			return res.render('error', {
+				error: 'Cart not found - The cart with the specified ID does not exist',
+				details: 'Please try again with a different ID',
 			});
+			// return res.status(404).json({
+			// 	message: 'Cart not found - The cart with the specified ID does not exist',
+			// 	error: true,
+			// 	payload: null,
+			// });
 		}
-		return res.status(200).json({
-			message: 'Cart retrieved successfully',
-			error: false,
-			payload: cart,
+
+		//Format the numbers in the cart to two decimal places
+		const formattedCart = {
+			...cart,
+			totalCart: Math.round(cart.totalCart * 100) / 100, // Redondear a dos decimales
+		};
+		console.log('✅ ~ router.get ~ formattedCart:', formattedCart);
+		return res.render('cart', {
+			title: 'Cart',
+			cart: formattedCart,
 		});
+		// return res.status(200).json({
+		// 	message: 'Cart retrieved successfully',
+		// 	error: false,
+		// 	payload: cart,
+		// });
 	} catch (error) {
 		// return res.render('error', {
 		// 	error: 'Internal Server Error',
@@ -190,8 +200,6 @@ router.post('/:cid/product/:pid', async (req, res) => {
 
 //* DELETE A PRODUCT IN AN EXISTING CART ************************/
 router.delete('/:cid/product/:pid', async (req, res) => {
-	const { cartId, productId } = req.params;
-
 	try {
 		// Find the cart
 		const cart = await CartsMongoManager.getById(req.params.cid);
@@ -249,6 +257,72 @@ router.delete('/:cid/product/:pid', async (req, res) => {
 
 		return res.status(201).json({
 			message: 'product successfully subtracted from cart ',
+			error: false,
+			payload: updatedCart,
+		});
+	} catch (error) {
+		return res.status(500).json({
+			message: `Internal Server Error - ${error}`,
+			error: true,
+			payload: null,
+		});
+	}
+});
+
+//* DELETE THE COMPLETE PRODUCT IN AN EXISTING CART ************************/
+router.delete('/:cid/product/:pid/delete', async (req, res) => {
+	try {
+		// Find the cart
+		const cart = await CartsMongoManager.getById(req.params.cid);
+
+		// If the cart is not found, return an error
+		if (!cart) {
+			return res.status(404).json({
+				message: 'Cart not found',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// Find the product
+		const product = await ProductsMongoManager.getById(req.params.pid);
+
+		// If the product is not found, return an error
+		if (!product) {
+			return res.status(404).json({
+				message: 'Product not found',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// Find the product in the cart
+		const productInCart = cart.products.find(
+			(prod) => String(prod.product._id) === String(product._id)
+		);
+
+		// If the product is not in the cart, return an error
+		if (!productInCart) {
+			return res.status(404).json({
+				message: 'Product not found in cart',
+				error: true,
+				payload: null,
+			});
+		}
+
+		// Delete the product from the cart
+		cart.products = cart.products.filter(
+			(prod) => String(prod.product._id) !== String(product._id)
+		);
+
+		// Update the total cart
+		cart.totalCart = cart.products.reduce((acc, curr) => acc + curr.totalProduct, 0);
+
+		// Update the cart
+		const updatedCart = await CartsMongoManager.update(cart);
+
+		return res.status(201).json({
+			message: 'product successfully deleted from cart ',
 			error: false,
 			payload: updatedCart,
 		});

@@ -29,7 +29,7 @@ const cartSchema = new Schema({
 // Mongoose Middleware: Populate the product field in the products array always before returning the cart usind find
 // to show in the cart I only need to populate only some fields like title, price and thumbnail and not all fields of the product. To do this we use the second parameter of populate which is the field selection.
 cartSchema.pre(['find', 'findOne'], function (next) {
-	this.populate('products.product', '_id title price thumbnail');
+	this.populate('products.product', '_id id title price thumbnail');
 	next();
 });
 

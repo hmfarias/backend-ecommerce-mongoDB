@@ -7,7 +7,7 @@
 			<h3>{{this.title}}</h3>
 			<a href='/products/{{this.id}}'>View Details</a>
 			<form action='/products/{{this._id}}?_method=DELETE' method='POST'>
-				<button class='button-delete'>Delete</button>
+				<button class='button-delete'><i class='fa-regular fa-trash-can'></i></button>
 			</form>
 		</li>
 	{{/each}}

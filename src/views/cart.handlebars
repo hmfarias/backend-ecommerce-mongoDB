@@ -1,0 +1,72 @@
+{{! View to show a cart }}
+<div class='cart-container'>
+	<h1>{{title}}</h1>
+
+	<!--Verify if there are products in the cart -->
+	{{#if cart.products.length}}
+		{{#each cart.products}}
+			<div class='cart-item'>
+				<!-- image -->
+				<img src='{{this.product.thumbnail}}' alt='{{this.product.title}}' />
+
+				<div class='cart-item-details'>
+					<!-- title -->
+					<h3 class='cart-item-title'>{{this.product.title}}</h3>
+					<p>carro:{{cart.id}}</p>
+
+					<!-- add and substract buttons -->
+					<div class='quantity-buttons'>
+						<button
+							class='btn-decrease'
+							data-cart-id='{{../cart.id}}'
+							data-product-id='{{this.product.id}}'
+						><i class='fa-solid fa-minus'></i></button>
+						<span>{{this.quantity}}</span>
+						<button
+							class='btn-increase'
+							data-cart-id='{{../cart.id}}'
+							data-product-id='{{this.product.id}}'
+						><i class='fa-solid fa-plus'></i></button>
+					</div>
+				</div>
+
+				<!-- price -->
+				<div class='cart-item-price'>
+					<p class='price-label'>Precio Unitario</p>
+					$
+					{{this.product.price}}
+				</div>
+
+				<!-- quantity -->
+				<div class='cart-item-quantity'>
+					<p class='quantity-label'>Cantidad</p>
+					{{this.quantity}}
+				</div>
+
+				<!-- Total -->
+				<div class='cart-item-total'>
+					<p class='total-label'>Total</p>
+					$
+					{{this.totalProduct}}
+				</div>
+
+				<!-- delete button -->
+                <button
+					class='button-delete'
+					data-cart-id='{{../cart.id}}'
+					data-product-id='{{this.product.id}}'
+				><i class='fa-regular fa-trash-can'></i></button>
+                    
+			</div>
+		{{/each}}
+
+		<!-- Show the total cart -->
+		<div class='cart-total'>
+			Total Cart: ${{cart.totalCart}}
+		</div>
+	{{else}}
+		<p>No products in the cart.</p>
+	{{/if}}
+</div>
+
+<script type='module' src='/js/cart.js'></script>

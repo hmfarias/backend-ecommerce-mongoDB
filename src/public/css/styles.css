@@ -1,3 +1,10 @@
+/* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f4f4f4;
@@ -6,8 +13,86 @@ body {
 	text-align: center;
 }
 
-header {
-	background-color: #f0f0f0;
+/* Header */
+.header {
+	margin-bottom: 2rem;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	color: black;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+	font-size: 1.2rem;
+	color: gray;
+}
+
+/* Contenedor principal */
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.homecontainer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/* Sección de texto */
+.text-section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.text-section h2 {
+	font-size: 2rem;
+	color: darkgray;
+}
+
+.text-section p {
+	font-size: 1.2rem;
+	color: gray;
+}
+
+.cta-button {
+	background-color: #ff6f61;
+	color: white;
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #ff4d4d;
+	transform: scale(1.05);
+}
+
+/* Sección de imagen */
+.image-section {
+	flex: 1;
+	max-width: 500px;
+	margin: 70px 0;
+}
+
+.image-section img {
+	width: 100%;
+	height: auto;
 }
 
 h1 {
@@ -48,6 +133,7 @@ button:hover {
 }
 
 .product-card {
+	position: relative; /* Hace que el contenedor sea el punto de referencia para el posicionamiento absoluto*/
 	background: white;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,6 +156,24 @@ button:hover {
 	border-radius: 8px;
 	object-fit: cover;
 	margin-bottom: 10px;
+}
+
+.button-delete {
+	position: absolute; /* Posiciona el botón respecto al contenedor .product-card */
+	bottom: 10px; /* Distancia desde el borde inferior */
+	right: 10px; /* Distancia desde el borde derecho */
+	background: #ff4d4d;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: background 0.3s ease-in-out;
+}
+
+.button-delete:hover {
+	background: #cc0000;
 }
 
 h3 {
@@ -158,21 +262,6 @@ button[type='button'] {
 	font-size: 1rem;
 	border: none;
 	transition: background-color 0.3s ease;
-}
-
-.button-delete {
-	background: #ff4d4d;
-	color: white;
-	border: none;
-	padding: 8px 12px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 0.9rem;
-	transition: background 0.3s ease-in-out;
-}
-
-.button-delete:hover {
-	background: #cc0000;
 }
 
 /* Estilos para la vista de un solo producto */
@@ -292,7 +381,7 @@ button[type='button'] {
 	display: flex;
 	justify-content: space-between;
 	background-color: #333;
-	padding: 10px 0;
+	padding: 10px 10px;
 }
 
 .navbar a {
@@ -324,4 +413,95 @@ button[type='button'] {
 
 .j-center {
 	justify-content: center;
+}
+
+.cart-container {
+	max-width: 800px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+	text-align: center;
+	color: #333;
+}
+.cart-item {
+	display: flex;
+	align-items: flex-start; /* Alinea los elementos al inicio */
+	justify-content: space-between; /* Distribuye el espacio entre los elementos */
+	margin-bottom: 15px;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	position: relative; /* Necesario para posicionar el botón "Delete" */
+}
+.cart-item img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	margin-right: 15px;
+	border-radius: 4px;
+}
+.cart-item-details {
+	/* flex-grow: 1; */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.cart-item-title {
+	font-size: 1.2rem;
+	color: #333;
+	margin: 0;
+}
+.quantity-buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+.quantity-buttons button {
+	background: #007bff;
+	color: white;
+	border: none;
+	padding: 5px 15px;
+	cursor: pointer;
+	font-size: 1rem;
+	border-radius: 4px;
+	margin: 5px;
+	height: 35px;
+}
+.quantity-buttons button:hover {
+	background: #0056b3;
+}
+.cart-item-price,
+.cart-item-quantity,
+.cart-item-total {
+	margin-left: auto;
+	text-align: right;
+}
+.cart-item-price {
+	font-size: 1rem;
+	color: #666;
+}
+.cart-item-quantity {
+	font-size: 1rem;
+	color: #333;
+}
+.cart-item-total {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #333;
+}
+.cart-total {
+	text-align: right;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.price-label,
+.quantity-label,
+.total-label {
+	font-size: 0.9rem;
+	color: #666;
+	font-weight: bold;
 }

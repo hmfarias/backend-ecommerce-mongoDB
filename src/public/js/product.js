@@ -21,7 +21,6 @@ const createCartAndAddProduct = async (productId) => {
 
 			// Parse the response as JSON
 			const responseData = await createCartResponse.json();
-			console.log('✅ ~ createCartAndAddProduct ~ responseData:', responseData);
 
 			if (responseData.error) {
 				console.error('Error creating cart:', responseData.message);
@@ -75,8 +74,6 @@ const addProductToCart = async (cartId, productId) => {
 			return;
 		}
 
-		console.log('Product added to cart:', responseData.payload);
-
 		// Show a success message
 		Swal.fire({
 			title: 'Success!',
@@ -92,17 +89,79 @@ const addProductToCart = async (cartId, productId) => {
 	}
 };
 
+// Function to remove or decrease product quantity from the cart
+const removeProductFromCart = async (cartId, productId) => {
+	try {
+		const removeProductResponse = await fetch(`/carts/${cartId}/product/${productId}`, {
+			method: 'DELETE', // Use DELETE method for removing/reducing quantity
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		});
+
+		const responseData = await removeProductResponse.json();
+
+		if (responseData.error) {
+			Swal.fire({
+				title: 'Warning!',
+				text: responseData.message,
+				icon: 'warning',
+				position: 'top-end',
+				timer: 1500,
+				showConfirmButton: false,
+				toast: true,
+			});
+
+			return;
+		}
+		Swal.fire({
+			title: 'Updated!',
+			text: 'Product substracted from cart successfully!',
+			icon: 'info',
+			position: 'top-end',
+			timer: 2000,
+			showConfirmButton: false,
+			toast: true,
+		});
+	} catch (error) {
+		console.error('Network or unexpected error:', error.message || error);
+	}
+};
+
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-	// Get the "Add to Cart" button
+	// Get the "+" button
 	const addToCartButton = document.getElementById('add-to-cart-btn');
+	// Get the "-" button
+	const removeFromCartButton = document.getElementById('subs-to-cart-btn');
 
 	// Add click event listener to the button
 	addToCartButton.addEventListener('click', async function () {
 		// Get the product ID from the button's data attribute
 		const productId = this.getAttribute('data-product-id');
-
 		// Create the cart (if it doesn't exist) and add the product
 		await createCartAndAddProduct(productId);
+	});
+
+	// Add event listener to "Remove from Cart" button
+	removeFromCartButton.addEventListener('click', async function () {
+		const productId = this.getAttribute('data-product-id');
+		const cartId = getCartIdFromStorage();
+
+		if (!cartId) {
+			console.warn('No cart found in storage.');
+			Swal.fire({
+				title: 'Warning!',
+				text: 'No cart found in storage',
+				icon: 'warning',
+				position: 'top-end',
+				timer: 2000,
+				showConfirmButton: false,
+				toast: true,
+			});
+			return;
+		}
+
+		await removeProductFromCart(cartId, productId);
 	});
 });
