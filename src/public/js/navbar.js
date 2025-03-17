@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const cartLink = document.getElementById('cart-link');
 
 	// Add a click event to the cart link
-	cartLink.addEventListener('click', (event) => {
+	cartLink.addEventListener('click', async (event) => {
 		event.preventDefault();
 
 		// Get the cartId from LocalStorage
@@ -11,18 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// Verify if there is a cartId in LocalStorage
 		if (!cartId) {
-			// If there is no cart, show an error message or redirect the cart creation page
-			Swal.fire({
+			await Swal.fire({
 				title: 'Warning!',
-				text: 'No cart found. Please create a cart first.',
+				text: 'No cart found. Please add products to create it',
 				icon: 'warning',
 				position: 'top-end',
-				timer: 2000,
+				timer: 2500,
 				showConfirmButton: false,
 				toast: true,
 			});
+			// Redirect to the home page
+			window.location.href = '/';
+			return;
 		}
-		// Redirect the endpoint /:cid
+
+		// Redirect to the cart if it exists
 		window.location.href = `/carts/${cartId}`;
 	});
 });

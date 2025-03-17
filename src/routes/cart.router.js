@@ -335,4 +335,32 @@ router.delete('/:cid/product/:pid/delete', async (req, res) => {
 	}
 });
 
+//* DELETE A COMPLETE CART ************************/
+router.delete('/:cid', async (req, res) => {
+	try {
+		// Delete the cart
+		const deletedCart = await CartsMongoManager.delete(req.params.cid);
+
+		if (!deletedCart) {
+			return res.status(404).json({
+				message: `Cart with ID ${req.params.cid} not found`,
+				error: true,
+				payload: null,
+			});
+		}
+
+		return res.status(201).json({
+			message: 'Cart successfully deleted',
+			error: false,
+			payload: deletedCart,
+		});
+	} catch (error) {
+		return res.status(500).json({
+			message: `Internal Server Error - ${error}`,
+			error: true,
+			payload: null,
+		});
+	}
+});
+
 export default router;

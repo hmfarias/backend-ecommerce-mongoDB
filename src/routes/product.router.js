@@ -62,7 +62,7 @@ router.get('/:id', async (req, res) => {
 
 //CREATE a new product -------------------------------------------------------------------------------
 router.post('/', uploader.single('file'), async (req, res) => {
-	const { title, description, code, price, status = true, stock, category } = req.body;
+	const { title, description, code, price, stock, category } = req.body;
 
 	const thumbnail = req.file
 		? '/img/' + req.file.filename
@@ -79,7 +79,6 @@ router.post('/', uploader.single('file'), async (req, res) => {
 			description,
 			code,
 			price,
-			status,
 			stock,
 			category,
 			thumbnail,

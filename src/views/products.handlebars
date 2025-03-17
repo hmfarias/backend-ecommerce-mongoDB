@@ -1,5 +1,6 @@
 {{! View to show a list of products }}
-<h1>Products</h1>
+
+{{!-- <h1>Products</h1>
 <ul>
 	{{#each products}}
 		<li class='product-card'>
@@ -15,4 +16,66 @@
 <div class='container-buttons j-center'>
 	<button onclick="window.location.href = '/newProduct'">Create Product</button>
 	<button onclick="window.location.href = '/'">Go Home</button>
+</div> --}}
+
+<h1 id='products-title'>Products</h1>
+
+<div class='page-product-container'>
+	<!-- Sección de Filtros y Ordenamiento - 1/4 -->
+	<div class='filters-section'>
+		<h2>Filter by Category</h2>
+		<!-- Filtro de categoría -->
+		<form id='category-form'>
+			<select name='category' id='category-select'>
+				<option value='all'>All Categories</option>
+			</select>
+			<button type='submit'>Apply</button>
+		</form>
+
+		<h2>Filter by Status</h2>
+		<!-- Filtro de estatus -->
+		<form>
+			<select name='status'>
+				<option value='all'>All Status</option>
+				<option value='available'>In Stock</option>
+				<option value='low-stock'>Low Stock</option>
+				<option value='out-of-stock'>Out of Stock</option>
+			</select>
+			<button type='submit'>Apply</button>
+		</form>
+
+		<h2>Sort by Price</h2>
+		<!-- Ordenar por precio -->
+		<form>
+			<select name='price'>
+				<option value='asc'>Price: Low to High</option>
+				<option value='desc'>Price: High to Low</option>
+			</select>
+			<button type='submit'>Sort</button>
+		</form>
+	</div>
+
+	<!-- Sección de Productos - 3/4 -->
+	<div class='products-list-section'>
+		<ul>
+			{{#each products}}
+				<li class='product-card'>
+					<img src='{{this.thumbnail}}' alt='{{this.title}}' class='product-thumbnail' />
+					<h3>{{this.title}}</h3>
+					<p>Price: ${{this.price}}</p>
+					<a href='/products/{{this.id}}'>View Details</a>
+					<form action='/products/{{this._id}}?_method=DELETE' method='POST'>
+						<button class='button-delete'><i class='fa-regular fa-trash-can'></i></button>
+					</form>
+				</li>
+			{{/each}}
+		</ul>
+
+		<div class='container-buttons j-center'>
+			<button onclick="window.location.href = '/newProduct'">Create Product</button>
+			<button onclick="window.location.href = '/'">Go Home</button>
+		</div>
+	</div>
 </div>
+
+<script type='module' src='/js/products.js'></script>

@@ -68,7 +68,7 @@ body {
 }
 
 .cta-button {
-	background-color: #ff6f61;
+	background-color: #2f14dd;
 	color: white;
 	padding: 1rem 2rem;
 	font-size: 1.2rem;
@@ -102,7 +102,7 @@ h1 {
 	margin-top: 2rem;
 }
 
-ul {
+/* ul {
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -110,7 +110,7 @@ ul {
 	padding: 0;
 	margin: 20px auto;
 	max-width: 1000px;
-}
+} */
 
 button {
 	padding: 0.75rem 1.5rem;
@@ -130,50 +130,6 @@ button {
 
 button:hover {
 	background: #0056b3;
-}
-
-.product-card {
-	position: relative; /* Hace que el contenedor sea el punto de referencia para el posicionamiento absoluto*/
-	background: white;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	padding: 16px;
-	text-align: center;
-	transition: transform 0.2s ease-in-out;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.product-card:hover {
-	transform: translateY(-7px);
-}
-
-.product-thumbnail {
-	width: 100%;
-	max-width: 200px;
-	height: auto;
-	border-radius: 8px;
-	object-fit: cover;
-	margin-bottom: 10px;
-}
-
-.button-delete {
-	position: absolute; /* Posiciona el botón respecto al contenedor .product-card */
-	bottom: 10px; /* Distancia desde el borde inferior */
-	right: 10px; /* Distancia desde el borde derecho */
-	background: #ff4d4d;
-	color: white;
-	border: none;
-	padding: 8px 12px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 0.9rem;
-	transition: background 0.3s ease-in-out;
-}
-
-.button-delete:hover {
-	background: #cc0000;
 }
 
 h3 {
@@ -457,7 +413,7 @@ h1 {
 .quantity-buttons {
 	display: flex;
 	align-items: center;
-	margin-top: 5px;
+	margin-top: 1rem;
 }
 .quantity-buttons button {
 	background: #007bff;
@@ -504,4 +460,99 @@ h1 {
 	font-size: 0.9rem;
 	color: #666;
 	font-weight: bold;
+}
+.button-delete-cart {
+	background: #ff4d4d;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+}
+
+/* Product List Page	-------------------------------------------------------------------------------- */
+
+/* Diseño con flexbox: Parte izquierda (filtros) 1/4, Parte derecha (productos) 3/4 */
+.page-product-container {
+	display: flex;
+	gap: 2rem;
+	max-width: 100%;
+	margin: 1.5rem 1.5rem;
+}
+
+/* Filtros (izquierda) */
+.filters-section {
+	flex: 1; /* 1/4 de la pantalla */
+	max-width: 300px; /* Limitar el ancho de la columna de filtros */
+	background-color: #f9f9f9;
+	padding: 1.5rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+/* Estilo de los formularios dentro de la sección de filtros */
+.filters-section form {
+	margin-bottom: 1.5rem;
+}
+
+/* Productos (derecha) */
+.products-list-section {
+	flex: 3; /* 3/4 de la pantalla */
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+/* Diseño de la lista de productos */
+.products-list-section ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+.product-card {
+	position: relative; /* Hace que el contenedor sea el punto de referencia para el posicionamiento absoluto*/
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	text-align: center;
+	transition: transform 0.2s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-card:hover {
+	transform: translateY(-7px);
+}
+
+.product-thumbnail {
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	border-radius: 8px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.button-delete {
+	position: absolute; /* Posiciona el botón respecto al contenedor .product-card */
+	bottom: 10px; /* Distancia desde el borde inferior */
+	right: 10px; /* Distancia desde el borde derecho */
+	background: #ff4d4d;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: background 0.3s ease-in-out;
+}
+
+.button-delete:hover {
+	background: #cc0000;
 }

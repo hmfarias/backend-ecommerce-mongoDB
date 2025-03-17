@@ -12,7 +12,6 @@
 				<div class='cart-item-details'>
 					<!-- title -->
 					<h3 class='cart-item-title'>{{this.product.title}}</h3>
-					<p>carro:{{cart.id}}</p>
 
 					<!-- add and substract buttons -->
 					<div class='quantity-buttons'>
@@ -64,6 +63,17 @@
 		<div class='cart-total'>
 			Total Cart: ${{cart.totalCart}}
 		</div>
+		<!-- delete cart button -->
+		<div class='container-buttons j-end'>
+			<p>Delete Cart</p>
+        <button
+			id="button-delete-cart"
+			class='button-delete-cart'
+			data-cart-id='{{cart.id}}'
+			><i class='fa-regular fa-trash-can'></i>
+		</button>
+
+	</div>
 	{{else}}
 		<p>No products in the cart.</p>
 	{{/if}}

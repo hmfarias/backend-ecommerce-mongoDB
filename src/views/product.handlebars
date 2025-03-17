@@ -10,7 +10,7 @@
 		<p>{{product.description}}</p>
 		<p>Precio: {{product.price}}</p>
 		<p>Stock: {{product.stock}}</p>
-		<p>Status: {{product.status}}</p>
+		<p>Status: {{product.availabilityStatus}}</p>
 		<p>Category: {{product.category}}</p>
 	</div>
 	<div class='container-buttons j-between'>
@@ -18,10 +18,10 @@
 			<p> Add to cart</p>
 			<div class='container'>
 				<button id='subs-to-cart-btn' data-product-id='{{product.id}}'><i
-						class='fa-solid fa-minus fa-fade'
+						class='fa-solid fa-minus'
 					></i></button>
 				<button id='add-to-cart-btn' data-product-id='{{product.id}}'><i
-						class='fa-solid fa-plus fa-fade'
+						class='fa-solid fa-plus'
 					></i></button>
 			</div>
 		</div>
