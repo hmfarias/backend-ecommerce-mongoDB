@@ -44,6 +44,8 @@
    - [Arquitectura](#arquitectura)
    - [Estructura de archivos](#estructura)
    - [Filtros y Paginación](#filtros)
+   - [Gestión de Productos](#productos)
+   - [Gestión del Carrito](#carrito)
 8. [Contribuyendo](#contribuyendo)
 9. [Licencia](#licencia)
 10. [Contacto](#contacto)
@@ -361,6 +363,48 @@ Este sistema permite que los usuarios encuentren los productos que desean de man
 
 <hr>
 
+<a name="carrito"></a>
+
+### 🟢 Gestión del Carrito
+
+En la aplicación, la **gestión del carrito** se encarga de permitir a los usuarios agregar, actualizar, eliminar y ver los productos en su carrito de compras. Esta funcionalidad es crucial para una experiencia de compra en línea, ya que permite a los usuarios seleccionar productos antes de proceder con el pago. La gestión del carrito se implementa mediante un conjunto de rutas y lógica de backend que interactúan con la base de datos.
+
+#### ¿Cómo Funciona la Gestión del Carrito?
+
+1. **Creación de un Carrito**: 
+   Cuando un usuario agrega un producto al carrito, se verifica si ya existe un carrito. Si es la primera vez que el usuario agrega un producto, se crea un carrito vacío y, a continuación, se agrega el producto en la misma operación. Si el carrito ya existe (es decir, no es la primera vez que el usuario agrega productos), se recupera el carrito previamente creado y el producto se agrega a dicho carrito.
+
+2. **Agregar Productos al Carrito**:
+   Los usuarios pueden agregar productos uno a uno al carrito mediante la selección de un producto y la elección de la cantidad mediante los botones `+` y `-`. Al agregar un producto, se actualiza el carrito en la base de datos, y se almacena información como el ID del producto, la cantidad, y el precio total del producto.
+
+3. **Actualizar Cantidad de Productos en la vista de carrito**:
+   Los usuarios pueden modificar la cantidad de un producto en su carrito. Esta acción actualiza la cantidad de ese producto en el carrito y recalcula el precio total.
+
+4. **Eliminar Productos del Carrito**:
+   Los productos pueden ser eliminados completamente del carrito en cualquier momento. Al eliminar un producto, se elimina su entrada en la base de datos correspondiente al carrito.
+
+5. **Visualización del Carrito**:
+   El carrito del usuario se puede ver en cualquier momento desde la interfaz de usuario presionando el simbolo del carrito que se ubica a la derecha en el Navbar. Esta vista muestra los productos en el carrito, su cantidad, el precio total por producto y el total a pagar por el carrito.
+
+6. **Finalización de Compra**:
+   El alcance del proyecto no incluye la funcionalidad completa de finalización de compra. Sin embargo, se ha implementado un botón "Eliminar" en el carrito para ilustrar el uso del endpoint `DELETE`, el cual se utilizaría posteriormente para eliminar los productos del carrito luego de procesar la compra. Esta implementación es solo una representación de cómo se gestionaría el proceso de eliminación una vez completada la compra en un sistema real.
+
+#### Estructura de la Gestión del Carrito
+
+La gestión del carrito se realiza mediante el uso de un **modelo de carrito** en la base de datos, y las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) se manejan con la ayuda de los **routers** y **managers**.
+
+El flujo básico es el siguiente:
+
+- **Router**: Las rutas para manejar el carrito están definidas en el archivo `cart.router.js`, donde se exponen los endpoints para agregar, eliminar o ver productos del carrito.
+  
+- **Modelo de Carrito**: El modelo `cart.model.js` representa la estructura del carrito en la base de datos, incluyendo los productos agregados, su cantidad y el precio. En este modelo, cada producto dentro del carrito solo guarda el `_id` del producto, en lugar de almacenar toda la información del producto directamente. Para obtener los detalles completos de cada producto, se utiliza el método `populate` de Mongoose. Este método permite realizar una consulta de referencia a la colección de productos y traer los datos completos de cada producto, como su nombre, descripción, precio, etc., a partir del `_id` almacenado en el carrito. De esta manera, se optimiza el almacenamiento y se mantiene la relación entre los carritos y los productos en la base de datos.
+
+- **Manager de Carrito**: El manager maneja la lógica para las operaciones del carrito. Incluye métodos para agregar productos, actualizar cantidades, eliminar productos y obtener el carrito completo.
+
+
+[Volver al menú](#top)
+
+<hr>
 
 <a name="contribuyendo"></a>
 
