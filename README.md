@@ -34,6 +34,7 @@
 1. [Introducción](#introduccion)
 2. [Construido con](#consturido)
 3. [Consideraciones Importantes](#consideraciones)
+   - [Acceso a los datos](#acceso)
    - [Persistencia](#persistencia)
    - [Maquetación y CSS](#maqueta)
    - [Comentarios en el código](#comentarios)
@@ -87,9 +88,15 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ## CONSIDERACIONES IMPORTATES
 
+<a name="acceso"></a>
+
+### ACCESO A LOS DATOS
+
 Los datos se acceden mediante "Managers" (clases ProductsMongoManager y CartsMongoManager) de modo que se encuentra perfectamente separado el acceso directo a los datos y las rutas desde donde se llama a esos datos. Esto permite que si eventualmente se decidiera cambiar el sistema de persistencia, bastará con realizar o construir los nuevos managers sin necesidad de modificar las rutas. 
 
 [Volver al menú](#top)
+
+<hr>
 
 <a name="persistencia"></a>
 
