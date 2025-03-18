@@ -336,9 +336,19 @@ Cuando el usuario cambia la página, se actualizan los enlaces de paginación (`
 
 ### 🔶 Implementación de los Filtros y Paginación
 
-1. **En el Backend**: El backend maneja los filtros y la paginación en las consultas a la base de datos. Se utilizan parámetros opcionales en la URL para aplicar los filtros y calcular la página correspondiente.
+1. **En el Backend**: El backend maneja los filtros y la paginación en las consultas a la base de datos. Se utilizan parámetros opcionales en la URL para aplicar los filtros y calcular la página correspondiente. Se implementa con `paginate`.
+
+#### ¿Cómo Funciona `paginate`?
+
+El método `paginate` permite que los resultados de una consulta de MongoDB se dividan en varias páginas, facilitando la visualización de un número limitado de resultados por página. Este método se aplica directamente sobre los modelos de Mongoose y acepta parámetros que indican la página actual, el número de elementos por página y otros filtros de búsqueda.
+
+Los parámetros que se pasan al método `paginate` en la aplicación son:
+
+- **Página (`page`)**: El número de la página que se desea visualizar. 
+- **Límite (`limit`)**: El número de documentos que se deben mostrar por página.
+- **Filtros**: Los filtros que el usuario aplica, como categoría, estado de disponibilidad, y orden de precio.
    
-2. **En el Frontend**: El frontend permite al usuario seleccionar los filtros y navegar entre las páginas de resultados utilizando formularios interactivos.
+3. **En el Frontend**: El frontend permite al usuario seleccionar los filtros y navegar entre las páginas de resultados utilizando formularios interactivos.
 
 El código de filtrado y paginación es flexible y permite ajustar los filtros sin necesidad de modificar el código de las rutas principales. Esto asegura que la lógica de los filtros y la paginación se pueda extender fácilmente en el futuro.
 
