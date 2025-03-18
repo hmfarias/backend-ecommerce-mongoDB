@@ -152,7 +152,7 @@ Sin embargo, en un proyecto real, se recomienda minimizar el uso de comentarios 
 
 Antes de ejecutar la aplicación, es necesario crear un archivo .env en la carpeta raíz (donde se encuentra el package.json). Este archivo almacenará las variables de entorno necesarias para la configuración del servidor y la conexión a la base de datos.
 
-### 🟢 Contenido del archivo .env:
+### 🟢 Contenido que debe tener el archivo .env:
 ```
 /**
 * Environment variables
@@ -169,6 +169,7 @@ DB_HOST=cluster0.fergg.mongodb.net
 DB_NAME=Backend-ecommerce  
 ```
 
+Este archivo .env, a su vez es procesado por `/src/config/config.js`, que es quien finalmente se encarga de cargar las variables de entorno desde .env y configurar los valores necesarios para el funcionamiento de la aplicación, como el puerto del servidor y la conexión a la base de datos. 
 
 [Volver al menú](#top)
 
