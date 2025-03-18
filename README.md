@@ -308,11 +308,11 @@ La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 
 ### 🟢 Filtros y Paginación
 
-#### Filtros y Paginación en la Aplicación
+### Filtros y Paginación en la Aplicación
 
 La aplicación implementa un sistema de **filtros** y **paginación** para facilitar la visualización de productos en el frontend, mejorando la experiencia del usuario al interactuar con un gran número de productos. A continuación se explica cómo funcionan ambos:
 
-##### Filtros
+### Filtros
 
 Los **filtros** permiten al usuario especificar ciertos criterios para reducir la cantidad de productos que se muestran en la lista. Los filtros disponibles son:
 
@@ -323,7 +323,7 @@ Los **filtros** permiten al usuario especificar ciertos criterios para reducir l
 
 El sistema de filtros se implementa utilizando parámetros en la URL, lo que permite que la búsqueda sea dinámica y fácil de manejar tanto en el frontend como en el backend. Los filtros se aplican directamente a las consultas a la base de datos, mejorando la eficiencia de la aplicación.
 
-##### Paginación
+#### Paginación
 
 La **paginación** permite dividir la lista de productos en varias páginas, mostrando solo una parte de los productos a la vez. Esto ayuda a optimizar la carga de la página y mejora el rendimiento general de la aplicación.
 
@@ -334,7 +334,7 @@ La paginación se maneja a través de los siguientes parámetros:
 
 Cuando el usuario cambia la página, se actualizan los enlaces de paginación (`prevLink`, `nextLink`, `firstLink`, `lastLink`), que permiten navegar entre las páginas de productos.
 
-##### Implementación de los Filtros y Paginación
+#### Implementación de los Filtros y Paginación
 
 1. **En el Backend**: El backend maneja los filtros y la paginación en las consultas a la base de datos. Se utilizan parámetros opcionales en la URL para aplicar los filtros y calcular la página correspondiente.
    
