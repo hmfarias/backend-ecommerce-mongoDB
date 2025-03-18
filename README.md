@@ -88,6 +88,16 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ## CONSIDERACIONES IMPORTATES
 
+<a name="persistencia"></a>
+
+### PERSISTENCIA DE DATOS EN LA APLICACIÓN
+
+En esta aplicación, la persistencia de datos se ha logrado integrando MongoDB como sistema de gestión de bases de datos NoSQL, junto con Mongoose como Object Data Modeling (ODM) para Node.js. Esta combinación permite gestionar de manera eficiente las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) y facilita la interacción con la base de datos.
+
+[Volver al menú](#top)
+
+<hr>
+
 <a name="acceso"></a>
 
 ### ACCESO A LOS DATOS
@@ -99,14 +109,6 @@ Gracias a esta abstracción, si en el futuro se decide cambiar el sistema de per
 [Volver al menú](#top)
 
 <hr>
-
-<a name="persistencia"></a>
-
-### PERSISTENCIA DE DATOS EN LA APLICACIÓN
-
-En esta aplicación, la persistencia de datos se ha logrado integrando MongoDB como sistema de gestión de bases de datos NoSQL, junto con Mongoose como Object Data Modeling (ODM) para Node.js. Esta combinación permite gestionar de manera eficiente las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) y facilita la interacción con la base de datos.
-
-[Volver al menú](#top)
 
 <a name="maqueta"></a>
 
