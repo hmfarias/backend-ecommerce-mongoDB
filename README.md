@@ -146,7 +146,7 @@ Sin embargo, en un proyecto real, se recomienda minimizar el uso de comentarios 
 Antes de ejecutar la aplicación, es necesario crear un archivo .env en la carpeta raíz (donde se encuentra el package.json). Este archivo almacenará las variables de entorno necesarias para la configuración del servidor y la conexión a la base de datos.
 
 ### Contenido del archivo .env:
-<code>
+```
 /**
 * Environment variables
     PORT: Port of application
@@ -160,7 +160,7 @@ DB_USER=hmfarias
 DB_PASSWORD=QQATDs4SdAAWYa23
 DB_HOST=cluster0.fergg.mongodb.net
 DB_NAME=Backend-ecommerce  
-</code>
+```
 
 
 [Volver al menú](#top)
@@ -183,9 +183,9 @@ Antes de instalar la aplicación, asegúrate de contar con:
 
 2. **Clonar el repositorio:**  
    Ejecuta el siguiente comando para clonar el proyecto:  
-   <code>
+   ```
      git clone https://github.com/hmfarias/backend-ecommerce.git
-   </code>  
+   ```
 
    Esto creará una carpeta llamada backend-ecommerce con todos los archivos de la aplicación.
 
@@ -198,9 +198,9 @@ Asegúrate de estar ubicado dentro de la carpeta backend-ecommerce en la termina
 5. **Instalar las dependencias:**
 
 	Ejecuta el siguiente comando para instalar las dependencias del proyecto:
-   	<code>
+   	```
    	npm install
-   	</code>
+   	```
    
 6. **Configurar las variables de entorno:**
 Crea un archivo .env en la raíz del proyecto con la configuración de las credenciales (ver sección CREDENCIALES (.env)).
