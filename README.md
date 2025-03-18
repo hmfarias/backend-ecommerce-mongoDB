@@ -92,7 +92,9 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ### ACCESO A LOS DATOS
 
-Los datos se acceden mediante "Managers" (clases ProductsMongoManager y CartsMongoManager) de modo que se encuentra perfectamente separado el acceso directo a los datos y las rutas desde donde se llama a esos datos. Esto permite que si eventualmente se decidiera cambiar el sistema de persistencia, bastará con realizar o construir los nuevos managers sin necesidad de modificar las rutas. 
+El acceso a los datos se gestiona a través de Managers, representados por las clases ProductsMongoManager y CartsMongoManager. Esta arquitectura garantiza una clara separación entre la lógica de persistencia y las rutas que consumen los datos, promoviendo un diseño modular y escalable.
+
+Gracias a esta abstracción, si en el futuro se decide cambiar el sistema de persistencia (por ejemplo, migrar de MongoDB a otro motor de base de datos), solo será necesario implementar nuevos Managers sin afectar la estructura ni la lógica de las rutas existentes. Esto facilita el mantenimiento y la evolución del sistema con mínima intervención en el código.
 
 [Volver al menú](#top)
 
