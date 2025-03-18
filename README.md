@@ -451,20 +451,6 @@ El método GET en la aplicación está diseñado para recuperar una lista pagina
 	
 }
 ```
-Explicación:
-	1.	status: Indica el estado de la solicitud, ya sea success o error, dependiendo de si la operación fue exitosa o no.
-	2.	payload: Contiene los productos solicitados. Esto es un array con los productos que se encuentran en la página actual de acuerdo con los parámetros de consulta (por ejemplo, filtro, paginación, etc.).
-	3.	totalPages: Número total de páginas disponibles, lo que indica cuántas páginas hay en total en función del número de productos y la cantidad de productos por página.
-	4.	prevPage: Número de la página anterior, si existe. Si es la primera página, su valor será null.
-	5.	nextPage: Número de la página siguiente, si existe. Si es la última página, su valor será null.
-	6.	page: Número de la página actual que se está mostrando.
-	7.	hasPrevPage: Un valor booleano (true o false) que indica si existe una página previa a la actual.
-	8.	hasNextPage: Un valor booleano (true o false) que indica si existe una página siguiente a la actual.
-	9.	prevLink: URL que lleva a la página previa. Si no hay página previa (cuando hasPrevPage=false), se devolverá como null.
-	10.	nextLink: URL que lleva a la página siguiente. Si no hay página siguiente (cuando hasNextPage=false), se devolverá como null.
- 	11.	firstLink: URL que lleva a a la primera página de resultados de productos.
-  	12.	lastLink: URL que lleva a a la ultima página de resultados de productos.
-
 Este formato permite una paginación eficiente y facilita la navegación entre diferentes páginas de resultados en la interfaz de usuario, proporcionando tanto los datos como los enlaces para navegar a las páginas adyacentes de productos.
 
 [Volver al menú](#top)
