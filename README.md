@@ -116,7 +116,9 @@ Gracias a esta abstracción, si en el futuro se decide cambiar el sistema de per
 
 ### MAQUETACIÓN Y CSS DE LA PAGINA
 
-Se destaca que se ha hecho foco en el BACKEND de la aplicación. No obstante ello se ha tratado de lograr mediante una maquetación BASICA, un entorno de front end agradable para poder probar las funcionalidades del backend.
+Si bien el enfoque principal de la aplicación ha sido el desarrollo del backend, se ha implementado una maquetación básica para ofrecer un entorno visual limpio y funcional que facilite la prueba de sus funcionalidades.
+
+El diseño de la interfaz sigue una estructura sencilla pero organizada, asegurando una navegación clara y una experiencia de usuario intuitiva. Se han aplicado estilos CSS básicos para mejorar la presentación de los datos sin descuidar el rendimiento ni la accesibilidad.
 
 [Volver al menú](#top)
 
@@ -126,7 +128,9 @@ Se destaca que se ha hecho foco en el BACKEND de la aplicación. No obstante ell
 
 ### COMENTARIOS EN EL CÓDIGO
 
-Tratándose de una aplicación de índole DIDACTICO, se han dejado en el código comentarios útiles para su estudio. Pero se destaca que en un proyecto real, los mismos deben ser utilizados lo menos posible.
+Dado que esta aplicación tiene un propósito didáctico, se han incluido comentarios en el código para facilitar su comprensión y estudio. Estos comentarios explican la lógica de implementación y el flujo de datos dentro de la aplicación.
+
+Sin embargo, en un proyecto real, se recomienda minimizar el uso de comentarios innecesarios, priorizando un código limpio y autoexplicativo mediante buenas prácticas de nomenclatura y estructuración.
 
 [Volver al menú](#top)
 
@@ -136,7 +140,9 @@ Tratándose de una aplicación de índole DIDACTICO, se han dejado en el código
 
 ## CREDENCIALES (archivo .env)
 
-Antes de ejecutar la aplicación, deberá crear en la carpeta raíz (a nivel del archivo package.json) el archivo .env con el siguiente contenido:
+Antes de ejecutar la aplicación, es necesario crear un archivo .env en la carpeta raíz (donde se encuentra el package.json). Este archivo almacenará las variables de entorno necesarias para la configuración del servidor y la conexión a la base de datos.
+
+###Contenido del archivo .env:
 
 <code>
 /**
