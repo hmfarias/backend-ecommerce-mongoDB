@@ -54,7 +54,7 @@
 
 <a name="introduccion"></a>
 
-## INTRODUCCION
+## 🔹 INTRODUCCION
 
 Bienvenidos al backend de Notre Dame, tu tienda polirubro online exclusiva. Este repositorio contiene la infraestructura y lógica de negocio que impulsa nuestra plataforma, garantizando una experiencia de compra eficiente, segura y confiable.
 
@@ -68,7 +68,7 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 <a name="consturido"></a>
 
-### CONSTRUIDO CON
+## 🔹 CONSTRUIDO CON
 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) como framework de código abierto para crear aplicaciones web y APIs. Está escrito en JavaScript y se ejecuta en el entorno de Node.js
 
@@ -92,11 +92,11 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 <a name="consideraciones"></a>
 
-## CONSIDERACIONES IMPORTATES
+## 🔹 CONSIDERACIONES IMPORTATES
 
 <a name="persistencia"></a>
 
-### PERSISTENCIA DE DATOS EN LA APLICACIÓN
+### 🟢 PERSISTENCIA DE DATOS EN LA APLICACIÓN
 
 La aplicación implementa la persistencia de datos utilizando MongoDB como sistema de base de datos NoSQL, en combinación con Mongoose como Object Data Modeling (ODM) para Node.js. Esta integración permite una gestión eficiente de las operaciones CRUD (Crear, Leer, Actualizar, Eliminar), proporcionando una interfaz flexible y estructurada para interactuar con la base de datos.
 
@@ -108,7 +108,7 @@ El uso de Mongoose no solo simplifica la manipulación de datos mediante esquema
 
 <a name="acceso"></a>
 
-### ACCESO A LOS DATOS
+### 🟢 ACCESO A LOS DATOS
 
 El acceso a los datos se gestiona a través de Managers, representados por las clases ProductsMongoManager y CartsMongoManager. Esta arquitectura garantiza una clara separación entre la lógica de persistencia y las rutas que consumen los datos, promoviendo un diseño modular y escalable.
 
@@ -120,7 +120,7 @@ Gracias a esta abstracción, si en el futuro se decide cambiar el sistema de per
 
 <a name="maqueta"></a>
 
-### MAQUETACIÓN Y CSS DE LA PAGINA
+### 🟢 MAQUETACIÓN Y CSS DE LA PAGINA
 
 Si bien el enfoque principal de la aplicación ha sido el desarrollo del backend, se ha implementado una maquetación básica para ofrecer un entorno visual limpio y funcional que facilite la prueba de sus funcionalidades.
 
@@ -132,7 +132,7 @@ El diseño de la interfaz sigue una estructura sencilla pero organizada, asegura
 
 <a name="comentarios"></a>
 
-### COMENTARIOS EN EL CÓDIGO
+### 🟢 COMENTARIOS EN EL CÓDIGO
 
 Dado que esta aplicación tiene un propósito didáctico, se han incluido comentarios en el código para facilitar su comprensión y estudio. Estos comentarios explican la lógica de implementación y el flujo de datos dentro de la aplicación.
 
@@ -144,11 +144,11 @@ Sin embargo, en un proyecto real, se recomienda minimizar el uso de comentarios 
 
 <a name="environment"></a>
 
-## CREDENCIALES (archivo .env)
+## 🔹 CREDENCIALES (archivo .env)
 
 Antes de ejecutar la aplicación, es necesario crear un archivo .env en la carpeta raíz (donde se encuentra el package.json). Este archivo almacenará las variables de entorno necesarias para la configuración del servidor y la conexión a la base de datos.
 
-### Contenido del archivo .env:
+### 🟢 Contenido del archivo .env:
 ```
 /**
 * Environment variables
@@ -172,7 +172,7 @@ DB_NAME=Backend-ecommerce
 
 <a name="instalacion"></a>
 
-## INSTALACIÓN EN LOCAL
+## 🔹 INSTALACIÓN EN LOCAL
 
 ### **Prerequisitos:**  
 Antes de instalar la aplicación, asegúrate de contar con:  
@@ -220,7 +220,7 @@ Consulta la configuración de credenciales en la sección [CREDENCIALES (.env)](
 Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
   http://localhost:8080
 
-🔹 ¡Listo! Ya puedes explorar y probar la aplicación en tu entorno local. 🚀
+✅ ¡Listo! Ya puedes explorar y probar la aplicación en tu entorno local. 🚀
 
 [Volver al menú](#top)
 
@@ -228,11 +228,11 @@ Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
 
 <a name="funcionamiento"></a>
 
-## FUNCIONAMIENTO DE LA APLICACION
+## 🔹 FUNCIONAMIENTO DE LA APLICACION
 
 <a name="arquitectura"></a>
 
-### 🔹 Arquitectura
+### 🟢 Arquitectura
 
 La aplicación está basada en una arquitectura **MVC (Modelo-Vista-Controlador)** y utiliza **MongoDB** como sistema de persistencia, gestionado a través de **Mongoose** como ODM. Esto permite realizar las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) de forma eficiente y simplificada.
 
@@ -244,7 +244,7 @@ Los datos se acceden mediante **Managers** (clases `ProductsMongoManager` y `Car
 
 <a name="estructura"></a>
 
-### 🔹 Estructura de la Aplicación
+### 🟢 Estructura de la Aplicación
 
 La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 
@@ -306,13 +306,13 @@ La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 
 <a name="filtros"></a>
 
-### 🔹 Filtros y Paginación
+### 🟢 Filtros y Paginación
 
-### Filtros y Paginación en la Aplicación
+#### Filtros y Paginación en la Aplicación
 
 La aplicación implementa un sistema de **filtros** y **paginación** para facilitar la visualización de productos en el frontend, mejorando la experiencia del usuario al interactuar con un gran número de productos. A continuación se explica cómo funcionan ambos:
 
-#### Filtros
+##### Filtros
 
 Los **filtros** permiten al usuario especificar ciertos criterios para reducir la cantidad de productos que se muestran en la lista. Los filtros disponibles son:
 
@@ -323,7 +323,7 @@ Los **filtros** permiten al usuario especificar ciertos criterios para reducir l
 
 El sistema de filtros se implementa utilizando parámetros en la URL, lo que permite que la búsqueda sea dinámica y fácil de manejar tanto en el frontend como en el backend. Los filtros se aplican directamente a las consultas a la base de datos, mejorando la eficiencia de la aplicación.
 
-#### Paginación
+##### Paginación
 
 La **paginación** permite dividir la lista de productos en varias páginas, mostrando solo una parte de los productos a la vez. Esto ayuda a optimizar la carga de la página y mejora el rendimiento general de la aplicación.
 
@@ -334,7 +334,7 @@ La paginación se maneja a través de los siguientes parámetros:
 
 Cuando el usuario cambia la página, se actualizan los enlaces de paginación (`prevLink`, `nextLink`, `firstLink`, `lastLink`), que permiten navegar entre las páginas de productos.
 
-#### Implementación de los Filtros y Paginación
+##### Implementación de los Filtros y Paginación
 
 1. **En el Backend**: El backend maneja los filtros y la paginación en las consultas a la base de datos. Se utilizan parámetros opcionales en la URL para aplicar los filtros y calcular la página correspondiente.
    
@@ -354,7 +354,7 @@ Este sistema permite que los usuarios encuentren los productos que desean de man
 
 <a name="contribuyendo"></a>
 
-## CONTRIBUYENDO
+## 🔹 CONTRIBUYENDO
 
 Las contribuciones son lo que hace que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que haga es **muy apreciada**.
 
@@ -375,7 +375,7 @@ Si tiene una sugerencia para mejorar este proyecto, por favor haga un "fork" al 
 
 <a name="licencia"></a>
 
-## LICENCIA
+## 🔹 LICENCIA
 
 Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más información.
 
@@ -387,7 +387,7 @@ Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más infor
 
 <a name="contacto"></a>
 
-## CONTACTO
+## 🔹 CONTACTO
 
 Marcelo Farias - [+54 9 3512601888] - hmfarias7@gmail.com
 
