@@ -466,7 +466,7 @@ GET /products?category=all&status=in-stock&price=asc&page=2&limit=10
 - page=2: Indica que el usuario está solicitando la página 2 de los productos.
 - limit=10: Establece que el número máximo de productos por página será 10.
 
-#### Respuesta del Método GET:
+#### 🔶 Respuesta del Método GET:
 ```
 {
   "status": "success",
