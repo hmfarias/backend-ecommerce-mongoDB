@@ -68,11 +68,13 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) como framework de código abierto para crear aplicaciones web y APIs. Está escrito en JavaScript y se ejecuta en el entorno de Node.js
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) como lenguaje de programación interpretado, de alto nivel y dinámico. Se ejecuta en el navegador del cliente, lo que permite la creación de páginas web interactivas y dinámicas.
-
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) (HyperText Markup Language) como lenguaje de marcación de hipertéxto estándar utilizado para crear y diseñar páginas web.
 
+![Handlebars](https://img.shields.io/badge/Handlebars-%23000000?style=for-the-badge&logo=Handlebars.js&logoColor=white) para la vista en el frontend
+
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) (Cascading Style Sheets, Level 3) como lenguaje de diseño gráfico utilizado para controlar el aspecto visual de las páginas web, separando el contenido (HTML) de la presentación visual (CSS).
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) como lenguaje de programación interpretado, de alto nivel y dinámico. Se ejecuta en el navegador del cliente, lo que permite la creación de páginas web interactivas y dinámicas.
 
 ![Static Badge](https://img.shields.io/badge/Sweer%20Alert-green?style=for-the-badge) como biblioteca de JavaScript que facilita la creación de alertas y diálogos personalizados y estéticamente agradables en la aplicacion web.
 
@@ -181,40 +183,40 @@ Antes de instalar la aplicación, asegúrate de contar con:
 2. **Clonar el repositorio:**  
    Ejecuta el siguiente comando para clonar el proyecto:  
 
-   ```sh
-   git clone https://github.com/hmfarias/backend-ecommerce.git
+   <code>
+     git clone https://github.com/hmfarias/backend-ecommerce.git
+   </code>  
 
-Prerequisitos de instalación:
-Debes contar con un editor de código como Visual Estudio Code o similar.
+Esto creará una carpeta llamada backend-ecommerce con todos los archivos de la aplicación.
 
-1- En tu árbol de directorios sitúate en la carpeta donde deseas instalar la app.
+3. **Abrir el proyecto en el editor de código:**
+Abre Visual Studio Code (o tu editor de preferencia) y selecciona la carpeta backend-ecommerce.
 
-2- Clona el repositorio escribiendo en la terminal o consola de tu pc el siguiente código:
-<code>
-git clone https://github.com/hmfarias/backend-ecommerce.git
-</code>
+4. **Abrir una terminal en la carpeta del proyecto:**
+Asegúrate de estar ubicado dentro de la carpeta backend-ecommerce en la terminal.
 
-Esto creará la carpeta "backend-ecommerce" y en su interior los archivos de aplicación.
+5. **Instalar las dependencias:**
+Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+   <code>
+     npm install
+   </code>
+   
+6. **Configurar las variables de entorno:**
+Crea un archivo .env en la raíz del proyecto con la configuración de las credenciales (ver sección CREDENCIALES (.env)).
+	
+7.	**Iniciar la aplicación en modo desarrollador:**
+Ejecuta el siguiente comando:
+  <code>
+    npm run dev
+  </code>
+Esto iniciará el servidor y mostrará un mensaje en la terminal indicando que la aplicación está corriendo en el puerto 8080 y conectada a la base de datos.
 
-3- Ejecuta tu editor de código y sitúate dentro de la carpeta backend-ecommerce. Podrás ver el código de la aplicación.
+8.	**Acceder a la aplicación desde el navegador:**
+Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
 
-4- Abre una terminal y asegurate de estar ubicado dentro de la carpeta backend-ecommerce
+  http://localhost:8080
 
-5- Ejecuta:
-<code>
-npm install
-</code>
-
-Esto instalará la aplicación de manera local.
-
-6- Ejecuta:
-<code>
-npm run dev
-</code>
-
-Esto iniciará la aplicación en modo desarrrollador, y mostrará un mensaje en la terminal indicando que el servidor está corriendo en el puerto 8080 y se ha conectado la Base de Datos.
-
-En el navegador web, abre una nueva pestaña y coloca la dirección http://localhost:8080. Aparecerá en la pantalla del navegador la página de inicio de la aplicación.
+🔹 ¡Listo! Ya puedes explorar y probar la aplicación en tu entorno local. 🚀
 
 [Volver al menú](#top)
 
