@@ -34,11 +34,10 @@
 1. [Introducción](#introduccion)
 2. [Construido con](#consturido)
 3. [Consideraciones Importantes](#consideraciones)
-   - [WEBSOCKET - DESAFÍO ENTREGABLE - PROCESO DE TESTING](#websocket)
-     - [PROBANDO EL DEPLOY EN GLITCH](#glitch)
-     - [EN LOCAL](#local)
+   - [Persistencia](#persistencia)
+   - [Maquetación y CSS](#maqueta)
    - [Comentarios en el código](#comentarios)
-4. [Esquema de la App](#esquema)
+4. [Credenciales - .env](#environment)
 5. [Instalación en local](#instalacion)
 6. [Contribuyendo](#contribuyendo)
 7. [Licencia](#licencia)
@@ -76,6 +75,8 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ![Static Badge](https://img.shields.io/badge/Sweer%20Alert-green?style=for-the-badge) como biblioteca de JavaScript que facilita la creación de alertas y diálogos personalizados y estéticamente agradables en la aplicacion web.
 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) como sistema de gestión de bases de datos (SGBD) no relacional y de código abierto. Se lo ha utilizado para almacenar y procesar los datos de la app. 
+
 [Volver al menú](#top)
 
 <hr>
@@ -88,90 +89,19 @@ En el estado actual, los datos se manejan en archivo JSON y se accede a ellos me
 
 [Volver al menú](#top)
 
-<a name="websocket"></a>
+<a name="persistencia"></a>
 
-### WEBSOCKET - DESAFÍO ENTREGABLE - PROCESO DE TESTING
+### PERSISTENCIA DE DATOS EN LA APLICACIÓN
 
-Se ha configurado el servidor para integrar el motor de plantillas Handlebars e instalar un servidor de socket.io al mismo.
-
-Se ha creado una vista “home.handlebars” la cual contiene la lista de todos los productos agregados hasta el momento.
-
-Además, se ha creado la vista “realTimeProducts.handlebars”, a la cual se accede en el endpoint “/realtimeproducts”. Esta vista contiene la misma lista de productos, pero trabaja con websockets.
-Cada vez que se agrega o elimina un producto usando los endpoints creados para tal efecto, la lista se actualiza automáticamente.
-
-Tambien se ha creado una vista “addProducts.handlebars”, a la cual se accede en el endpoint “/addproducts”. Esta vista contiene un formulario para agregar nuevos productos, el cual se envia a la ruta “/api/products” para ser almacenado en la base de datos (archivo JSON) y actualizada en tiempo real.
-
-La conexión de socket emits con HTTP se realiza dentro de la petición POST y DELETE.
-
-<a name="glitch"></a>
-
-### PROBANDO EL DEPLOY EN GLITCH
-
-### Paso 1: Ruta raíz
-
-1. Abra la ruta raíz del servidor en su navegador. (https://western-furtive-cream.glitch.me/)
-2. Deberá visualizarse el contenido de la vista `home.handlebars`.
-3. En este punto, podrá apreciar el listado de todos los productos cargados hasta el momento **web socket no se encuentra activo aqui**. Al hacer clic en el botón "View Real-Time Products", se accede a la vista "realTimeProducts.handlebars" donde se visualizan los productos en tiempo real.
-
-### Paso 2: Acceso a la ruta `/realtimeproducts`. (https://western-furtive-cream.glitch.me/realtimeproducts)
-
-1. Haga click en el boton "View Real-Time Products" para acceder a la vista "realTimeProducts.handlebars", o bien acceda a la ruta `/realtimeproducts` en la barra de direcciones del navegador.
-
-2. Corrobore que el servidor haya conectado correctamente con el cliente:
-   - En la consola del servidor, deberá mostrarse un mensaje que diga: **"New client connected"**.
-
-### Paso 3: Visualización de la lista de productos (ABRA DOS NAVEGADORES PARA PODER VER LA LISTA DE PRODUCTOS EN TIEMPO REAL)
-
-1. En la vista `/realtimeproducts`, podrá apreciar la lista de productos similar a la anterior, pero aquí se encuentra activo web socket.
-2. Haga click en el boton "Add more products" para acceder a la vista "addProducts.handlebars", o bien acceda a la ruta `/addproducts` en la barra de direcciones del navegador. Desde aquí se puede agregar nuevos productos. Al hacer clic en el botón "Add Product", se envia el formulario a la ruta `/api/products` donde se almacena en la base de datos (archivo JSON) y actualizada en tiempo real. Es conveniente tener abiertos dos navegadores, uno para ver la lista de productos en tiempo real y otro para agregar productos.
-3. A la derecha de cada producto, se encuentra un botón "Delete" que se puede utilizar para eliminar el producto seleccionado. Al hacer clic en el botón, se envia una solicitud DELETE a la ruta `/api/products/:id` donde se elimina el producto de la base de datos (archivo JSON) y actualizada en tiempo real.
-
-OTRA ALTERNATIVA: En el direcotrio raiz del proyecto, podrá encontrar el archivo "Ecommerce Backend.postman_collection.json", el cual provee la coleccion Postman necesaria para probar todos los endpoints de la aplicacion y en especial el POST Y DELETE DE PRODUCTOS, que son los que activan el io.emit para cada caso.
-
-1. Abra Postman e importe la colección. Ejecute el request "Get All Product in DEPLOY" para comprobar que el servidor se encuentre funcionando bien. Debería devoverle los 7 productos cargados hasta el momento.
-2. Abra el request "Post a new product in DEPLOY" (ya se encuentra creado el objeto necesario para dar de alta un nuevo producto". Ejecute el request. Esto activa el "io.emit" correspondiente.
-3. Podra verificar en el navegador, la incorporación del producto en la lista de productos.
-4. Abra el request "Delete a product in DEPLOY" (ya se encutra precargado el id 7 en la ruta aunque puede cambiarlo a cualquier id). Ejecute el request. Esto activa el "io.emit" correspondiente.
-5. Podra verificar en el navegador, la eliminación del producto en la lista de productos.
+En esta aplicación, la persistencia de datos se ha logrado integrando MongoDB como sistema de gestión de bases de datos NoSQL, junto con Mongoose como Object Data Modeling (ODM) para Node.js. Esta combinación permite gestionar de manera eficiente las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) y facilita la interacción con la base de datos.
 
 [Volver al menú](#top)
 
-<hr>
+<a name="maqueta"></a>
 
-<a name="local"></a>
+### MAQUETACIÓN Y CSS DE LA PAGINA
 
-### EN LOCAL
-
-### Paso 1: Instalación y ejecución del servidor
-
-(ver [Instalación en local](#instalacion))
-
-### Paso 2: Ruta raíz
-
-1. Abra la ruta raíz del servidor en su navegador. (http://localhost:8080)
-2. Deberá visualizarse el contenido de la vista `home.handlebars`.
-3. En este punto, podrá apreciar el listado de todos los productos cargados hasta el momento **web socket no se encuentra activo aqui**. Al hacer clic en el botón "View Real-Time Products", se accede a la vista "realTimeProducts.handlebars" donde se visualizan los productos en tiempo real.
-
-### Paso 3: Acceso a la ruta `/realtimeproducts`. (http://localhost:8080/realtimeproducts)
-
-1. Haga click en el boton "View Real-Time Products" para acceder a la vista "realTimeProducts.handlebars", o bien acceda a la ruta `/realtimeproducts` en la barra de direcciones del navegador.
-
-2. Corrobore que el servidor haya conectado correctamente con el cliente:
-   - En la consola del servidor, deberá mostrarse un mensaje que diga: **"New client connected"**.
-
-### Paso 3: Visualización de la lista de productos (ABRA DOS NAVEGADORES PARA PODER VER LA LISTA DE PRODUCTOS EN TIEMPO REAL)
-
-1. En la vista `/realtimeproducts`, podrá apreciar la lista de productos similar a la anterior, pero aquí se encuentra activo web socket.
-2. Haga click en el boton "Add more products" para acceder a la vista "addProducts.handlebars", o bien acceda a la ruta `/addproducts` en la barra de direcciones del navegador. Desde aquí se puede agregar nuevos productos. Al hacer clic en el botón "Add Product", se envia el formulario a la ruta `/api/products` donde se almacena en la base de datos (archivo JSON) y actualizada en tiempo real. Es conveniente tener abiertos dos navegadores, uno para ver la lista de productos en tiempo real y otro para agregar productos.
-3. A la derecha de cada producto, se encuentra un botón "Delete" que se puede utilizar para eliminar el producto seleccionado. Al hacer clic en el botón, se envia una solicitud DELETE a la ruta `/api/products/:id` donde se elimina el producto de la base de datos (archivo JSON) y actualizada en tiempo real.
-
-OTRA ALTERNATIVA: En el direcotrio raiz del proyecto, podrá encontrar el archivo "Ecommerce Backend.postman_collection.json", el cual provee la coleccion Postman necesaria para probar todos los endpoints de la aplicacion y en especial el POST Y DELETE DE PRODUCTOS, que son los que activan el io.emit para cada caso.
-
-1. Abra Postman e importe la colección. Ejecute el request "Get All Product in DEPLOY" para comprobar que el servidor se encuentre funcionando bien. Debería devoverle los 7 productos cargados hasta el momento.
-2. Abra el request "Post a new product in DEPLOY" (ya se encuentra creado el objeto necesario para dar de alta un nuevo producto". Ejecute el request. Esto activa el "io.emit" correspondiente.
-3. Podra verificar en el navegador, la incorporación del producto en la lista de productos.
-4. Abra el request "Delete a product in DEPLOY" (ya se encutra precargado el id 7 en la ruta aunque puede cambiarlo a cualquier id). Ejecute el request. Esto activa el "io.emit" correspondiente.
-5. Podra verificar en el navegador, la eliminación del producto en la lista de productos.
+Se destaca que se ha hecho foco en el BACKEND de la aplicación. No obstante ello se ha tratado de lograr mediante una maquetación BASICA, un entorno de front end agradable para poder probar las funcionalidades del backend.
 
 [Volver al menú](#top)
 
@@ -187,15 +117,28 @@ Tratándose de una aplicación de índole DIDACTICO, se han dejado en el código
 
 <hr>
 
-<a name="esquema"></a>
+<a name="environment"></a>
 
-## ESQUEMA DE LA APP
+## CREDENCIALES (archivo .env)
 
-<div align="center">
-  <a href="">
-    <img src="" alt="Logo" width="900" height="auto">
-  </a>
-</div>
+Antes de ejecutar la aplicación, deberá crear en la carpeta raíz (a nivel del archivo package.json) el archivo .env con el siguiente contenido:
+
+<code>
+/**
+* Environment variables
+    PORT: Port of application
+    MONGODB_URI: URI of the database  
+*/
+/* Server Configuration
+PORT=8080
+
+/* Database Configuration
+DB_USER=hmfarias
+DB_PASSWORD=QQATDs4SdAAWYa23
+DB_HOST=cluster0.fergg.mongodb.net
+DB_NAME=Backend-ecommerce  
+</code>
+
 
 [Volver al menú](#top)
 
@@ -233,9 +176,9 @@ Esto instalará la aplicación de manera local.
 npm run dev
 </code>
 
-Esto iniciará la aplicación en modo desarrrollador, y mostrará un mensaje en la terminal indicando que el servidor está corriendo en el puerto 8080.
+Esto iniciará la aplicación en modo desarrrollador, y mostrará un mensaje en la terminal indicando que el servidor está corriendo en el puerto 8080 y se ha conectado la Base de Datos.
 
-En la carpeta raiz encontrarás el archivo "postman_collection.json" el cual contiene la coleccion postman para probar todos los endpoints. Bastará con importar la coleccion desde Postman, para que se cree una coleccion que contendra dos subcarpetas: "Products" con las llamadas a los endpoints de productos y "Carts" con las llamadas a los endpoints de Carritos de compra.
+En el navegador web, abre una nueva pestaña y coloca la dirección http://localhost:8080. Aparecerá en la pantalla del navegador la página de inicio de la aplicación.
 
 [Volver al menú](#top)
 
