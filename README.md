@@ -87,7 +87,7 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ## CONSIDERACIONES IMPORTATES
 
-En el estado actual, los datos se manejan en archivo JSON y se accede a ellos mediante la clase FileManagerJson. Esta clase recibe en su constructor el path del archivo json con el que se desea trabajar y posee dos metodos: getData() y saveData(), para obtener y grabar los datos en el archivo Json respectivamente.
+Los datos se acceden mediante clases de modo que se encuentra perfectamente separado el acceso directo a los datos mediantes un Manager y las rutas desde donde se llama a esos datos. Esto permite que si eventualmente se decidiera cambiar el sistema de persistencia de los datos, las rutas no se vean afectadas. 
 
 [Volver al menú](#top)
 
