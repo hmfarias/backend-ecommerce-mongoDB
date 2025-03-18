@@ -142,7 +142,7 @@ Sin embargo, en un proyecto real, se recomienda minimizar el uso de comentarios 
 
 Antes de ejecutar la aplicación, es necesario crear un archivo .env en la carpeta raíz (donde se encuentra el package.json). Este archivo almacenará las variables de entorno necesarias para la configuración del servidor y la conexión a la base de datos.
 
-###Contenido del archivo .env:
+### Contenido del archivo .env:
 
 <code>
 /**
