@@ -227,7 +227,7 @@ Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
 
 ## FUNCIONAMIENTO DE LA APLICACION
 
-### 🔹 Arquitectura y Persistencia de Datos
+### 🔹 Arquitectura
 
 La aplicación está basada en una arquitectura **MVC (Modelo-Vista-Controlador)** y utiliza **MongoDB** como sistema de persistencia, gestionado a través de **Mongoose** como ODM. Esto permite realizar las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) de forma eficiente y simplificada.
 
@@ -288,6 +288,46 @@ La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 ├── .env  // Variables de entorno
 └── package.json  // Dependencias y configuraciones del proyecto
 ```
+
+### 🔹 Filtros y Paginación
+
+### Filtros y Paginación en la Aplicación
+
+La aplicación implementa un sistema de **filtros** y **paginación** para facilitar la visualización de productos en el frontend, mejorando la experiencia del usuario al interactuar con un gran número de productos. A continuación se explica cómo funcionan ambos:
+
+#### Filtros
+
+Los **filtros** permiten al usuario especificar ciertos criterios para reducir la cantidad de productos que se muestran en la lista. Los filtros disponibles son:
+
+- **Categoría**: Filtra los productos según su categoría.
+- **Estado**: Permite seleccionar entre productos disponibles o no disponibles.
+- **Orden de precio**: El usuario puede elegir ordenar los productos por precio, ya sea de menor a mayor o de mayor a menor.
+- **Límite**: Establece la cantidad de productos a mostrar por página.
+
+El sistema de filtros se implementa utilizando parámetros en la URL, lo que permite que la búsqueda sea dinámica y fácil de manejar tanto en el frontend como en el backend. Los filtros se aplican directamente a las consultas a la base de datos, mejorando la eficiencia de la aplicación.
+
+#### Paginación
+
+La **paginación** permite dividir la lista de productos en varias páginas, mostrando solo una parte de los productos a la vez. Esto ayuda a optimizar la carga de la página y mejora el rendimiento general de la aplicación.
+
+La paginación se maneja a través de los siguientes parámetros:
+
+- **Página**: Indica qué página de productos se está visualizando.
+- **Límite**: Determina cuántos productos se deben mostrar por página.
+
+Cuando el usuario cambia la página, se actualizan los enlaces de paginación (`prevLink`, `nextLink`, `firstLink`, `lastLink`), que permiten navegar entre las páginas de productos.
+
+#### Implementación de los Filtros y Paginación
+
+1. **En el Backend**: El backend maneja los filtros y la paginación en las consultas a la base de datos. Se utilizan parámetros opcionales en la URL para aplicar los filtros y calcular la página correspondiente.
+   
+2. **En el Frontend**: El frontend permite al usuario seleccionar los filtros y navegar entre las páginas de resultados utilizando formularios interactivos.
+
+El código de filtrado y paginación es flexible y permite ajustar los filtros sin necesidad de modificar el código de las rutas principales. Esto asegura que la lógica de los filtros y la paginación se pueda extender fácilmente en el futuro.
+
+Por ejemplo, los parámetros `category`, `status`, `priceOrder`, `limit`, y `page` se envían como parte de la URL y se manejan adecuadamente en las rutas del servidor.
+
+Este sistema permite que los usuarios encuentren los productos que desean de manera más rápida y sencilla, mejorando la eficiencia en la navegación dentro de la tienda online.
 
 
 [Volver al menú](#top)
