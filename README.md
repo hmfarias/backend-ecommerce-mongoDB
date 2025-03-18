@@ -40,9 +40,10 @@
    - [Comentarios en el código](#comentarios)
 4. [Credenciales - .env](#environment)
 5. [Instalación en local](#instalacion)
-6. [Contribuyendo](#contribuyendo)
-7. [Licencia](#licencia)
-8. [Contacto](#contacto)
+6. [Funcionamiento de la Aplicacion](#funcionamiento)
+7. [Contribuyendo](#contribuyendo)
+8. [Licencia](#licencia)
+9. [Contacto](#contacto)
 
 <hr>
 
@@ -221,6 +222,76 @@ Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
 [Volver al menú](#top)
 
 <hr>
+
+<a name="funcionamiento"></a>
+
+## FUNCIONAMIENTO DE LA APLICACION
+
+### 🔹 Arquitectura y Persistencia de Datos
+
+La aplicación está basada en una arquitectura **MVC (Modelo-Vista-Controlador)** y utiliza **MongoDB** como sistema de persistencia, gestionado a través de **Mongoose** como ODM. Esto permite realizar las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) de forma eficiente y simplificada.
+
+Los datos se acceden mediante **Managers** (clases `ProductsMongoManager` y `CartsMongoManager`), lo que permite una separación clara entre la lógica de negocio y el acceso a la base de datos. De esta forma, si se decidiera cambiar el sistema de persistencia, bastaría con modificar o crear nuevos managers sin necesidad de alterar las rutas de la aplicación. Esta estructura proporciona flexibilidad y escalabilidad al proyecto.
+
+### 🔹 Estructura de la Aplicación
+
+La aplicación tiene la siguiente estructura básica de archivos y carpetas:
+
+|-src/
+├── config/
+│   └── config.js  // Lógica para manejar las variables de entorno provistas en .env
+│
+├── managers/
+│   └── ProductsMongoManager.js  // Lógica de interacción con la base de datos de productos
+│   └── CartsMongoManager.js  // Lógica de interacción con la base de datos de carritos
+│   └── CountersMongoManager.js // Lógica de interacción con los contadores para manejar ids personalizados tanto para productos como para carritos
+│   └── FileManagerJson.js // Logica de interaccion para persistencia en archivos JSON (version anterior de la aplicacion - queda para ilustrar la separacion entre rutas y acceso a datos)
+│
+├── models/
+│   └── product.model.js  // Modelo de datos de productos en MongoDB
+│   └── cart.model.js // Modelo de datos de carritos en MongoDB
+│   └── counter.model.js // Modelo de datos de contadores en MongoDB
+│
+├── public/
+│   └── css/
+│       └── styles.css // Maneja la maquetación de la aplicacion
+│   └── img/
+│       └── defect-product.png // archivo png para mostrar el uso de MULTER. Se lo puede utilizar para asignar la foto de producto a la hora de crear uno nuevo
+│       └── logo.png // archivo png con el logo de la app
+│   └── js/
+│       └── cart.js  // Lógica de interacción en el frontend de carritos
+│       └── navbar.js  // Lógica de interacción en el frontend para el navbar
+│       └── product.js  // Lógica de interacción en el frontend cuando se visualiza un producto individual
+│       └── products.js  // Lógica de interacción en el frontend de productos cuando se visualiza la lista
+│
+├── routes/
+│   └── cartRouter.js  // Rutas relacionadas con carritos
+│   └── productRouter.js  // Rutas relacionadas con productos
+│   └── viewsRouter.js  // Rutas relacionadas con las vistas handlebars
+│
+├── views/
+│   └── layouts/
+│       └── main.handlebars // layout base para el frontend
+│   └── partials/
+│       └── header.handlebars // layout para el header de la app
+│   └── cart.handlebars  // Vista del carrito con los productos agregados en la interfaz de usuario
+│   └── error.handlebars  // Vista de error para la interfaz de usuario cuando se produce algun tipo de error 
+│   └── index.handlebars  // Vista de home para la interfaz de usuario
+│   └── newProduct.handlebars  // Vista de carga de nuevo producto para la interfaz de usuario
+│   └── product.handlebars  // Vista de un producto individual para la interfaz de usuario
+│   └── products.handlebars  // Vista de la lista de productos para la interfaz de usuario
+│
+├── app.js  // Archivo principal que inicia el servidor
+├── utils.js  // crea y exporta una variable __dirname que proporciona la ruta del archivo App.js
+├── utilsMulter.js  // configura el manejo de archivos mediante la librería multer para la carga de imágenes en la aplicación.
+├── .env  // Variables de entorno
+└── package.json  // Dependencias y configuraciones del proyecto
+
+
+[Volver al menú](#top)
+
+<hr>
+
 
 <a name="contribuyendo"></a>
 
