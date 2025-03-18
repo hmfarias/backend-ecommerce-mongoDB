@@ -186,7 +186,7 @@ Antes de instalar la aplicación, asegúrate de contar con:
      git clone https://github.com/hmfarias/backend-ecommerce.git
    </code>  
 
-Esto creará una carpeta llamada backend-ecommerce con todos los archivos de la aplicación.
+   Esto creará una carpeta llamada backend-ecommerce con todos los archivos de la aplicación.
 
 3. **Abrir el proyecto en el editor de código:**
 Abre Visual Studio Code (o tu editor de preferencia) y selecciona la carpeta backend-ecommerce.
