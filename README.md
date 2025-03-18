@@ -45,6 +45,7 @@
    - [Estructura de archivos](#estructura)
    - [Filtros y Paginación](#filtros)
    - [Gestión de Productos](#productos)
+   	- [Vista de Productos](#vistaproductos)
    - [Gestión del Carrito](#carrito)
 8. [Contribuyendo](#contribuyendo)
 9. [Licencia](#licencia)
@@ -382,6 +383,8 @@ La gestión de productos en esta aplicación se maneja a través del modelo `pro
 Cada producto en el carrito se referencia solo por su `_id` en el modelo de carrito, lo que optimiza el almacenamiento. Para obtener los detalles completos de un producto dentro del carrito (como su nombre, precio, etc.), se utiliza el método `populate` de Mongoose. Este permite cargar toda la información del producto en el carrito, sin necesidad de almacenarla duplicada, lo que mejora la eficiencia de la base de datos.
 
 Esta estructura hace que la gestión de productos sea flexible y eficiente, permitiendo agregar, actualizar y eliminar productos con facilidad, y mejorando la experiencia del usuario en la tienda.
+
+<a name="vistaproductos"></a>
 
 ### 🟢 Vista de Productos
 
