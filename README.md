@@ -453,6 +453,50 @@ El método GET en la aplicación está diseñado para recuperar una lista pagina
 ```
 Este formato permite una paginación eficiente y facilita la navegación entre diferentes páginas de resultados en la interfaz de usuario, proporcionando tanto los datos como los enlaces para navegar a las páginas adyacentes de productos.
 
+El llamado a este método se realiza a través de una URL específica, donde se pueden incluir parámetros como los filtros por categoría y estado, y el orden de los productos por precio asi como la página actual, el límite de productos por página.
+
+Ejemplo:
+```
+GET /products?category=all&status=in-stock&price=asc&page=2&limit=10
+```
+
+- category=all: Filtra los productos por todas las categorías disponibles (en este caso, sin filtrado específico).
+- status=in-stock: Filtra los productos que están en stock.
+- price=asc: Ordena los productos por precio en orden ascendente.
+- page=2: Indica que el usuario está solicitando la página 2 de los productos.
+- limit=10: Establece que el número máximo de productos por página será 10.
+
+#### Respuesta del Método GET:
+```
+{
+  "status": "success",
+  "docs": [
+    {
+      "_id": "123",
+      "title": "Product 1",
+      "price": 100,
+      "thumbnail": "/img/product1.jpg"
+    },
+    {
+      "_id": "124",
+      "title": "Product 2",
+      "price": 150,
+      "thumbnail": "/img/product2.jpg"
+    }
+  ],
+  "totalPages": 5,
+  "prevPage": 1,
+  "nextPage": 3,
+  "page": 2,
+  "hasPrevPage": true,
+  "hasNextPage": true,
+  "prevLink": "/products?page=1&limit=10&category=all&status=in-stock&price=asc",
+  "nextLink": "/products?page=3&limit=10&category=all&status=in-stock&price=asc",
+  "firstLink": "/products?page=1&limit=10&category=all&status=in-stock&price=asc",
+  "lastLink": "/products?page=5&limit=10&category=all&status=in-stock&price=asc"
+}
+```
+
 [Volver al menú](#top)
 
 <hr>
