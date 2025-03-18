@@ -46,6 +46,7 @@
 	- [Filtros y Paginación](#filtros)
 	- [Gestión de Productos](#productos)
 		- [Vista de Productos](#vistaproductos)
+		- [Método GET](#get)
 	- [Gestión del Carrito](#carrito)
 8. [Contribuyendo](#contribuyendo)
 9. [Licencia](#licencia)
@@ -425,6 +426,44 @@ La vista de productos está diseñada para mostrar una lista de productos dispon
 El archivo `products.js` contiene la lógica necesaria para interactuar con los filtros y la paginación, manejando la aplicación de filtros y la actualización de la lista de productos en función de las acciones del usuario.
 
 Esta vista de productos es una parte fundamental de la interfaz de usuario, proporcionando un medio para explorar, filtrar y eliminar productos de manera eficiente.
+
+[Volver al menú](#top)
+
+<hr>
+<a name="vistaproductos"></a>
+
+### 🟢 El método GET de productos:
+El método GET en la aplicación está diseñado para recuperar una lista paginada de productos y devolverla en el siguiente formato:
+```
+{
+  "status": "success/error",
+  "payload": "Resultado de los productos solicitados",
+  "totalPages": "Total de páginas",
+  "prevPage": "Página anterior",
+  "nextPage": "Página siguiente",
+  "page": "Página actual",
+  "hasPrevPage": "Indicador para saber si la página previa existe",
+  "hasNextPage": "Indicador para saber si la página siguiente existe",
+  "prevLink": "Link directo a la página previa (null si hasPrevPage=false)",
+  "nextLink": "Link directo a la página siguiente (null si hasNextPage=false)"
+  "firstLink": "Link directo a la primera página"
+  "lastLink": "Link directo a la última página"
+	
+}
+```
+Explicación:
+	1.	status: Indica el estado de la solicitud, ya sea success o error, dependiendo de si la operación fue exitosa o no.
+	2.	payload: Contiene los productos solicitados. Esto es un array con los productos que se encuentran en la página actual de acuerdo con los parámetros de consulta (por ejemplo, filtro, paginación, etc.).
+	3.	totalPages: Número total de páginas disponibles, lo que indica cuántas páginas hay en total en función del número de productos y la cantidad de productos por página.
+	4.	prevPage: Número de la página anterior, si existe. Si es la primera página, su valor será null.
+	5.	nextPage: Número de la página siguiente, si existe. Si es la última página, su valor será null.
+	6.	page: Número de la página actual que se está mostrando.
+	7.	hasPrevPage: Un valor booleano (true o false) que indica si existe una página previa a la actual.
+	8.	hasNextPage: Un valor booleano (true o false) que indica si existe una página siguiente a la actual.
+	9.	prevLink: URL que lleva a la página previa. Si no hay página previa (cuando hasPrevPage=false), se devolverá como null.
+	10.	nextLink: URL que lleva a la página siguiente. Si no hay página siguiente (cuando hasNextPage=false), se devolverá como null.
+
+Este formato permite una paginación eficiente y facilita la navegación entre diferentes páginas de resultados en la interfaz de usuario, proporcionando tanto los datos como los enlaces para navegar a las páginas adyacentes de productos.
 
 [Volver al menú](#top)
 
