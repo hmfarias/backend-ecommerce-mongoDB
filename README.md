@@ -237,6 +237,7 @@ Los datos se acceden mediante **Managers** (clases `ProductsMongoManager` y `Car
 
 La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 
+```
 |-src/
 ├── config/
 │   └── config.js  // Lógica para manejar las variables de entorno provistas en .env
@@ -286,6 +287,7 @@ La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 ├── utilsMulter.js  // configura el manejo de archivos mediante la librería multer para la carga de imágenes en la aplicación.
 ├── .env  // Variables de entorno
 └── package.json  // Dependencias y configuraciones del proyecto
+```
 
 
 [Volver al menú](#top)
