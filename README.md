@@ -369,7 +369,7 @@ Este sistema permite que los usuarios encuentren los productos que desean de man
 
 En la aplicación, la **gestión del carrito** se encarga de permitir a los usuarios agregar, actualizar, eliminar y ver los productos en su carrito de compras. Esta funcionalidad es crucial para una experiencia de compra en línea, ya que permite a los usuarios seleccionar productos antes de proceder con el pago. La gestión del carrito se implementa mediante un conjunto de rutas y lógica de backend que interactúan con la base de datos.
 
-#### ¿Cómo Funciona la Gestión del Carrito?
+#### 🔶 ¿Cómo Funciona la Gestión del Carrito?
 
 1. **Creación de un Carrito**: 
    Cuando un usuario agrega un producto al carrito, se verifica si ya existe un carrito. Si es la primera vez que el usuario agrega un producto, se crea un carrito vacío y, a continuación, se agrega el producto en la misma operación. Si el carrito ya existe (es decir, no es la primera vez que el usuario agrega productos), se recupera el carrito previamente creado y el producto se agrega a dicho carrito.
@@ -389,7 +389,7 @@ En la aplicación, la **gestión del carrito** se encarga de permitir a los usua
 6. **Finalización de Compra**:
    El alcance del proyecto no incluye la funcionalidad completa de finalización de compra. Sin embargo, se ha implementado un botón "Eliminar" en el carrito para ilustrar el uso del endpoint `DELETE`, el cual se utilizaría posteriormente para eliminar los productos del carrito luego de procesar la compra. Esta implementación es solo una representación de cómo se gestionaría el proceso de eliminación una vez completada la compra en un sistema real.
 
-#### Estructura de la Gestión del Carrito
+#### 🔶 Estructura de la Gestión del Carrito
 
 La gestión del carrito se realiza mediante el uso de un **modelo de carrito** en la base de datos, y las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) se manejan con la ayuda de los **routers** y **managers**.
 
