@@ -1,16 +1,47 @@
 import ProductModel from '../models/product.model.js';
 
 class ProductsMongoManager {
-	// Retrieve all products (returns a lean object for performance)
-	static async get() {
+	static async get({ category, status, priceOrder, page = 1, limit = 10 }) {
 		try {
-			return await ProductModel.find().lean();
+			const filter = {};
+
+			// Add filter by category
+			if (category && category !== 'all') {
+				filter.category = category;
+			}
+
+			// Add filter by availability status
+			if (status && status !== 'all') {
+				filter.availabilityStatus = status;
+			}
+
+			// Pagination options configuration
+			const options = {
+				page: parseInt(page, 10),
+				limit: parseInt(limit, 10),
+				sort: {},
+				lean: true, // To improve performance
+			};
+
+			// Apply price order if provided
+			if (priceOrder === 'asc' || priceOrder === 'desc') {
+				options.sort.price = priceOrder === 'asc' ? 1 : -1;
+			}
+
+			// Execute and returnthe query with pagination
+			const result = await ProductModel.paginate(filter, options);
+
+			// If there are no products, return an empty array
+			if (result.docs.length === 0) {
+				return { products: [], totalDocs: 0, totalPages: 0, currentPage: 1 };
+			}
+
+			return result;
 		} catch (error) {
 			console.error('Error fetching products:', error.message);
-			return [];
+			return { products: [], totalDocs: 0, totalPages: 0, currentPage: 1 };
 		}
 	}
-
 	// Create a new product and return it as a plain object
 	static async create(product) {
 		try {
@@ -25,7 +56,8 @@ class ProductsMongoManager {
 	// Retrieve a single product by its custom 'id' field
 	static async getById(id) {
 		try {
-			const product = await ProductModel.findOne({ id }).lean();
+			// const product = await ProductModel.findOne({ id }).lean();
+			const product = await ProductModel.findById(id).lean();
 			return product || null; // Return null if not found
 		} catch (error) {
 			console.error('Error fetching product by ID:', error.message);
@@ -61,22 +93,3 @@ class ProductsMongoManager {
 }
 
 export default ProductsMongoManager;
-
-// static async get() {
-// 	return ProductModel.find().lean();
-// }
-
-// static async create(product) {
-// 	let newProduct = await ProductModel.create(product);
-// 	return newProduct.toObject();
-// }
-
-// static async getById(id) {
-// 	const product = await ProductModel.findOne({ id: id });
-// 	return product ? product.toObject() : null; // avoid error if product is null
-// }
-
-// static async delete(id) {
-// 	const product = await ProductModel.findByIdAndDelete(id);
-// 	return product ? product.toObject() : null; // avoid error if product is null
-// }

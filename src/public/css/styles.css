@@ -13,7 +13,7 @@ body {
 	text-align: center;
 }
 
-/* Header */
+/* Header *********************************/
 .header {
 	margin-bottom: 2rem;
 }
@@ -29,7 +29,28 @@ body {
 	color: gray;
 }
 
-/* Contenedor principal */
+/* Estilo para el navbar ****************/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #333;
+	padding: 10px 10px;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	margin: 0 10px;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.navbar a:hover {
+	background-color: #575757;
+}
+
+/* Contenedor principal HOME****************************/
 .home-container {
 	display: flex;
 	flex-direction: column;
@@ -102,16 +123,6 @@ h1 {
 	margin-top: 2rem;
 }
 
-/* ul {
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	gap: 16px;
-	padding: 0;
-	margin: 20px auto;
-	max-width: 1000px;
-} */
-
 button {
 	padding: 0.75rem 1.5rem;
 	border: none;
@@ -150,6 +161,7 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Estilo para el formulario de insertar un producto **********************/
 .form-insert {
 	max-width: 768px; /* Similar a max-w-3xl */
 	margin: 2rem auto; /* Centra el formulario */
@@ -201,6 +213,7 @@ button[type='submit'] {
 	font-size: 1rem;
 	border: none;
 	transition: background-color 0.3s ease;
+	margin-top: 1rem;
 }
 
 /* Estilo para el botón de envío al pasar el ratón */
@@ -208,19 +221,7 @@ button[type='submit']:hover {
 	background-color: #2563eb; /* Similar a hover:bg-blue-600 */
 }
 
-/* Estilo para el botón "Go Home" */
-button[type='button'] {
-	background-color: #6b7280; /* Similar a bg-gray-500 */
-	color: white;
-	padding: 0.75rem 1.5rem;
-	border-radius: 0.375rem;
-	cursor: pointer;
-	font-size: 1rem;
-	border: none;
-	transition: background-color 0.3s ease;
-}
-
-/* Estilos para la vista de un solo producto */
+/* Estilos para la vista de un solo producto ************/
 .product-container {
 	background-color: #fff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -307,7 +308,7 @@ button[type='button'] {
 	width: 48%; /* Definir el ancho de cada grupo de campos */
 }
 
-/* Estilo para los inputs dentro de los grupos */
+/* Estilo para los inputs dentro de los grupos ***************/
 .items-group input,
 .items-group select {
 	width: 100%; /* Asegura que cada campo ocupe el 48% del espacio disponible */
@@ -330,27 +331,6 @@ button[type='button'] {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-/* Estilo para el navbar */
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	background-color: #333;
-	padding: 10px 10px;
-}
-
-.navbar a {
-	color: white;
-	text-decoration: none;
-	margin: 0 10px;
-	display: block;
-	text-align: center;
-	font-size: 18px;
-}
-
-.navbar a:hover {
-	background-color: #575757;
 }
 
 .large-text {
@@ -494,6 +474,8 @@ h1 {
 /* Estilo de los formularios dentro de la sección de filtros */
 .filters-section form {
 	margin-bottom: 1.5rem;
+	text-align: start;
+	font-weight: bold;
 }
 
 /* Productos (derecha) */

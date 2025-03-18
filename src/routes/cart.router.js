@@ -48,11 +48,6 @@ router.get('/:cid', async (req, res) => {
 				error: 'Cart not found - The cart with the specified ID does not exist',
 				details: 'Please try again with a different ID',
 			});
-			// return res.status(404).json({
-			// 	message: 'Cart not found - The cart with the specified ID does not exist',
-			// 	error: true,
-			// 	payload: null,
-			// });
 		}
 
 		//Format the numbers in the cart to two decimal places
@@ -65,16 +60,7 @@ router.get('/:cid', async (req, res) => {
 			title: 'Cart',
 			cart: formattedCart,
 		});
-		// return res.status(200).json({
-		// 	message: 'Cart retrieved successfully',
-		// 	error: false,
-		// 	payload: cart,
-		// });
 	} catch (error) {
-		// return res.render('error', {
-		// 	error: 'Internal Server Error',
-		// 	details: error.message,
-		// });
 		return res.status(500).json({
 			message: `Internal Server Error - ${error}`,
 			error: true,
@@ -105,23 +91,7 @@ router.post('/', async (req, res) => {
 			error: false,
 			payload: newCart,
 		});
-
-		// show the product in the view	product.handlebars
-		// res.render('product', { title: 'Product', product: newProduct });
 	} catch (error) {
-		// if (error.code === 11000) {
-		// 	const duplicateField = Object.keys(error.keyPattern)[0];
-
-		// 	return res.render('error', {
-		// 		error: `A cart with this ${duplicateField} already exists`,
-		// 		details: 'Please try again  with a different one',
-		// 	});
-		// }
-
-		// res.render('error', {
-		// 	error: 'Internal Server Error',
-		// 	details: error.message,
-		// });
 		return res.status(500).json({
 			message: `Internal Server Error - ${error}`,
 			error: true,
@@ -132,12 +102,11 @@ router.post('/', async (req, res) => {
 
 //* POST A PRODUCT IN AN EXISTING CART ************************/
 router.post('/:cid/product/:pid', async (req, res) => {
-	const cartId = parseInt(req.params.cid);
-	const productId = parseInt(req.params.pid);
+	const cartId = req.params.cid;
+	const productId = req.params.pid;
 
 	try {
 		// Find the product
-		// const product = products.find((prod) => prod.id === productId);
 		const product = await ProductsMongoManager.getById(productId);
 
 		// If the product is not found, return an error
@@ -150,7 +119,6 @@ router.post('/:cid/product/:pid', async (req, res) => {
 		}
 
 		// Find the cart
-		// let cart = carts.find((c) => c.id === cartId);
 		let cart = await CartsMongoManager.getById(cartId);
 
 		// If the cart is not found, return an error

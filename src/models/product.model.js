@@ -5,6 +5,7 @@
  */
 
 import mongoose from 'mongoose';
+import mongoosePaginate from 'mongoose-paginate-v2';
 
 const { Schema } = mongoose; //import the Schema from mongoose
 
@@ -53,6 +54,8 @@ const productSchema = new Schema({
 	availabilityStatus: { type: String, default: 'In Stock' },
 	thumbnail: { type: String, required: false },
 });
+
+productSchema.plugin(mongoosePaginate);
 
 const ProductModel = mongoose.model(collection, productSchema);
 

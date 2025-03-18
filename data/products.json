@@ -19,7 +19,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -76,7 +76,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -133,7 +133,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -190,7 +190,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -245,7 +245,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -302,7 +302,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -361,7 +361,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -420,7 +420,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -479,7 +479,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -538,7 +538,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -597,7 +597,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -656,7 +656,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -715,7 +715,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -774,7 +774,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -833,7 +833,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -891,7 +891,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -945,7 +945,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -999,7 +999,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1053,7 +1053,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1110,7 +1110,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1164,7 +1164,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -1218,7 +1218,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1272,7 +1272,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -1326,7 +1326,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1380,7 +1380,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -1436,7 +1436,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -1492,7 +1492,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -1546,7 +1546,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1605,7 +1605,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -1659,7 +1659,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1713,7 +1713,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "Out of Stock",
+		"availabilityStatus": "out-of-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -1767,7 +1767,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1821,7 +1821,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1875,7 +1875,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -1931,7 +1931,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -1985,7 +1985,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -2041,7 +2041,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -2095,7 +2095,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -2149,7 +2149,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -2203,7 +2203,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -2257,7 +2257,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -2314,7 +2314,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -2368,7 +2368,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -2426,7 +2426,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -2482,7 +2482,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -2540,7 +2540,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -2599,7 +2599,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -2655,7 +2655,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "Out of Stock",
+		"availabilityStatus": "out-of-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -2711,7 +2711,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -2768,7 +2768,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -2824,7 +2824,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -2883,7 +2883,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -2939,7 +2939,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -2995,7 +2995,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3051,7 +3051,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3107,7 +3107,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -3166,7 +3166,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -3222,7 +3222,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3278,7 +3278,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -3334,7 +3334,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -3390,7 +3390,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -3446,7 +3446,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3502,7 +3502,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -3558,7 +3558,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3614,7 +3614,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3670,7 +3670,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -3729,7 +3729,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -3786,7 +3786,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -3840,7 +3840,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -3896,7 +3896,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -3952,7 +3952,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -4008,7 +4008,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4064,7 +4064,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4120,7 +4120,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -4176,7 +4176,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4232,7 +4232,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4288,7 +4288,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -4345,7 +4345,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -4404,7 +4404,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -4463,7 +4463,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4522,7 +4522,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4581,7 +4581,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -4640,7 +4640,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4700,7 +4700,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -4760,7 +4760,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -4820,7 +4820,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -4880,7 +4880,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -4940,7 +4940,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -5000,7 +5000,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5060,7 +5060,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5120,7 +5120,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -5180,7 +5180,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5240,7 +5240,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -5299,7 +5299,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -5358,7 +5358,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5417,7 +5417,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -5476,7 +5476,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5535,7 +5535,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -5594,7 +5594,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -5652,7 +5652,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -5711,7 +5711,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -5768,7 +5768,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5825,7 +5825,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -5882,7 +5882,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5940,7 +5940,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -5998,7 +5998,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -6057,7 +6057,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -6114,7 +6114,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -6174,7 +6174,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -6232,7 +6232,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -6289,7 +6289,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -6346,7 +6346,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -6403,7 +6403,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -6463,7 +6463,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -6523,7 +6523,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -6583,7 +6583,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -6643,7 +6643,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -6703,7 +6703,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -6762,7 +6762,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -6821,7 +6821,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -6880,7 +6880,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -6939,7 +6939,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -6998,7 +6998,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7057,7 +7057,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -7116,7 +7116,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -7175,7 +7175,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -7234,7 +7234,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -7294,7 +7294,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7353,7 +7353,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -7412,7 +7412,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7471,7 +7471,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7530,7 +7530,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -7589,7 +7589,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -7648,7 +7648,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7707,7 +7707,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -7766,7 +7766,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "Out of Stock",
+		"availabilityStatus": "out-of-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7824,7 +7824,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -7880,7 +7880,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7936,7 +7936,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -7994,7 +7994,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -8050,7 +8050,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -8106,7 +8106,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8162,7 +8162,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8218,7 +8218,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -8277,7 +8277,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8333,7 +8333,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -8389,7 +8389,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -8445,7 +8445,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -8501,7 +8501,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8557,7 +8557,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8613,7 +8613,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -8669,7 +8669,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -8725,7 +8725,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "Out of Stock",
+		"availabilityStatus": "out-of-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -8782,7 +8782,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -8841,7 +8841,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8900,7 +8900,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -8959,7 +8959,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -9018,7 +9018,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -9077,7 +9077,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -9137,7 +9137,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -9197,7 +9197,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "Out of Stock",
+		"availabilityStatus": "out-of-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -9256,7 +9256,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -9315,7 +9315,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -9374,7 +9374,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -9433,7 +9433,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -9492,7 +9492,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -9552,7 +9552,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -9614,7 +9614,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -9676,7 +9676,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -9738,7 +9738,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "Out of Stock",
+		"availabilityStatus": "out-of-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -9800,7 +9800,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -9862,7 +9862,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -9921,7 +9921,7 @@
 		},
 		"warrantyInformation": "1 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -9980,7 +9980,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -10039,7 +10039,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -10098,7 +10098,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -10156,7 +10156,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -10215,7 +10215,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -10274,7 +10274,7 @@
 		},
 		"warrantyInformation": "Lifetime warranty",
 		"shippingInformation": "Ships in 2 weeks",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -10333,7 +10333,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -10392,7 +10392,7 @@
 		},
 		"warrantyInformation": "No warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -10451,7 +10451,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "Low Stock",
+		"availabilityStatus": "low-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -10509,7 +10509,7 @@
 		},
 		"warrantyInformation": "3 months warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -10567,7 +10567,7 @@
 		},
 		"warrantyInformation": "3 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -10626,7 +10626,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -10686,7 +10686,7 @@
 		},
 		"warrantyInformation": "1 week warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -10746,7 +10746,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -10806,7 +10806,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 3,
@@ -10866,7 +10866,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships overnight",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,
@@ -10926,7 +10926,7 @@
 		},
 		"warrantyInformation": "5 year warranty",
 		"shippingInformation": "Ships in 1 week",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -10985,7 +10985,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1-2 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 5,
@@ -11044,7 +11044,7 @@
 		},
 		"warrantyInformation": "6 months warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 2,
@@ -11103,7 +11103,7 @@
 		},
 		"warrantyInformation": "2 year warranty",
 		"shippingInformation": "Ships in 1 month",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 1,
@@ -11162,7 +11162,7 @@
 		},
 		"warrantyInformation": "1 month warranty",
 		"shippingInformation": "Ships in 3-5 business days",
-		"availabilityStatus": "In Stock",
+		"availabilityStatus": "in-stock",
 		"reviews": [
 			{
 				"rating": 4,

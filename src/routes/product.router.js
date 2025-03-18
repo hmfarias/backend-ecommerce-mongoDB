@@ -14,19 +14,57 @@ const router = Router();
 // GET all product  -------------------------------------------------------------------------------
 router.get('/', async (req, res) => {
 	try {
-		const products = await ProductsMongoManager.get();
+		const { category, status, priceOrder, page = 1, limit = 10 } = req.query;
 
-		if (!products) {
-			return res.render('error', {
-				error: 'Error retrieving products',
-				details: 'Please try again',
-			});
-		}
+		// transform the page and limit to integer
+		const pagenumber = parseInt(page, 10) || 1;
+		const limitNumber = parseInt(limit, 10) || 10;
 
-		// show the products in the view products.handlebars
+		//Call the get() method with filtering and pagination parameters
+		const result = await ProductsMongoManager.get({
+			category,
+			status,
+			priceOrder,
+			page: pagenumber,
+			limit: limitNumber,
+		});
+
+		// Build the base url with filters
+		const params = new URLSearchParams();
+
+		if (category && category !== 'all') params.append('category', category);
+		if (status && status !== 'all') params.append('status', status);
+		if (priceOrder) params.append('priceOrder', priceOrder);
+		if (limit) params.append('limit', limit);
+
+		// Build pagination links
+		const prevLink = result.hasPrevPage
+			? `/products?${params.toString()}&page=${result.prevPage}`
+			: null;
+		const nextLink = result.hasNextPage
+			? `/products?${params.toString()}&page=${result.nextPage}`
+			: null;
+		const firstLink = result.page > 1 ? `/products?${params.toString()}&page=1` : null;
+		const lastLink =
+			result.page < result.totalPages
+				? `/products?${params.toString()}&page=${result.totalPages}`
+				: null;
+
+		// render the products in the view products.handlebars
 		res.render('products', {
 			title: 'Products',
-			products: products,
+			status: 'success',
+			products: result.docs,
+			totalPages: result.totalPages,
+			prevPage: result.prevPage,
+			nextPage: result.nextPage,
+			page: result.page,
+			hasPrevPage: result.hasPrevPage,
+			hasNextPage: result.hasNextPage,
+			prevLink,
+			nextLink,
+			firstLink,
+			lastLink,
 		});
 	} catch (error) {
 		console.error(error);
