@@ -168,6 +168,22 @@ DB_NAME=Backend-ecommerce
 
 ## INSTALACIÓN EN LOCAL
 
+### **Prerequisitos:**  
+Antes de instalar la aplicación, asegúrate de contar con:  
+- Un editor de código como **Visual Studio Code** o similar.  
+- **Node.js** y **npm** instalados en tu sistema.  
+
+### **Pasos para la instalación:**  
+
+1. **Ubicar el directorio de instalación:**  
+   En tu terminal o consola, navega hasta la carpeta donde deseas instalar la aplicación.  
+
+2. **Clonar el repositorio:**  
+   Ejecuta el siguiente comando para clonar el proyecto:  
+
+   ```sh
+   git clone https://github.com/hmfarias/backend-ecommerce.git
+
 Prerequisitos de instalación:
 Debes contar con un editor de código como Visual Estudio Code o similar.
 
