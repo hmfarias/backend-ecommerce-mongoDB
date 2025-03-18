@@ -384,7 +384,7 @@ En la aplicación, la **gestión del carrito** se encarga de permitir a los usua
    Los productos pueden ser eliminados completamente del carrito en cualquier momento. Al eliminar un producto, se elimina su entrada en la base de datos correspondiente al carrito.
 
 5. **Visualización del Carrito**:
-   El carrito del usuario se puede ver en cualquier momento desde la interfaz de usuario presionando el simbolo del carrito que se ubica a la derecha en el Navbar. Esta vista muestra los productos en el carrito, su cantidad, el precio total por producto y el total a pagar por el carrito.
+   El carrito del usuario se puede ver en cualquier momento desde la interfaz de usuario presionando el simbolo del carrito que se ubica a la derecha en el Navbar. Esta vista muestra los productos en el carrito, su cantidad, el precio total por producto y el total a pagar por el carrito. En caso de que todavía no exista un carrito (pues el usuario no ha agregado ningún producto), la aplicación informa sobre esa situación.
 
 6. **Finalización de Compra**:
    El alcance del proyecto no incluye la funcionalidad completa de finalización de compra. Sin embargo, se ha implementado un botón "Eliminar" en el carrito para ilustrar el uso del endpoint `DELETE`, el cual se utilizaría posteriormente para eliminar los productos del carrito luego de procesar la compra. Esta implementación es solo una representación de cómo se gestionaría el proceso de eliminación una vez completada la compra en un sistema real.
