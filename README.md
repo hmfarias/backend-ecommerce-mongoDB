@@ -430,7 +430,7 @@ Esta vista de productos es una parte fundamental de la interfaz de usuario, prop
 [Volver al menú](#top)
 
 <hr>
-<a name="vistaproductos"></a>
+<a name="get"></a>
 
 ### 🟢 El método GET de productos:
 El método GET en la aplicación está diseñado para recuperar una lista paginada de productos y devolverla en el siguiente formato:
@@ -462,6 +462,8 @@ Explicación:
 	8.	hasNextPage: Un valor booleano (true o false) que indica si existe una página siguiente a la actual.
 	9.	prevLink: URL que lleva a la página previa. Si no hay página previa (cuando hasPrevPage=false), se devolverá como null.
 	10.	nextLink: URL que lleva a la página siguiente. Si no hay página siguiente (cuando hasNextPage=false), se devolverá como null.
+ 	11.	firstLink: URL que lleva a a la primera página de resultados de productos.
+  	12.	lastLink: URL que lleva a a la ultima página de resultados de productos.
 
 Este formato permite una paginación eficiente y facilita la navegación entre diferentes páginas de resultados en la interfaz de usuario, proporcionando tanto los datos como los enlaces para navegar a las páginas adyacentes de productos.
 
