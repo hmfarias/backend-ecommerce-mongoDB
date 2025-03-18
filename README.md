@@ -378,7 +378,7 @@ En la aplicación, la **gestión del carrito** se encarga de permitir a los usua
    Los usuarios pueden agregar productos uno a uno al carrito mediante la selección de un producto y la elección de la cantidad mediante los botones `+` y `-`. Al agregar un producto, se actualiza el carrito en la base de datos, y se almacena información como el ID del producto, la cantidad, y el precio total del producto.
 
 3. **Actualizar Cantidad de Productos en la vista de carrito**:
-   Los usuarios pueden modificar la cantidad de un producto en su carrito. Esta acción actualiza la cantidad de ese producto en el carrito y recalcula el precio total.
+   Los usuarios pueden modificar la cantidad de un producto en su carrito desde el mismo carrito. Esta acción actualiza la cantidad de ese producto en el carrito y recalcula el precio total.
 
 4. **Eliminar Productos del Carrito**:
    Los productos pueden ser eliminados completamente del carrito en cualquier momento. Al eliminar un producto, se elimina su entrada en la base de datos correspondiente al carrito.
