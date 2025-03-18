@@ -182,7 +182,6 @@ Antes de instalar la aplicación, asegúrate de contar con:
 
 2. **Clonar el repositorio:**  
    Ejecuta el siguiente comando para clonar el proyecto:  
-
    <code>
      git clone https://github.com/hmfarias/backend-ecommerce.git
    </code>  
