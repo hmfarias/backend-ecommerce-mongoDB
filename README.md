@@ -206,11 +206,10 @@ Crea un archivo .env en la raíz del proyecto con la configuración de las crede
 Consulta la configuración de credenciales en la sección [CREDENCIALES (.env)](#environment).
 	
 8. **Iniciar la aplicación en modo desarrollador:**
-   
 	Ejecuta el siguiente comando:
-  	<code>
-    	npm run dev
-  	</code>
+  		<code>
+    			npm run dev
+  		</code>
 	Esto iniciará el servidor y mostrará un mensaje en la terminal indicando que la aplicación está corriendo en el puerto 8080 y conectada a la base de datos.
 
 10.	**Acceder a la aplicación desde el navegador:**
