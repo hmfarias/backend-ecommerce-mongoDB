@@ -87,7 +87,7 @@ Gracias por visitar nuestro repositorio. ¡Esperamos que disfrutes explorando y 
 
 ## CONSIDERACIONES IMPORTATES
 
-Los datos se acceden mediante clases de modo que se encuentra perfectamente separado el acceso directo a los datos mediantes un Manager y las rutas desde donde se llama a esos datos. Esto permite que si eventualmente se decidiera cambiar el sistema de persistencia de los datos, las rutas no se vean afectadas. 
+Los datos se acceden mediante "Managers" (clases ProductsMongoManager y CartsMongoManager) de modo que se encuentra perfectamente separado el acceso directo a los datos y las rutas desde donde se llama a esos datos. Esto permite que si eventualmente se decidiera cambiar el sistema de persistencia, bastará con realizar o construir los nuevos managers sin necesidad de modificar las rutas. 
 
 [Volver al menú](#top)
 
