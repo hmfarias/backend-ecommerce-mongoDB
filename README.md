@@ -41,9 +41,12 @@
 4. [Credenciales - .env](#environment)
 5. [Instalación en local](#instalacion)
 6. [Funcionamiento de la Aplicacion](#funcionamiento)
-7. [Contribuyendo](#contribuyendo)
-8. [Licencia](#licencia)
-9. [Contacto](#contacto)
+   - [Arquitectura](#arquitectura)
+   - [Estructura de archivos](#estructura)
+   - [Filtros y Paginación](#filtros)
+8. [Contribuyendo](#contribuyendo)
+9. [Licencia](#licencia)
+10. [Contacto](#contacto)
 
 <hr>
 
@@ -227,11 +230,19 @@ Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
 
 ## FUNCIONAMIENTO DE LA APLICACION
 
+<a name="arquitectura"></a>
+
 ### 🔹 Arquitectura
 
 La aplicación está basada en una arquitectura **MVC (Modelo-Vista-Controlador)** y utiliza **MongoDB** como sistema de persistencia, gestionado a través de **Mongoose** como ODM. Esto permite realizar las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) de forma eficiente y simplificada.
 
 Los datos se acceden mediante **Managers** (clases `ProductsMongoManager` y `CartsMongoManager`), lo que permite una separación clara entre la lógica de negocio y el acceso a la base de datos. De esta forma, si se decidiera cambiar el sistema de persistencia, bastaría con modificar o crear nuevos managers sin necesidad de alterar las rutas de la aplicación. Esta estructura proporciona flexibilidad y escalabilidad al proyecto.
+
+[Volver al menú](#top)
+
+<hr>
+
+<a name="estructura"></a>
 
 ### 🔹 Estructura de la Aplicación
 
@@ -288,6 +299,12 @@ La aplicación tiene la siguiente estructura básica de archivos y carpetas:
 ├── .env  // Variables de entorno
 └── package.json  // Dependencias y configuraciones del proyecto
 ```
+
+[Volver al menú](#top)
+
+<hr>
+
+<a name="filtros"></a>
 
 ### 🔹 Filtros y Paginación
 
