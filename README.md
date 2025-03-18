@@ -195,10 +195,11 @@ Abre Visual Studio Code (o tu editor de preferencia) y selecciona la carpeta bac
 Asegúrate de estar ubicado dentro de la carpeta backend-ecommerce en la terminal.
 
 5. **Instalar las dependencias:**
-Ejecuta el siguiente comando para instalar las dependencias del proyecto:
-   <code>
-     npm install
-   </code>
+
+	Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+   	<code>
+   	npm install
+   	</code>
    
 6. **Configurar las variables de entorno:**
 Crea un archivo .env en la raíz del proyecto con la configuración de las credenciales (ver sección CREDENCIALES (.env)).
