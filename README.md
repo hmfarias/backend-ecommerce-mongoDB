@@ -212,7 +212,6 @@ Esto iniciará el servidor y mostrará un mensaje en la terminal indicando que l
 
 8.	**Acceder a la aplicación desde el navegador:**
 Abre una nueva pestaña en tu navegador y accede a la siguiente dirección:
-
   http://localhost:8080
 
 🔹 ¡Listo! Ya puedes explorar y probar la aplicación en tu entorno local. 🚀
