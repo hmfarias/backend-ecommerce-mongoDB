@@ -6,8 +6,8 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/hmfarias/backend-ecommerce">
-    <img src="https://github.com/hmfarias/backend-ecommerce/blob/main/src/public/logo.png" alt="Logo" width="350" height="auto">
+  <a href="https://github.com/hmfarias/backend-ecommerce-mongoDB">
+    <img src="https://github.com/hmfarias/backend-ecommerce-mongoDB/blob/main/src/public/logo.png" alt="Logo" width="350" height="auto">
   </a>
   <h1 align="center">BACKEND</h1>
 
@@ -17,11 +17,11 @@
     <a href="" target="_blank" ><strong>»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/hmfarias/backend-ecommerce">Ver repositorio</a>
+    <a href="https://github.com/hmfarias/backend-ecommerce-mongoDB">Ver repositorio</a>
     ·
-    <a href="https://github.com/hmfarias/backend-ecommerce/issues">Reportar un error</a>
+    <a href="https://github.com/hmfarias/backend-ecommerce-mongoDB/issues">Reportar un error</a>
     ·
-    <a href="https://github.com/hmfarias/backend-ecommerce/issues">Solicitar función</a>
+    <a href="https://github.com/hmfarias/backend-ecommerce-mongoDB/issues">Solicitar función</a>
   </p>
 </div>
 
