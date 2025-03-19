@@ -167,4 +167,104 @@ router.delete('/:id', async (req, res) => {
 	}
 });
 
+// GET a product by id for update-------------------------------------------------------------------
+router.get('/updateProduct/:id', async (req, res) => {
+	//categories list
+	const categoryList = [
+		'beauty',
+		'fragrances',
+		'furniture',
+		'groceries',
+		'home-decoration',
+		'kitchen-accessories',
+		'laptops',
+		'mens-shirts',
+		'mens-shoes',
+		'mens-watches',
+		'mobile-accessories',
+		'motorcycle',
+		'skin-care',
+		'smartphones',
+		'sports-accessories',
+		'sunglasses',
+		'tablets',
+		'tops',
+		'vehicle',
+		'womens-bags',
+		'womens-dresses',
+		'womens-jewellery',
+		'womens-shoes',
+		'womens-watches',
+	];
+
+	try {
+		const product = await ProductsMongoManager.getById(req.params.id);
+
+		if (!product) {
+			return res.render('error', {
+				error: 'Product not found - The product with the specified ID does not exist',
+				details: 'Please try again with a different ID',
+			});
+		}
+
+		// show the product in the view	product.handlebars
+		res.render('updateProduct', {
+			title: 'Update Product',
+			product: product,
+			categoryList,
+		});
+	} catch (error) {
+		return res.render('error', {
+			error: 'Internal Server Error',
+			details: error.message,
+		});
+	}
+});
+
+// UPDATE a product by id -------------------------------------------------------------------------------
+router.put('/:id', uploader.single('file'), async (req, res) => {
+	const { title, description, code, price, stock, category } = req.body;
+
+	const thumbnail = req.file
+		? '/img/' + req.file.filename
+		: 'https://prd.place/400?id=14';
+
+	try {
+		const product = await ProductsMongoManager.updateById(req.params.id, {
+			title,
+			description,
+			code,
+			price,
+			stock,
+			category,
+			thumbnail,
+		});
+
+		if (!product) {
+			return res.render('error', {
+				error:
+					'Error updating product - The product with the specified ID does not exist',
+				details: 'Please try again with a different ID',
+			});
+		}
+
+		// show the product in the view	product.handlebars
+		res.render('product', { title: 'Product', product: product });
+	} catch (error) {
+		if (error.code === 11000) {
+			const duplicateField = Object.keys(error.keyPattern)[0];
+
+			return res.render('error', {
+				error: `A product with this ${duplicateField} already exists`,
+				details: 'Please try again  with a different one',
+			});
+		}
+
+		res.render('error', {
+			error: 'Internal Server Error',
+			details: error.message,
+		});
+	}
+});
+
 export default router;

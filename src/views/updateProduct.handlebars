@@ -1,0 +1,51 @@
+<h1>Update Product</h1>
+{{! 'multipart/form-data' indicates that the form will contain files }}
+<form
+	class='form-insert'
+	action='/products/{{product._id}}?_method=PUT'
+	method='POST'
+	enctype='multipart/form-data'
+>
+
+	<label for='title'>Title</label>
+	<input type='text' name='title' id='title' value='{{product.title}}' required />
+	<label for='description'>Description</label>
+	<textarea
+		name='description'
+		id='description'
+		required
+	>{{product.description}}</textarea>
+	<div class='items-group'>
+		<div>
+			<label for='code'>Code</label>
+			<input type='text' name='code' id='code' value='{{product.code}}' required />
+		</div>
+		<div>
+			<label for='price'>Price</label>
+			<input type='number' name='price' id='price' value='{{product.price}}' required />
+
+		</div>
+	</div>
+	<div class='items-group'>
+		<div>
+			<label for='stock'>Stock</label>
+			<input type='number' name='stock' id='stock' value='{{product.stock}}' required />
+
+		</div>
+		<div>
+			<label for='category'>Category</label>
+			<select name='category' id='category' required>
+				{{#each categoryList}}
+					<option value='{{this}}' {{#if (eq this ../product.category)}}selected{{/if}}>{{this}}</option>
+				{{/each}}
+			</select>
+		</div>
+	</div>
+	<label for='file'>File</label>
+	<input type='file' name='file' id='file' />
+
+	<div class='container-buttons j-end'>
+		<button type='submit'>Update</button>
+		<button type='button' onclick='window.history.back()'>Cancel</button>
+	</div>
+</form>

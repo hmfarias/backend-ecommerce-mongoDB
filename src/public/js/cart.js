@@ -79,7 +79,7 @@ const deleteEntireProduct = async (cartId, productId) => {
 				text: responseData.message,
 				icon: 'error',
 				position: 'top-end',
-				timer: 2000,
+				timer: 1500,
 				showConfirmButton: false,
 				toast: true,
 			});

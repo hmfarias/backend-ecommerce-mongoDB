@@ -6,6 +6,7 @@
 
 import mongoose from 'mongoose';
 import mongoosePaginate from 'mongoose-paginate-v2';
+import CartModel from './cart.model.js';
 
 const { Schema } = mongoose; //import the Schema from mongoose
 
@@ -56,6 +57,26 @@ const productSchema = new Schema({
 });
 
 productSchema.plugin(mongoosePaginate);
+
+/**
+ * Middleware that runs before deleting a product.
+ * It is responsible for eliminating this product from all the carts in which it is present.
+ */
+productSchema.pre('findOneAndDelete', async function (next) {
+	try {
+		const productId = this.getQuery()._id; // Obtener el _id del producto que se está eliminando
+
+		// Remove the product from all the carts where you are present
+		await CartModel.updateMany(
+			{ 'products.product': productId }, // Buscar carritos que contengan este producto
+			{ $pull: { products: { product: productId } } } // Eliminar el producto de la lista
+		);
+
+		next();
+	} catch (error) {
+		next(error);
+	}
+});
 
 const ProductModel = mongoose.model(collection, productSchema);
 

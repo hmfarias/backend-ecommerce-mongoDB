@@ -40,6 +40,7 @@ router.get('/', async (req, res) => {
 });
 
 //* GET A CART BY ID **********************************************/
+//* GET A CART BY ID **********************************************/
 router.get('/:cid', async (req, res) => {
 	try {
 		const cart = await CartsMongoManager.getById(req.params.cid);
@@ -50,12 +51,22 @@ router.get('/:cid', async (req, res) => {
 			});
 		}
 
-		//Format the numbers in the cart to two decimal places
+		// TotalProduct Recalculate for each product in case the prices of a product change
+		const updatedProducts = cart.products.map((item) => {
+			const totalProduct = Math.round(item.quantity * item.product.price * 100) / 100;
+			return { ...item, totalProduct };
+		});
+
+		// Calculate the total cart by adding all the totalproduct in case the prices of a product change
+		const totalCart = updatedProducts.reduce((acc, item) => acc + item.totalProduct, 0);
+
+		// Create the formatted cart with updated values
 		const formattedCart = {
 			...cart,
-			totalCart: Math.round(cart.totalCart * 100) / 100, // Redondear a dos decimales
+			products: updatedProducts,
+			totalCart: Math.round(totalCart * 100) / 100, // Redondear a dos decimales
 		};
-		console.log('✅ ~ router.get ~ formattedCart:', formattedCart);
+
 		return res.render('cart', {
 			title: 'Cart',
 			cart: formattedCart,

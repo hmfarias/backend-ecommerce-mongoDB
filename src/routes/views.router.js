@@ -15,7 +15,11 @@ router.get('/', (req, res) => {
 });
 
 router.get('/newProduct', (req, res) => {
-	res.render('newProduct', { title: 'Create product' });
+	res.render('newProduct', { title: 'Create Product' });
+});
+
+router.get('/updateProduct', (req, res) => {
+	res.render('updateProduct', { title: 'Update Product' });
 });
 
 export default router;

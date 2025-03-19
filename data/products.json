@@ -10,7 +10,7 @@
 		"stock": 5,
 		"tags": ["beauty", "mascara"],
 		"brand": "Essence",
-		"sku": "RCH45Q1A",
+		"code": "RCH45Q1A",
 		"weight": 2,
 		"dimensions": {
 			"width": 23.17,
@@ -67,7 +67,7 @@
 		"stock": 44,
 		"tags": ["beauty", "eyeshadow"],
 		"brand": "Glamour Beauty",
-		"sku": "MVCFH27F",
+		"code": "MVCFH27F",
 		"weight": 3,
 		"dimensions": {
 			"width": 12.42,
@@ -124,7 +124,7 @@
 		"stock": 59,
 		"tags": ["beauty", "face powder"],
 		"brand": "Velvet Touch",
-		"sku": "9EN8WLT2",
+		"code": "9EN8WLT2",
 		"weight": 8,
 		"dimensions": {
 			"width": 24.16,
@@ -181,7 +181,7 @@
 		"stock": 68,
 		"tags": ["beauty", "lipstick"],
 		"brand": "Chic Cosmetics",
-		"sku": "O5IF1NTA",
+		"code": "O5IF1NTA",
 		"weight": 5,
 		"dimensions": {
 			"width": 14.37,
@@ -236,7 +236,7 @@
 		"stock": 71,
 		"tags": ["beauty", "nail polish"],
 		"brand": "Nail Couture",
-		"sku": "YUIIIP4W",
+		"code": "YUIIIP4W",
 		"weight": 9,
 		"dimensions": {
 			"width": 8.11,
@@ -293,7 +293,7 @@
 		"stock": 17,
 		"tags": ["fragrances", "perfumes"],
 		"brand": "Calvin Klein",
-		"sku": "DZM2JQZE",
+		"code": "DZM2JQZE",
 		"weight": 5,
 		"dimensions": {
 			"width": 11.53,
@@ -352,7 +352,7 @@
 		"stock": 41,
 		"tags": ["fragrances", "perfumes"],
 		"brand": "Chanel",
-		"sku": "K71HBCGS",
+		"code": "K71HBCGS",
 		"weight": 4,
 		"dimensions": {
 			"width": 21.27,
@@ -411,7 +411,7 @@
 		"stock": 91,
 		"tags": ["fragrances", "perfumes"],
 		"brand": "Dior",
-		"sku": "E70NB03B",
+		"code": "E70NB03B",
 		"weight": 10,
 		"dimensions": {
 			"width": 21.51,
@@ -470,7 +470,7 @@
 		"stock": 3,
 		"tags": ["fragrances", "perfumes"],
 		"brand": "Dolce & Gabbana",
-		"sku": "1NBFK980",
+		"code": "1NBFK980",
 		"weight": 5,
 		"dimensions": {
 			"width": 17,
@@ -529,7 +529,7 @@
 		"stock": 93,
 		"tags": ["fragrances", "perfumes"],
 		"brand": "Gucci",
-		"sku": "FFKZ6HOF",
+		"code": "FFKZ6HOF",
 		"weight": 10,
 		"dimensions": {
 			"width": 22.28,
@@ -588,7 +588,7 @@
 		"stock": 47,
 		"tags": ["furniture", "beds"],
 		"brand": "Annibale Colombo",
-		"sku": "4KMDTZWF",
+		"code": "4KMDTZWF",
 		"weight": 3,
 		"dimensions": {
 			"width": 28.75,
@@ -647,7 +647,7 @@
 		"stock": 16,
 		"tags": ["furniture", "sofas"],
 		"brand": "Annibale Colombo",
-		"sku": "LUU95CQP",
+		"code": "LUU95CQP",
 		"weight": 3,
 		"dimensions": {
 			"width": 20.97,
@@ -706,7 +706,7 @@
 		"stock": 16,
 		"tags": ["furniture", "bedside tables"],
 		"brand": "Furniture Co.",
-		"sku": "OWPLTZYX",
+		"code": "OWPLTZYX",
 		"weight": 10,
 		"dimensions": {
 			"width": 25.43,
@@ -765,7 +765,7 @@
 		"stock": 47,
 		"tags": ["furniture", "office chairs"],
 		"brand": "Knoll",
-		"sku": "RKHVJ4FE",
+		"code": "RKHVJ4FE",
 		"weight": 3,
 		"dimensions": {
 			"width": 16.59,
@@ -824,7 +824,7 @@
 		"stock": 95,
 		"tags": ["furniture", "bathroom"],
 		"brand": "Bath Trends",
-		"sku": "7OLTIEVO",
+		"code": "7OLTIEVO",
 		"weight": 6,
 		"dimensions": {
 			"width": 7.32,
@@ -882,7 +882,7 @@
 		"rating": 2.96,
 		"stock": 9,
 		"tags": ["fruits"],
-		"sku": "QTROUV79",
+		"code": "QTROUV79",
 		"weight": 8,
 		"dimensions": {
 			"width": 8.29,
@@ -936,7 +936,7 @@
 		"rating": 2.83,
 		"stock": 96,
 		"tags": ["meat"],
-		"sku": "BWWA2MSO",
+		"code": "BWWA2MSO",
 		"weight": 9,
 		"dimensions": {
 			"width": 23.35,
@@ -990,7 +990,7 @@
 		"rating": 2.88,
 		"stock": 13,
 		"tags": ["pet supplies", "cat food"],
-		"sku": "C3F8QN6O",
+		"code": "C3F8QN6O",
 		"weight": 9,
 		"dimensions": {
 			"width": 15.4,
@@ -1044,7 +1044,7 @@
 		"rating": 4.61,
 		"stock": 69,
 		"tags": ["meat"],
-		"sku": "G5YEHW7B",
+		"code": "G5YEHW7B",
 		"weight": 7,
 		"dimensions": {
 			"width": 15.96,
@@ -1101,7 +1101,7 @@
 		"rating": 4.01,
 		"stock": 22,
 		"tags": ["cooking essentials"],
-		"sku": "Q6ZP1UY8",
+		"code": "Q6ZP1UY8",
 		"weight": 8,
 		"dimensions": {
 			"width": 8.18,
@@ -1155,7 +1155,7 @@
 		"rating": 4.71,
 		"stock": 22,
 		"tags": ["vegetables"],
-		"sku": "6KGF2K6Z",
+		"code": "6KGF2K6Z",
 		"weight": 9,
 		"dimensions": {
 			"width": 11.04,
@@ -1209,7 +1209,7 @@
 		"rating": 2.74,
 		"stock": 40,
 		"tags": ["pet supplies", "dog food"],
-		"sku": "A6QRCH37",
+		"code": "A6QRCH37",
 		"weight": 2,
 		"dimensions": {
 			"width": 29.39,
@@ -1263,7 +1263,7 @@
 		"rating": 4.46,
 		"stock": 10,
 		"tags": ["dairy"],
-		"sku": "YA617RI7",
+		"code": "YA617RI7",
 		"weight": 4,
 		"dimensions": {
 			"width": 12.3,
@@ -1317,7 +1317,7 @@
 		"rating": 4.83,
 		"stock": 99,
 		"tags": ["seafood"],
-		"sku": "XNIH1MTA",
+		"code": "XNIH1MTA",
 		"weight": 8,
 		"dimensions": {
 			"width": 20.14,
@@ -1371,7 +1371,7 @@
 		"rating": 4.28,
 		"stock": 89,
 		"tags": ["vegetables"],
-		"sku": "HU7S7VQ0",
+		"code": "HU7S7VQ0",
 		"weight": 7,
 		"dimensions": {
 			"width": 7.32,
@@ -1427,7 +1427,7 @@
 		"rating": 4.43,
 		"stock": 8,
 		"tags": ["vegetables"],
-		"sku": "Y4RM3JCB",
+		"code": "Y4RM3JCB",
 		"weight": 2,
 		"dimensions": {
 			"width": 18.67,
@@ -1483,7 +1483,7 @@
 		"rating": 3.5,
 		"stock": 25,
 		"tags": ["condiments"],
-		"sku": "BTBNIIOU",
+		"code": "BTBNIIOU",
 		"weight": 9,
 		"dimensions": {
 			"width": 26.53,
@@ -1537,7 +1537,7 @@
 		"rating": 3.77,
 		"stock": 76,
 		"tags": ["desserts"],
-		"sku": "VEZMU1EQ",
+		"code": "VEZMU1EQ",
 		"weight": 5,
 		"dimensions": {
 			"width": 17.66,
@@ -1596,7 +1596,7 @@
 		"rating": 3.41,
 		"stock": 99,
 		"tags": ["beverages"],
-		"sku": "M2K19S06",
+		"code": "M2K19S06",
 		"weight": 2,
 		"dimensions": {
 			"width": 8.97,
@@ -1650,7 +1650,7 @@
 		"rating": 4.37,
 		"stock": 1,
 		"tags": ["fruits"],
-		"sku": "0X3NORB9",
+		"code": "0X3NORB9",
 		"weight": 8,
 		"dimensions": {
 			"width": 27.3,
@@ -1704,7 +1704,7 @@
 		"rating": 4.25,
 		"stock": 0,
 		"tags": ["fruits"],
-		"sku": "J074TE3H",
+		"code": "J074TE3H",
 		"weight": 10,
 		"dimensions": {
 			"width": 25.97,
@@ -1758,7 +1758,7 @@
 		"rating": 3.14,
 		"stock": 57,
 		"tags": ["dairy"],
-		"sku": "VOZKMF40",
+		"code": "VOZKMF40",
 		"weight": 1,
 		"dimensions": {
 			"width": 22.42,
@@ -1812,7 +1812,7 @@
 		"rating": 3.19,
 		"stock": 79,
 		"tags": ["fruits"],
-		"sku": "0M1K7RRC",
+		"code": "0M1K7RRC",
 		"weight": 4,
 		"dimensions": {
 			"width": 11.12,
@@ -1866,7 +1866,7 @@
 		"rating": 2.54,
 		"stock": 22,
 		"tags": ["beverages", "coffee"],
-		"sku": "FP5H3065",
+		"code": "FP5H3065",
 		"weight": 9,
 		"dimensions": {
 			"width": 11.21,
@@ -1922,7 +1922,7 @@
 		"rating": 3.82,
 		"stock": 8,
 		"tags": ["vegetables"],
-		"sku": "W4NOBW45",
+		"code": "W4NOBW45",
 		"weight": 9,
 		"dimensions": {
 			"width": 20,
@@ -1976,7 +1976,7 @@
 		"rating": 3.91,
 		"stock": 65,
 		"tags": ["health supplements"],
-		"sku": "BT2QOWKZ",
+		"code": "BT2QOWKZ",
 		"weight": 2,
 		"dimensions": {
 			"width": 5.62,
@@ -2032,7 +2032,7 @@
 		"rating": 4.08,
 		"stock": 86,
 		"tags": ["vegetables"],
-		"sku": "TAF870KJ",
+		"code": "TAF870KJ",
 		"weight": 2,
 		"dimensions": {
 			"width": 14.05,
@@ -2086,7 +2086,7 @@
 		"rating": 3.94,
 		"stock": 49,
 		"tags": ["grains"],
-		"sku": "905JXMXM",
+		"code": "905JXMXM",
 		"weight": 1,
 		"dimensions": {
 			"width": 28.86,
@@ -2140,7 +2140,7 @@
 		"rating": 4.59,
 		"stock": 78,
 		"tags": ["beverages"],
-		"sku": "I1ZNSLXJ",
+		"code": "I1ZNSLXJ",
 		"weight": 9,
 		"dimensions": {
 			"width": 15.73,
@@ -2194,7 +2194,7 @@
 		"rating": 4.5,
 		"stock": 9,
 		"tags": ["fruits"],
-		"sku": "LPP7I4JZ",
+		"code": "LPP7I4JZ",
 		"weight": 4,
 		"dimensions": {
 			"width": 20.82,
@@ -2248,7 +2248,7 @@
 		"rating": 4.55,
 		"stock": 97,
 		"tags": ["household essentials"],
-		"sku": "IQEZWXMJ",
+		"code": "IQEZWXMJ",
 		"weight": 3,
 		"dimensions": {
 			"width": 24.1,
@@ -2305,7 +2305,7 @@
 		"rating": 2.93,
 		"stock": 95,
 		"tags": ["beverages"],
-		"sku": "LZG5PPHA",
+		"code": "LZG5PPHA",
 		"weight": 2,
 		"dimensions": {
 			"width": 25.46,
@@ -2359,7 +2359,7 @@
 		"rating": 3.56,
 		"stock": 62,
 		"tags": ["home decor", "swing"],
-		"sku": "MBEK52ST",
+		"code": "MBEK52ST",
 		"weight": 8,
 		"dimensions": {
 			"width": 20.75,
@@ -2417,7 +2417,7 @@
 		"rating": 3.84,
 		"stock": 34,
 		"tags": ["home decor", "photo frame"],
-		"sku": "EZOJC792",
+		"code": "EZOJC792",
 		"weight": 4,
 		"dimensions": {
 			"width": 15.46,
@@ -2473,7 +2473,7 @@
 		"rating": 3.61,
 		"stock": 89,
 		"tags": ["home decor", "artificial plants"],
-		"sku": "LLNHNIFU",
+		"code": "LLNHNIFU",
 		"weight": 9,
 		"dimensions": {
 			"width": 27.15,
@@ -2531,7 +2531,7 @@
 		"rating": 3.33,
 		"stock": 70,
 		"tags": ["home decor", "plant accessories"],
-		"sku": "M8IWE8MF",
+		"code": "M8IWE8MF",
 		"weight": 8,
 		"dimensions": {
 			"width": 16.28,
@@ -2590,7 +2590,7 @@
 		"rating": 4.56,
 		"stock": 84,
 		"tags": ["home decor", "lighting"],
-		"sku": "0K9UDIUB",
+		"code": "0K9UDIUB",
 		"weight": 2,
 		"dimensions": {
 			"width": 29.6,
@@ -2646,7 +2646,7 @@
 		"rating": 4.4,
 		"stock": 0,
 		"tags": ["kitchen tools", "utensils"],
-		"sku": "MYIWU1I6",
+		"code": "MYIWU1I6",
 		"weight": 4,
 		"dimensions": {
 			"width": 27.97,
@@ -2702,7 +2702,7 @@
 		"rating": 3.62,
 		"stock": 42,
 		"tags": ["drinkware", "cups"],
-		"sku": "1CSCC3UH",
+		"code": "1CSCC3UH",
 		"weight": 8,
 		"dimensions": {
 			"width": 7.48,
@@ -2759,7 +2759,7 @@
 		"rating": 2.88,
 		"stock": 17,
 		"tags": ["kitchen tools", "utensils"],
-		"sku": "0TDFNB1Q",
+		"code": "0TDFNB1Q",
 		"weight": 6,
 		"dimensions": {
 			"width": 21.06,
@@ -2815,7 +2815,7 @@
 		"rating": 2.73,
 		"stock": 81,
 		"tags": ["kitchen appliances", "blenders"],
-		"sku": "6HG6U3Q9",
+		"code": "6HG6U3Q9",
 		"weight": 10,
 		"dimensions": {
 			"width": 16.73,
@@ -2874,7 +2874,7 @@
 		"rating": 2.94,
 		"stock": 2,
 		"tags": ["cookware", "woks"],
-		"sku": "OOE6KF9I",
+		"code": "OOE6KF9I",
 		"weight": 4,
 		"dimensions": {
 			"width": 14.69,
@@ -2930,7 +2930,7 @@
 		"rating": 4.82,
 		"stock": 53,
 		"tags": ["kitchen tools", "cutting boards"],
-		"sku": "B7MZ3JGK",
+		"code": "B7MZ3JGK",
 		"weight": 3,
 		"dimensions": {
 			"width": 24.38,
@@ -2986,7 +2986,7 @@
 		"rating": 4.18,
 		"stock": 59,
 		"tags": ["kitchen tools", "juicers"],
-		"sku": "PIUKVEZ4",
+		"code": "PIUKVEZ4",
 		"weight": 9,
 		"dimensions": {
 			"width": 21.74,
@@ -3042,7 +3042,7 @@
 		"rating": 2.91,
 		"stock": 30,
 		"tags": ["kitchen tools", "slicers"],
-		"sku": "WG4L41YK",
+		"code": "WG4L41YK",
 		"weight": 5,
 		"dimensions": {
 			"width": 17.18,
@@ -3098,7 +3098,7 @@
 		"rating": 4.84,
 		"stock": 41,
 		"tags": ["kitchen appliances", "cooktops"],
-		"sku": "D88AMROJ",
+		"code": "D88AMROJ",
 		"weight": 9,
 		"dimensions": {
 			"width": 28.07,
@@ -3157,7 +3157,7 @@
 		"rating": 3.7,
 		"stock": 13,
 		"tags": ["kitchen tools", "strainers"],
-		"sku": "4XB2EHHJ",
+		"code": "4XB2EHHJ",
 		"weight": 6,
 		"dimensions": {
 			"width": 5.19,
@@ -3213,7 +3213,7 @@
 		"rating": 4.18,
 		"stock": 10,
 		"tags": ["kitchen tools", "utensils"],
-		"sku": "5XHGD6PF",
+		"code": "5XHGD6PF",
 		"weight": 6,
 		"dimensions": {
 			"width": 23.61,
@@ -3269,7 +3269,7 @@
 		"rating": 3.06,
 		"stock": 68,
 		"tags": ["drinkware", "glasses"],
-		"sku": "2RO2KDHM",
+		"code": "2RO2KDHM",
 		"weight": 5,
 		"dimensions": {
 			"width": 14.7,
@@ -3325,7 +3325,7 @@
 		"rating": 2.87,
 		"stock": 80,
 		"tags": ["kitchen tools", "graters"],
-		"sku": "UBA8CV8A",
+		"code": "UBA8CV8A",
 		"weight": 3,
 		"dimensions": {
 			"width": 12.6,
@@ -3381,7 +3381,7 @@
 		"rating": 3.71,
 		"stock": 8,
 		"tags": ["kitchen appliances", "blenders"],
-		"sku": "JZNXDL37",
+		"code": "JZNXDL37",
 		"weight": 4,
 		"dimensions": {
 			"width": 13.3,
@@ -3437,7 +3437,7 @@
 		"rating": 3.27,
 		"stock": 81,
 		"tags": ["kitchen tools", "ice cube trays"],
-		"sku": "K0UE7U34",
+		"code": "K0UE7U34",
 		"weight": 8,
 		"dimensions": {
 			"width": 27.19,
@@ -3493,7 +3493,7 @@
 		"rating": 2.96,
 		"stock": 33,
 		"tags": ["kitchen tools", "strainers"],
-		"sku": "4U0L9HB6",
+		"code": "4U0L9HB6",
 		"weight": 5,
 		"dimensions": {
 			"width": 22.94,
@@ -3549,7 +3549,7 @@
 		"rating": 4.31,
 		"stock": 59,
 		"tags": ["kitchen tools", "cutlery"],
-		"sku": "NHTTZ30W",
+		"code": "NHTTZ30W",
 		"weight": 7,
 		"dimensions": {
 			"width": 11.63,
@@ -3605,7 +3605,7 @@
 		"rating": 2.84,
 		"stock": 26,
 		"tags": ["kitchen tools", "storage"],
-		"sku": "T4T5IDXP",
+		"code": "T4T5IDXP",
 		"weight": 1,
 		"dimensions": {
 			"width": 13.76,
@@ -3661,7 +3661,7 @@
 		"rating": 2.71,
 		"stock": 27,
 		"tags": ["kitchen appliances", "microwaves"],
-		"sku": "7CERPRRE",
+		"code": "7CERPRRE",
 		"weight": 8,
 		"dimensions": {
 			"width": 9.61,
@@ -3720,7 +3720,7 @@
 		"rating": 4.34,
 		"stock": 93,
 		"tags": ["kitchen tools", "organization"],
-		"sku": "T4EBCVSS",
+		"code": "T4EBCVSS",
 		"weight": 7,
 		"dimensions": {
 			"width": 7.37,
@@ -3777,7 +3777,7 @@
 		"rating": 3.4,
 		"stock": 40,
 		"tags": ["cookware", "pans"],
-		"sku": "3E1WZOKX",
+		"code": "3E1WZOKX",
 		"weight": 7,
 		"dimensions": {
 			"width": 19.51,
@@ -3831,7 +3831,7 @@
 		"rating": 3.07,
 		"stock": 30,
 		"tags": ["dinnerware", "plates"],
-		"sku": "S8T5CGBD",
+		"code": "S8T5CGBD",
 		"weight": 8,
 		"dimensions": {
 			"width": 14.77,
@@ -3887,7 +3887,7 @@
 		"rating": 3.22,
 		"stock": 15,
 		"tags": ["kitchen tools", "tongs"],
-		"sku": "BTNVE4CT",
+		"code": "BTNVE4CT",
 		"weight": 3,
 		"dimensions": {
 			"width": 27.38,
@@ -3943,7 +3943,7 @@
 		"rating": 3.86,
 		"stock": 37,
 		"tags": ["cookware", "pots"],
-		"sku": "BSFNUA3V",
+		"code": "BSFNUA3V",
 		"weight": 9,
 		"dimensions": {
 			"width": 9.58,
@@ -3999,7 +3999,7 @@
 		"rating": 3.77,
 		"stock": 36,
 		"tags": ["kitchen tools", "turners"],
-		"sku": "HCKJ62ZJ",
+		"code": "HCKJ62ZJ",
 		"weight": 4,
 		"dimensions": {
 			"width": 22.29,
@@ -4055,7 +4055,7 @@
 		"rating": 4.05,
 		"stock": 24,
 		"tags": ["kitchen tools", "organization"],
-		"sku": "WFKJQQRD",
+		"code": "WFKJQQRD",
 		"weight": 8,
 		"dimensions": {
 			"width": 20.73,
@@ -4111,7 +4111,7 @@
 		"rating": 3.98,
 		"stock": 51,
 		"tags": ["kitchen tools", "utensils"],
-		"sku": "PPBAZ4TS",
+		"code": "PPBAZ4TS",
 		"weight": 9,
 		"dimensions": {
 			"width": 8.45,
@@ -4167,7 +4167,7 @@
 		"rating": 3.2,
 		"stock": 48,
 		"tags": ["serveware", "trays"],
-		"sku": "PCU0I0A1",
+		"code": "PCU0I0A1",
 		"weight": 8,
 		"dimensions": {
 			"width": 25.01,
@@ -4223,7 +4223,7 @@
 		"rating": 4.99,
 		"stock": 80,
 		"tags": ["kitchen tools", "baking"],
-		"sku": "WHUXD7N8",
+		"code": "WHUXD7N8",
 		"weight": 7,
 		"dimensions": {
 			"width": 19.66,
@@ -4279,7 +4279,7 @@
 		"rating": 4.41,
 		"stock": 86,
 		"tags": ["kitchen tools", "peelers"],
-		"sku": "YR9GLZ3I",
+		"code": "YR9GLZ3I",
 		"weight": 4,
 		"dimensions": {
 			"width": 17.36,
@@ -4336,7 +4336,7 @@
 		"stock": 39,
 		"tags": ["laptops", "apple"],
 		"brand": "Apple",
-		"sku": "QDKO6NRJ",
+		"code": "QDKO6NRJ",
 		"weight": 4,
 		"dimensions": {
 			"width": 12.38,
@@ -4395,7 +4395,7 @@
 		"stock": 38,
 		"tags": ["laptops"],
 		"brand": "Asus",
-		"sku": "4A9KFMBG",
+		"code": "4A9KFMBG",
 		"weight": 8,
 		"dimensions": {
 			"width": 19.67,
@@ -4454,7 +4454,7 @@
 		"stock": 34,
 		"tags": ["laptops"],
 		"brand": "Huawei",
-		"sku": "U2CBNNB0",
+		"code": "U2CBNNB0",
 		"weight": 9,
 		"dimensions": {
 			"width": 22.11,
@@ -4513,7 +4513,7 @@
 		"stock": 71,
 		"tags": ["laptops"],
 		"brand": "Lenovo",
-		"sku": "MST9WZQY",
+		"code": "MST9WZQY",
 		"weight": 7,
 		"dimensions": {
 			"width": 11.02,
@@ -4572,7 +4572,7 @@
 		"stock": 18,
 		"tags": ["laptops"],
 		"brand": "Dell",
-		"sku": "XBJJ446X",
+		"code": "XBJJ446X",
 		"weight": 10,
 		"dimensions": {
 			"width": 12.09,
@@ -4631,7 +4631,7 @@
 		"stock": 44,
 		"tags": ["clothing", "men's shirts"],
 		"brand": "Fashion Trends",
-		"sku": "6RJDTVCU",
+		"code": "6RJDTVCU",
 		"weight": 6,
 		"dimensions": {
 			"width": 17.25,
@@ -4691,7 +4691,7 @@
 		"stock": 64,
 		"tags": ["clothing", "men's t-shirts"],
 		"brand": "Gigabyte",
-		"sku": "QA703Y60",
+		"code": "QA703Y60",
 		"weight": 2,
 		"dimensions": {
 			"width": 8.54,
@@ -4751,7 +4751,7 @@
 		"stock": 65,
 		"tags": ["clothing", "men's shirts"],
 		"brand": "Classic Wear",
-		"sku": "TWL7HRBB",
+		"code": "TWL7HRBB",
 		"weight": 1,
 		"dimensions": {
 			"width": 29.56,
@@ -4811,7 +4811,7 @@
 		"stock": 20,
 		"tags": ["clothing", "men's shirts"],
 		"brand": "Casual Comfort",
-		"sku": "KEVGVDTV",
+		"code": "KEVGVDTV",
 		"weight": 2,
 		"dimensions": {
 			"width": 7.11,
@@ -4871,7 +4871,7 @@
 		"stock": 69,
 		"tags": ["clothing", "men's shirts"],
 		"brand": "Urban Chic",
-		"sku": "L902AU9L",
+		"code": "L902AU9L",
 		"weight": 1,
 		"dimensions": {
 			"width": 18.43,
@@ -4931,7 +4931,7 @@
 		"stock": 15,
 		"tags": ["footwear", "athletic shoes"],
 		"brand": "Nike",
-		"sku": "84YC5J67",
+		"code": "84YC5J67",
 		"weight": 5,
 		"dimensions": {
 			"width": 19.29,
@@ -4991,7 +4991,7 @@
 		"stock": 14,
 		"tags": ["footwear", "sports cleats"],
 		"brand": "Nike",
-		"sku": "81LRTRP5",
+		"code": "81LRTRP5",
 		"weight": 7,
 		"dimensions": {
 			"width": 14.83,
@@ -5051,7 +5051,7 @@
 		"stock": 10,
 		"tags": ["footwear", "casual shoes"],
 		"brand": "Puma",
-		"sku": "64ORN32I",
+		"code": "64ORN32I",
 		"weight": 8,
 		"dimensions": {
 			"width": 14.58,
@@ -5111,7 +5111,7 @@
 		"stock": 73,
 		"tags": ["footwear", "athletic shoes"],
 		"brand": "Off White",
-		"sku": "8SRWW2RM",
+		"code": "8SRWW2RM",
 		"weight": 3,
 		"dimensions": {
 			"width": 10.71,
@@ -5171,7 +5171,7 @@
 		"stock": 75,
 		"tags": ["footwear", "casual shoes"],
 		"brand": "Off White",
-		"sku": "1SFJZOT2",
+		"code": "1SFJZOT2",
 		"weight": 4,
 		"dimensions": {
 			"width": 18.32,
@@ -5231,7 +5231,7 @@
 		"stock": 69,
 		"tags": ["watches", "leather watches"],
 		"brand": "Fashion Timepieces",
-		"sku": "WGZ21MSA",
+		"code": "WGZ21MSA",
 		"weight": 10,
 		"dimensions": {
 			"width": 18.39,
@@ -5290,7 +5290,7 @@
 		"stock": 65,
 		"tags": ["watches", "luxury watches"],
 		"brand": "Longines",
-		"sku": "LA7B9XEV",
+		"code": "LA7B9XEV",
 		"weight": 2,
 		"dimensions": {
 			"width": 5.83,
@@ -5349,7 +5349,7 @@
 		"stock": 84,
 		"tags": ["watches", "luxury watches"],
 		"brand": "Rolex",
-		"sku": "J3GPKQW0",
+		"code": "J3GPKQW0",
 		"weight": 6,
 		"dimensions": {
 			"width": 12.17,
@@ -5408,7 +5408,7 @@
 		"stock": 33,
 		"tags": ["watches", "luxury watches"],
 		"brand": "Rolex",
-		"sku": "LUZDIKKR",
+		"code": "LUZDIKKR",
 		"weight": 5,
 		"dimensions": {
 			"width": 28.07,
@@ -5467,7 +5467,7 @@
 		"stock": 11,
 		"tags": ["watches", "luxury watches"],
 		"brand": "Rolex",
-		"sku": "86V20NWJ",
+		"code": "86V20NWJ",
 		"weight": 5,
 		"dimensions": {
 			"width": 9.68,
@@ -5526,7 +5526,7 @@
 		"stock": 35,
 		"tags": ["watches", "luxury watches"],
 		"brand": "Rolex",
-		"sku": "XFGRO0O5",
+		"code": "XFGRO0O5",
 		"weight": 5,
 		"dimensions": {
 			"width": 5.22,
@@ -5585,7 +5585,7 @@
 		"stock": 50,
 		"tags": ["electronics", "smart speakers"],
 		"brand": "Amazon",
-		"sku": "YHLK4W9V",
+		"code": "YHLK4W9V",
 		"weight": 7,
 		"dimensions": {
 			"width": 8.1,
@@ -5643,7 +5643,7 @@
 		"stock": 93,
 		"tags": ["electronics", "wireless earphones"],
 		"brand": "Apple",
-		"sku": "H76W8TSP",
+		"code": "H76W8TSP",
 		"weight": 3,
 		"dimensions": {
 			"width": 22.62,
@@ -5702,7 +5702,7 @@
 		"stock": 7,
 		"tags": ["electronics", "over-ear headphones"],
 		"brand": "Apple",
-		"sku": "HPK82VDE",
+		"code": "HPK82VDE",
 		"weight": 4,
 		"dimensions": {
 			"width": 7.73,
@@ -5759,7 +5759,7 @@
 		"stock": 78,
 		"tags": ["electronics", "wireless chargers"],
 		"brand": "Apple",
-		"sku": "CBIU3PMZ",
+		"code": "CBIU3PMZ",
 		"weight": 3,
 		"dimensions": {
 			"width": 25.51,
@@ -5816,7 +5816,7 @@
 		"stock": 65,
 		"tags": ["electronics", "smart speakers"],
 		"brand": "Apple",
-		"sku": "LDHQAT4B",
+		"code": "LDHQAT4B",
 		"weight": 2,
 		"dimensions": {
 			"width": 21.14,
@@ -5873,7 +5873,7 @@
 		"stock": 4,
 		"tags": ["electronics", "chargers"],
 		"brand": "Apple",
-		"sku": "YAA6EHI7",
+		"code": "YAA6EHI7",
 		"weight": 5,
 		"dimensions": {
 			"width": 28.77,
@@ -5931,7 +5931,7 @@
 		"stock": 80,
 		"tags": ["electronics", "power banks"],
 		"brand": "Apple",
-		"sku": "XNFJURL7",
+		"code": "XNFJURL7",
 		"weight": 6,
 		"dimensions": {
 			"width": 21.61,
@@ -5989,7 +5989,7 @@
 		"stock": 68,
 		"tags": ["electronics", "smartwatches"],
 		"brand": "Apple",
-		"sku": "ZNXPOEPT",
+		"code": "ZNXPOEPT",
 		"weight": 6,
 		"dimensions": {
 			"width": 8.96,
@@ -6048,7 +6048,7 @@
 		"stock": 49,
 		"tags": ["electronics", "wireless earphones"],
 		"brand": "Beats",
-		"sku": "7N15J2UK",
+		"code": "7N15J2UK",
 		"weight": 6,
 		"dimensions": {
 			"width": 23.49,
@@ -6105,7 +6105,7 @@
 		"stock": 51,
 		"tags": ["electronics", "phone accessories"],
 		"brand": "Apple",
-		"sku": "3UHE8VLA",
+		"code": "3UHE8VLA",
 		"weight": 5,
 		"dimensions": {
 			"width": 6.32,
@@ -6165,7 +6165,7 @@
 		"stock": 96,
 		"tags": ["electronics", "camera accessories"],
 		"brand": "TechGear",
-		"sku": "RDEQ0W2L",
+		"code": "RDEQ0W2L",
 		"weight": 9,
 		"dimensions": {
 			"width": 8.42,
@@ -6223,7 +6223,7 @@
 		"stock": 89,
 		"tags": ["electronics", "selfie accessories"],
 		"brand": "GadgetMaster",
-		"sku": "2VZ1ZNMO",
+		"code": "2VZ1ZNMO",
 		"weight": 7,
 		"dimensions": {
 			"width": 13.38,
@@ -6280,7 +6280,7 @@
 		"stock": 33,
 		"tags": ["electronics", "selfie accessories"],
 		"brand": "SnapTech",
-		"sku": "9T6WSF1E",
+		"code": "9T6WSF1E",
 		"weight": 7,
 		"dimensions": {
 			"width": 6.11,
@@ -6337,7 +6337,7 @@
 		"stock": 45,
 		"tags": ["electronics", "camera accessories"],
 		"brand": "ProVision",
-		"sku": "8K18CNAH",
+		"code": "8K18CNAH",
 		"weight": 7,
 		"dimensions": {
 			"width": 29.9,
@@ -6394,7 +6394,7 @@
 		"stock": 63,
 		"tags": ["motorcycles"],
 		"brand": "Generic Motors",
-		"sku": "8MOWO363",
+		"code": "8MOWO363",
 		"weight": 9,
 		"dimensions": {
 			"width": 14.87,
@@ -6454,7 +6454,7 @@
 		"stock": 88,
 		"tags": ["motorcycles", "sportbikes"],
 		"brand": "Kawasaki",
-		"sku": "9WBTI8EP",
+		"code": "9WBTI8EP",
 		"weight": 7,
 		"dimensions": {
 			"width": 28.34,
@@ -6514,7 +6514,7 @@
 		"stock": 85,
 		"tags": ["motorcycles", "sportbikes"],
 		"brand": "MotoGP",
-		"sku": "0ENL5IX6",
+		"code": "0ENL5IX6",
 		"weight": 9,
 		"dimensions": {
 			"width": 27.4,
@@ -6574,7 +6574,7 @@
 		"stock": 11,
 		"tags": ["motorcycles", "scooters"],
 		"brand": "ScootMaster",
-		"sku": "RGF3EX5E",
+		"code": "RGF3EX5E",
 		"weight": 2,
 		"dimensions": {
 			"width": 8.02,
@@ -6634,7 +6634,7 @@
 		"stock": 12,
 		"tags": ["motorcycles", "sportbikes"],
 		"brand": "SpeedMaster",
-		"sku": "MW0SG302",
+		"code": "MW0SG302",
 		"weight": 9,
 		"dimensions": {
 			"width": 17.16,
@@ -6694,7 +6694,7 @@
 		"stock": 98,
 		"tags": ["personal care", "hand soap"],
 		"brand": "Attitude",
-		"sku": "E6U3C701",
+		"code": "E6U3C701",
 		"weight": 6,
 		"dimensions": {
 			"width": 9.98,
@@ -6753,7 +6753,7 @@
 		"stock": 43,
 		"tags": ["personal care", "body wash"],
 		"brand": "Olay",
-		"sku": "BZCSD4EX",
+		"code": "BZCSD4EX",
 		"weight": 8,
 		"dimensions": {
 			"width": 8.6,
@@ -6812,7 +6812,7 @@
 		"stock": 54,
 		"tags": ["personal care", "body lotion"],
 		"brand": "Vaseline",
-		"sku": "31IK2JUC",
+		"code": "31IK2JUC",
 		"weight": 10,
 		"dimensions": {
 			"width": 28.39,
@@ -6871,7 +6871,7 @@
 		"stock": 65,
 		"tags": ["smartphones", "apple"],
 		"brand": "Apple",
-		"sku": "AZ1L68SM",
+		"code": "AZ1L68SM",
 		"weight": 4,
 		"dimensions": {
 			"width": 8.49,
@@ -6930,7 +6930,7 @@
 		"stock": 99,
 		"tags": ["smartphones", "apple"],
 		"brand": "Apple",
-		"sku": "ZPXH3X9J",
+		"code": "ZPXH3X9J",
 		"weight": 8,
 		"dimensions": {
 			"width": 16.21,
@@ -6989,7 +6989,7 @@
 		"stock": 26,
 		"tags": ["smartphones", "apple"],
 		"brand": "Apple",
-		"sku": "YGQKHPGK",
+		"code": "YGQKHPGK",
 		"weight": 8,
 		"dimensions": {
 			"width": 22.39,
@@ -7048,7 +7048,7 @@
 		"stock": 99,
 		"tags": ["smartphones", "apple"],
 		"brand": "Apple",
-		"sku": "9QN3UDUD",
+		"code": "9QN3UDUD",
 		"weight": 10,
 		"dimensions": {
 			"width": 27.86,
@@ -7107,7 +7107,7 @@
 		"stock": 76,
 		"tags": ["smartphones", "oppo"],
 		"brand": "Oppo",
-		"sku": "J1NO9ULG",
+		"code": "J1NO9ULG",
 		"weight": 3,
 		"dimensions": {
 			"width": 29.52,
@@ -7166,7 +7166,7 @@
 		"stock": 92,
 		"tags": ["smartphones", "oppo"],
 		"brand": "Oppo",
-		"sku": "H2TTGWXB",
+		"code": "H2TTGWXB",
 		"weight": 2,
 		"dimensions": {
 			"width": 20.35,
@@ -7225,7 +7225,7 @@
 		"stock": 61,
 		"tags": ["smartphones", "oppo"],
 		"brand": "Oppo",
-		"sku": "ELZ94HM3",
+		"code": "ELZ94HM3",
 		"weight": 2,
 		"dimensions": {
 			"width": 21.83,
@@ -7285,7 +7285,7 @@
 		"stock": 81,
 		"tags": ["smartphones", "realme"],
 		"brand": "Realme",
-		"sku": "25KENV7J",
+		"code": "25KENV7J",
 		"weight": 6,
 		"dimensions": {
 			"width": 21.74,
@@ -7344,7 +7344,7 @@
 		"stock": 87,
 		"tags": ["smartphones", "realme"],
 		"brand": "Realme",
-		"sku": "5E11C5C4",
+		"code": "5E11C5C4",
 		"weight": 1,
 		"dimensions": {
 			"width": 29.32,
@@ -7403,7 +7403,7 @@
 		"stock": 53,
 		"tags": ["smartphones", "realme"],
 		"brand": "Realme",
-		"sku": "GHDMRAP2",
+		"code": "GHDMRAP2",
 		"weight": 4,
 		"dimensions": {
 			"width": 28.82,
@@ -7462,7 +7462,7 @@
 		"stock": 55,
 		"tags": ["smartphones", "samsung galaxy"],
 		"brand": "Samsung",
-		"sku": "VZF4Z58Z",
+		"code": "VZF4Z58Z",
 		"weight": 8,
 		"dimensions": {
 			"width": 23.33,
@@ -7521,7 +7521,7 @@
 		"stock": 75,
 		"tags": ["smartphones", "samsung galaxy"],
 		"brand": "Samsung",
-		"sku": "GLXQQKBF",
+		"code": "GLXQQKBF",
 		"weight": 6,
 		"dimensions": {
 			"width": 6.88,
@@ -7580,7 +7580,7 @@
 		"stock": 40,
 		"tags": ["smartphones", "samsung galaxy"],
 		"brand": "Samsung",
-		"sku": "5GJFL98I",
+		"code": "5GJFL98I",
 		"weight": 3,
 		"dimensions": {
 			"width": 28.23,
@@ -7639,7 +7639,7 @@
 		"stock": 13,
 		"tags": ["smartphones", "vivo"],
 		"brand": "Vivo",
-		"sku": "BG6974E7",
+		"code": "BG6974E7",
 		"weight": 1,
 		"dimensions": {
 			"width": 28.83,
@@ -7698,7 +7698,7 @@
 		"stock": 19,
 		"tags": ["smartphones", "vivo"],
 		"brand": "Vivo",
-		"sku": "N9WFE2WH",
+		"code": "N9WFE2WH",
 		"weight": 5,
 		"dimensions": {
 			"width": 27.29,
@@ -7757,7 +7757,7 @@
 		"stock": 0,
 		"tags": ["smartphones", "vivo"],
 		"brand": "Vivo",
-		"sku": "KSF00BOC",
+		"code": "KSF00BOC",
 		"weight": 7,
 		"dimensions": {
 			"width": 5.72,
@@ -7815,7 +7815,7 @@
 		"rating": 3.78,
 		"stock": 48,
 		"tags": ["sports equipment", "american football"],
-		"sku": "QLDVAXMJ",
+		"code": "QLDVAXMJ",
 		"weight": 9,
 		"dimensions": {
 			"width": 9.74,
@@ -7871,7 +7871,7 @@
 		"rating": 4.76,
 		"stock": 71,
 		"tags": ["sports equipment", "baseball"],
-		"sku": "VXE0FZPJ",
+		"code": "VXE0FZPJ",
 		"weight": 6,
 		"dimensions": {
 			"width": 21.26,
@@ -7927,7 +7927,7 @@
 		"rating": 2.72,
 		"stock": 43,
 		"tags": ["sports equipment", "baseball"],
-		"sku": "WOP4GLB6",
+		"code": "WOP4GLB6",
 		"weight": 7,
 		"dimensions": {
 			"width": 15.64,
@@ -7985,7 +7985,7 @@
 		"rating": 4.15,
 		"stock": 100,
 		"tags": ["sports equipment", "basketball"],
-		"sku": "EMF68NH8",
+		"code": "EMF68NH8",
 		"weight": 10,
 		"dimensions": {
 			"width": 15.68,
@@ -8041,7 +8041,7 @@
 		"rating": 4.98,
 		"stock": 57,
 		"tags": ["sports equipment", "basketball"],
-		"sku": "ENEWIQSR",
+		"code": "ENEWIQSR",
 		"weight": 7,
 		"dimensions": {
 			"width": 12.95,
@@ -8097,7 +8097,7 @@
 		"rating": 4.43,
 		"stock": 42,
 		"tags": ["sports equipment", "cricket"],
-		"sku": "8F923MI3",
+		"code": "8F923MI3",
 		"weight": 4,
 		"dimensions": {
 			"width": 26.97,
@@ -8153,7 +8153,7 @@
 		"rating": 3.07,
 		"stock": 3,
 		"tags": ["sports equipment", "cricket"],
-		"sku": "RK7E32YJ",
+		"code": "RK7E32YJ",
 		"weight": 4,
 		"dimensions": {
 			"width": 14.13,
@@ -8209,7 +8209,7 @@
 		"rating": 3.34,
 		"stock": 31,
 		"tags": ["sports equipment", "cricket"],
-		"sku": "00M0YHO1",
+		"code": "00M0YHO1",
 		"weight": 4,
 		"dimensions": {
 			"width": 18.85,
@@ -8268,7 +8268,7 @@
 		"rating": 4.16,
 		"stock": 31,
 		"tags": ["sports equipment", "cricket"],
-		"sku": "MY2K8E37",
+		"code": "MY2K8E37",
 		"weight": 2,
 		"dimensions": {
 			"width": 15.56,
@@ -8324,7 +8324,7 @@
 		"rating": 3.95,
 		"stock": 17,
 		"tags": ["sports equipment", "badminton"],
-		"sku": "P2K2L1IZ",
+		"code": "P2K2L1IZ",
 		"weight": 7,
 		"dimensions": {
 			"width": 15.24,
@@ -8380,7 +8380,7 @@
 		"rating": 3.94,
 		"stock": 66,
 		"tags": ["sports equipment", "football"],
-		"sku": "LJLW0BOI",
+		"code": "LJLW0BOI",
 		"weight": 1,
 		"dimensions": {
 			"width": 22.49,
@@ -8436,7 +8436,7 @@
 		"rating": 4.84,
 		"stock": 45,
 		"tags": ["sports equipment", "golf"],
-		"sku": "QAPLNLL0",
+		"code": "QAPLNLL0",
 		"weight": 1,
 		"dimensions": {
 			"width": 11.42,
@@ -8492,7 +8492,7 @@
 		"rating": 4.87,
 		"stock": 7,
 		"tags": ["sports equipment", "golf"],
-		"sku": "Q5JH7UTR",
+		"code": "Q5JH7UTR",
 		"weight": 5,
 		"dimensions": {
 			"width": 27.3,
@@ -8548,7 +8548,7 @@
 		"rating": 4.11,
 		"stock": 37,
 		"tags": ["sports equipment", "baseball"],
-		"sku": "WQ91QZCL",
+		"code": "WQ91QZCL",
 		"weight": 4,
 		"dimensions": {
 			"width": 29.14,
@@ -8604,7 +8604,7 @@
 		"rating": 4.77,
 		"stock": 99,
 		"tags": ["sports equipment", "tennis"],
-		"sku": "E2QETULP",
+		"code": "E2QETULP",
 		"weight": 3,
 		"dimensions": {
 			"width": 27.82,
@@ -8660,7 +8660,7 @@
 		"rating": 3.82,
 		"stock": 86,
 		"tags": ["sports equipment", "tennis"],
-		"sku": "NBRQ6V5N",
+		"code": "NBRQ6V5N",
 		"weight": 2,
 		"dimensions": {
 			"width": 14.55,
@@ -8716,7 +8716,7 @@
 		"rating": 4.08,
 		"stock": 0,
 		"tags": ["sports equipment", "volleyball"],
-		"sku": "0WKXK9YE",
+		"code": "0WKXK9YE",
 		"weight": 6,
 		"dimensions": {
 			"width": 10.73,
@@ -8773,7 +8773,7 @@
 		"stock": 100,
 		"tags": ["eyewear", "sunglasses"],
 		"brand": "Fashion Shades",
-		"sku": "572XJQ54",
+		"code": "572XJQ54",
 		"weight": 3,
 		"dimensions": {
 			"width": 14.41,
@@ -8832,7 +8832,7 @@
 		"stock": 100,
 		"tags": ["eyewear", "sunglasses"],
 		"brand": "Fashion Shades",
-		"sku": "4K0LQT72",
+		"code": "4K0LQT72",
 		"weight": 9,
 		"dimensions": {
 			"width": 15.27,
@@ -8891,7 +8891,7 @@
 		"stock": 74,
 		"tags": ["eyewear", "sunglasses"],
 		"brand": "Fashion Shades",
-		"sku": "6ZLT86N8",
+		"code": "6ZLT86N8",
 		"weight": 9,
 		"dimensions": {
 			"width": 10.62,
@@ -8950,7 +8950,7 @@
 		"stock": 35,
 		"tags": ["eyewear", "party glasses"],
 		"brand": "Fashion Fun",
-		"sku": "CBO6BLYV",
+		"code": "CBO6BLYV",
 		"weight": 1,
 		"dimensions": {
 			"width": 17.04,
@@ -9009,7 +9009,7 @@
 		"stock": 59,
 		"tags": ["eyewear", "sunglasses"],
 		"brand": "Fashion Shades",
-		"sku": "FCWURP6V",
+		"code": "FCWURP6V",
 		"weight": 6,
 		"dimensions": {
 			"width": 8.15,
@@ -9068,7 +9068,7 @@
 		"stock": 32,
 		"tags": ["electronics", "tablets"],
 		"brand": "Apple",
-		"sku": "L5CSWLNS",
+		"code": "L5CSWLNS",
 		"weight": 3,
 		"dimensions": {
 			"width": 24.9,
@@ -9128,7 +9128,7 @@
 		"stock": 76,
 		"tags": ["electronics", "tablets"],
 		"brand": "Samsung",
-		"sku": "1SIVLPFN",
+		"code": "1SIVLPFN",
 		"weight": 10,
 		"dimensions": {
 			"width": 18.5,
@@ -9188,7 +9188,7 @@
 		"stock": 0,
 		"tags": ["electronics", "tablets"],
 		"brand": "Samsung",
-		"sku": "AKJPAPFO",
+		"code": "AKJPAPFO",
 		"weight": 8,
 		"dimensions": {
 			"width": 12.42,
@@ -9247,7 +9247,7 @@
 		"rating": 3.57,
 		"stock": 37,
 		"tags": ["clothing", "dresses"],
-		"sku": "YAXY0OOO",
+		"code": "YAXY0OOO",
 		"weight": 2,
 		"dimensions": {
 			"width": 22.85,
@@ -9306,7 +9306,7 @@
 		"rating": 2.67,
 		"stock": 20,
 		"tags": ["clothing", "girls' dresses"],
-		"sku": "99397X82",
+		"code": "99397X82",
 		"weight": 3,
 		"dimensions": {
 			"width": 8.02,
@@ -9365,7 +9365,7 @@
 		"rating": 3.49,
 		"stock": 81,
 		"tags": ["clothing", "dresses"],
-		"sku": "GVBVDYSG",
+		"code": "GVBVDYSG",
 		"weight": 5,
 		"dimensions": {
 			"width": 13.86,
@@ -9424,7 +9424,7 @@
 		"rating": 4.63,
 		"stock": 19,
 		"tags": ["clothing", "dresses"],
-		"sku": "4VA2AFL0",
+		"code": "4VA2AFL0",
 		"weight": 8,
 		"dimensions": {
 			"width": 24.35,
@@ -9483,7 +9483,7 @@
 		"rating": 2.82,
 		"stock": 100,
 		"tags": ["clothing", "dresses"],
-		"sku": "35AA2Y9Z",
+		"code": "35AA2Y9Z",
 		"weight": 4,
 		"dimensions": {
 			"width": 13,
@@ -9543,7 +9543,7 @@
 		"stock": 53,
 		"tags": ["sedans", "vehicles"],
 		"brand": "Chrysler",
-		"sku": "SPG50KEL",
+		"code": "SPG50KEL",
 		"weight": 5,
 		"dimensions": {
 			"width": 5.03,
@@ -9605,7 +9605,7 @@
 		"stock": 85,
 		"tags": ["sedans", "sports cars", "vehicles"],
 		"brand": "Dodge",
-		"sku": "AWI8JXJ4",
+		"code": "AWI8JXJ4",
 		"weight": 8,
 		"dimensions": {
 			"width": 27.01,
@@ -9667,7 +9667,7 @@
 		"stock": 81,
 		"tags": ["hatchbacks", "compact cars", "vehicles"],
 		"brand": "Dodge",
-		"sku": "FTLDKR58",
+		"code": "FTLDKR58",
 		"weight": 10,
 		"dimensions": {
 			"width": 14.26,
@@ -9729,7 +9729,7 @@
 		"stock": 0,
 		"tags": ["suvs", "vehicles"],
 		"brand": "Dodge",
-		"sku": "8I1NEZNH",
+		"code": "8I1NEZNH",
 		"weight": 8,
 		"dimensions": {
 			"width": 17.45,
@@ -9791,7 +9791,7 @@
 		"stock": 22,
 		"tags": ["minivans", "vehicles"],
 		"brand": "Chrysler",
-		"sku": "26P5DXAD",
+		"code": "26P5DXAD",
 		"weight": 8,
 		"dimensions": {
 			"width": 21.11,
@@ -9853,7 +9853,7 @@
 		"stock": 76,
 		"tags": ["fashion accessories", "handbags"],
 		"brand": "Fashionista",
-		"sku": "A5HC6SCF",
+		"code": "A5HC6SCF",
 		"weight": 2,
 		"dimensions": {
 			"width": 16.06,
@@ -9912,7 +9912,7 @@
 		"stock": 9,
 		"tags": ["fashion accessories", "leather bags"],
 		"brand": "Heshe",
-		"sku": "W8MA1IE7",
+		"code": "W8MA1IE7",
 		"weight": 5,
 		"dimensions": {
 			"width": 24.49,
@@ -9971,7 +9971,7 @@
 		"stock": 43,
 		"tags": ["fashion accessories", "designer bags"],
 		"brand": "Prada",
-		"sku": "WXX4YTJM",
+		"code": "WXX4YTJM",
 		"weight": 4,
 		"dimensions": {
 			"width": 23.45,
@@ -10030,7 +10030,7 @@
 		"stock": 89,
 		"tags": ["fashion accessories", "backpacks"],
 		"brand": "Urban Chic",
-		"sku": "85TOBG0M",
+		"code": "85TOBG0M",
 		"weight": 1,
 		"dimensions": {
 			"width": 9.35,
@@ -10089,7 +10089,7 @@
 		"stock": 24,
 		"tags": ["fashion accessories", "handbags"],
 		"brand": "Elegance Collection",
-		"sku": "0I2M70SW",
+		"code": "0I2M70SW",
 		"weight": 1,
 		"dimensions": {
 			"width": 15.31,
@@ -10147,7 +10147,7 @@
 		"rating": 4.77,
 		"stock": 59,
 		"tags": ["clothing", "gowns"],
-		"sku": "CL0LXEBG",
+		"code": "CL0LXEBG",
 		"weight": 7,
 		"dimensions": {
 			"width": 22.4,
@@ -10206,7 +10206,7 @@
 		"rating": 2.52,
 		"stock": 59,
 		"tags": ["clothing", "corsets", "skirts"],
-		"sku": "TU384RG4",
+		"code": "TU384RG4",
 		"weight": 1,
 		"dimensions": {
 			"width": 19.1,
@@ -10265,7 +10265,7 @@
 		"rating": 3,
 		"stock": 67,
 		"tags": ["clothing", "corsets", "skirts"],
-		"sku": "KM6VKT38",
+		"code": "KM6VKT38",
 		"weight": 6,
 		"dimensions": {
 			"width": 9.79,
@@ -10324,7 +10324,7 @@
 		"rating": 2.92,
 		"stock": 29,
 		"tags": ["clothing", "dresses"],
-		"sku": "EOSIQZU7",
+		"code": "EOSIQZU7",
 		"weight": 7,
 		"dimensions": {
 			"width": 22.66,
@@ -10383,7 +10383,7 @@
 		"rating": 4.17,
 		"stock": 15,
 		"tags": ["clothing", "suits"],
-		"sku": "MWF43VM5",
+		"code": "MWF43VM5",
 		"weight": 4,
 		"dimensions": {
 			"width": 24.67,
@@ -10442,7 +10442,7 @@
 		"rating": 2.94,
 		"stock": 1,
 		"tags": ["fashion accessories", "earrings"],
-		"sku": "O7LSKAP2",
+		"code": "O7LSKAP2",
 		"weight": 10,
 		"dimensions": {
 			"width": 19.73,
@@ -10500,7 +10500,7 @@
 		"rating": 2.54,
 		"stock": 89,
 		"tags": ["fashion accessories", "earrings"],
-		"sku": "OCEA4CEQ",
+		"code": "OCEA4CEQ",
 		"weight": 8,
 		"dimensions": {
 			"width": 28.22,
@@ -10558,7 +10558,7 @@
 		"rating": 3.32,
 		"stock": 76,
 		"tags": ["fashion accessories", "earrings"],
-		"sku": "8F1O6KAS",
+		"code": "8F1O6KAS",
 		"weight": 9,
 		"dimensions": {
 			"width": 25.36,
@@ -10617,7 +10617,7 @@
 		"stock": 80,
 		"tags": ["footwear", "slippers"],
 		"brand": "Comfort Trends",
-		"sku": "0EVS1LOK",
+		"code": "0EVS1LOK",
 		"weight": 9,
 		"dimensions": {
 			"width": 9.73,
@@ -10677,7 +10677,7 @@
 		"stock": 99,
 		"tags": ["footwear", "heel shoes"],
 		"brand": "Calvin Klein",
-		"sku": "9U4PYRXS",
+		"code": "9U4PYRXS",
 		"weight": 1,
 		"dimensions": {
 			"width": 15.41,
@@ -10737,7 +10737,7 @@
 		"stock": 99,
 		"tags": ["footwear", "women's shoes"],
 		"brand": "Fashion Diva",
-		"sku": "U52NOLI2",
+		"code": "U52NOLI2",
 		"weight": 3,
 		"dimensions": {
 			"width": 15.32,
@@ -10797,7 +10797,7 @@
 		"stock": 36,
 		"tags": ["footwear", "casual shoes"],
 		"brand": "Pampi",
-		"sku": "MJGF2DUO",
+		"code": "MJGF2DUO",
 		"weight": 3,
 		"dimensions": {
 			"width": 22.13,
@@ -10857,7 +10857,7 @@
 		"stock": 53,
 		"tags": ["footwear", "women's shoes"],
 		"brand": "Fashion Express",
-		"sku": "H8JNELSB",
+		"code": "H8JNELSB",
 		"weight": 5,
 		"dimensions": {
 			"width": 29.75,
@@ -10917,7 +10917,7 @@
 		"stock": 85,
 		"tags": ["watches", "luxury watches"],
 		"brand": "IWC",
-		"sku": "OJF7AK1J",
+		"code": "OJF7AK1J",
 		"weight": 4,
 		"dimensions": {
 			"width": 12.27,
@@ -10976,7 +10976,7 @@
 		"stock": 66,
 		"tags": ["watches", "luxury watches"],
 		"brand": "Rolex",
-		"sku": "E8CYFYQL",
+		"code": "E8CYFYQL",
 		"weight": 5,
 		"dimensions": {
 			"width": 22.54,
@@ -11035,7 +11035,7 @@
 		"stock": 31,
 		"tags": ["watches", "luxury watches", "women's watches"],
 		"brand": "Rolex",
-		"sku": "VKQ2UNB9",
+		"code": "VKQ2UNB9",
 		"weight": 8,
 		"dimensions": {
 			"width": 14.53,
@@ -11094,7 +11094,7 @@
 		"stock": 94,
 		"tags": ["watches", "women's watches"],
 		"brand": "Fashion Gold",
-		"sku": "N6I9YEWM",
+		"code": "N6I9YEWM",
 		"weight": 8,
 		"dimensions": {
 			"width": 5.9,
@@ -11153,7 +11153,7 @@
 		"stock": 55,
 		"tags": ["watches", "women's watches"],
 		"brand": "Fashion Co.",
-		"sku": "36T6X4M3",
+		"code": "36T6X4M3",
 		"weight": 8,
 		"dimensions": {
 			"width": 24.74,

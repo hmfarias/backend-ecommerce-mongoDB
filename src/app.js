@@ -1,5 +1,5 @@
 import express from 'express';
-import handlebars from 'express-handlebars';
+import handlebars, { create } from 'express-handlebars';
 import __dirname from './utils.js';
 import mongoose from 'mongoose';
 import methodOverride from 'method-override';
@@ -20,7 +20,15 @@ app.use(express.json()); //indicate that now we can receive JSON at the time of 
 app.use(express.urlencoded({ extended: true })); //Allows information to also be sent from the URL
 
 //Configure the handlebars template engine
-app.engine('handlebars', handlebars.engine({ defaultLayout: 'main' }));
+// Create a Handlebars instance
+const hbs = create({
+	defaultLayout: 'main',
+	helpers: {
+		eq: (a, b) => a === b, // Register helper properly
+	},
+});
+
+app.engine('handlebars', hbs.engine);
 app.set('views', `${__dirname}/views`);
 app.set('view engine', 'handlebars');
 

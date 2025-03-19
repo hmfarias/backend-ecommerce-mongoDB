@@ -164,4 +164,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		await removeProductFromCart(cartId, productId);
 	});
+
+	// Add event listener to the update button
+	const updateButton = document.querySelector('.button-upadate');
+
+	if (updateButton) {
+		updateButton.addEventListener('click', (event) => {
+			// Get the product ID from the clicked button's data-product-id attribute
+			const productId = updateButton.getAttribute('data-product-id'); // No es necesario event.target aquí, ya que solo hay un botón
+
+			// Redirect to the edit page for this product
+			window.location.href = `/products/updateProduct/${productId}`;
+		});
+	}
 });

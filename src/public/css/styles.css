@@ -194,6 +194,9 @@ select {
 	box-sizing: border-box;
 }
 
+textarea {
+	height: 100px;
+}
 /* Estilo para los inputs, textarea y select al tener el foco */
 input:focus,
 textarea:focus,
@@ -201,6 +204,7 @@ select:focus {
 	outline: none;
 	border-color: #3b82f6; /* Similar a focus:ring-blue-500 */
 	box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+	background-color: #dceafd;
 }
 
 /* Estilo para el botón de envío */
@@ -534,7 +538,20 @@ h1 {
 	font-size: 0.9rem;
 	transition: background 0.3s ease-in-out;
 }
-
 .button-delete:hover {
 	background: #cc0000;
+}
+
+.button-upadate {
+	background: #eda64f;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: background 0.3s ease-in-out;
+}
+.button-update:hover {
+	background: #686262;
 }

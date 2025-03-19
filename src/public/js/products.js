@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	// Función para capitalizar cada palabra
+	// Function to capitalize each word
 	const capitalizeEachWord = (text) => {
 		return text
 			.split(' ')
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			.join(' ');
 	};
 
-	// Lista de categorías
+	//categories list
 	const categoryList = [
 		'beauty',
 		'fragrances',
@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		'womens-watches',
 	];
 
-	// Obtiene los selects
+	// get the selects
 	const categorySelect = document.getElementById('category-select');
 	const statusSelect = document.querySelector("[name='status']");
 	const priceSelect = document.querySelector("[name='price']");
 	const limitInput = document.getElementById('limit-input');
 	const resetButton = document.getElementById('reset-filters');
 
-	// Añadir opciones del array al select de categorías
+	// Add array options to the categories select
 	if (categorySelect) {
 		categoryList.forEach((category) => {
 			const option = document.createElement('option');
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	// Recuperar valores de la URL y aplicarlos a los selects
+	// get URL values ​​and apply them to the selects
 	const urlParams = new URLSearchParams(window.location.search);
 	const selectedCategory = urlParams.get('category');
 	const selectedStatus = urlParams.get('status');
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		limitInput.value = selectedLimit;
 	}
 
-	// Manejo del formulario de filtros
+	// Handle form filters
 	const filtersForm = document.getElementById('filters-form');
 	if (filtersForm) {
 		filtersForm.addEventListener('submit', (event) => {

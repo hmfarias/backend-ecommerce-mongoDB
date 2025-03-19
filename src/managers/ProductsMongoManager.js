@@ -64,16 +64,15 @@ class ProductsMongoManager {
 			return null;
 		}
 	}
-
 	// Update a product's data
-	static async update(product) {
+	static async updateById(id, product) {
 		try {
 			const updatedProduct = await ProductModel.findOneAndUpdate(
-				{ id: product.id }, // Find by custom 'id' field
-				{ $set: product }, // Update with the new product data
-				{ new: true, lean: true } // Return updated document as plain object
+				{ _id: id }, // Search for _id
+				{ $set: product }, // Update with new product data
+				{ new: true, lean: true } // Returns the updated document as a flat object
 			);
-			return updatedProduct || null; // Return null if not found
+			return updatedProduct || null; // Return the updated or null product if you are not
 		} catch (error) {
 			console.error('Error updating product:', error.message);
 			return null;
