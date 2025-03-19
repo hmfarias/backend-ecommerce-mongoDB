@@ -197,16 +197,16 @@ Antes de instalar la aplicación, asegúrate de contar con:
    Ejecuta el siguiente comando para clonar el proyecto:
 
    ```
-     git clone https://github.com/hmfarias/backend-ecommerce.git
+     git clone https://github.com/hmfarias/backend-ecommerce-mongoDB.git
    ```
 
-   Esto creará una carpeta llamada backend-ecommerce con todos los archivos de la aplicación.
+   Esto creará una carpeta llamada backend-ecommerce-mongoDB con todos los archivos de la aplicación.
 
 3. **Abrir el proyecto en el editor de código:**
    Abre Visual Studio Code (o tu editor de preferencia) y selecciona la carpeta backend-ecommerce.
 
 4. **Abrir una terminal en la carpeta del proyecto:**
-   Asegúrate de estar ubicado dentro de la carpeta backend-ecommerce en la terminal.
+   Asegúrate de estar ubicado dentro de la carpeta backend-ecommerce-mongoDB en la terminal.
 
 5. **Instalar las dependencias:**
 
