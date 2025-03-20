@@ -225,9 +225,7 @@ router.get('/updateProduct/:id', async (req, res) => {
 router.put('/:id', uploader.single('file'), async (req, res) => {
 	const { title, description, code, price, stock, category } = req.body;
 
-	const thumbnail = req.file
-		? '/img/' + req.file.filename
-		: 'https://prd.place/400?id=14';
+	const thumbnail = req.file ? '/img/' + req.file.filename : req.thumbnail;
 
 	try {
 		const product = await ProductsMongoManager.updateById(req.params.id, {

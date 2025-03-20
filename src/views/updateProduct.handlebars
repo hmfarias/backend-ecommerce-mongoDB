@@ -41,8 +41,16 @@
 			</select>
 		</div>
 	</div>
+	
 	<label for='file'>File</label>
 	<input type='file' name='file' id='file' />
+
+	<input type='text' name='thumbnail' id='thumbnail' value='{{product.thumbnail}}' readonly />
+	<!-- Shows the current image -->
+	<img id="preview" src="{{product.thumbnail}}" alt="Current Image" style="max-width: 150px; margin-top: 10px;" />
+
+
+
 
 	<div class='container-buttons j-end'>
 		<button type='submit'>Update</button>
