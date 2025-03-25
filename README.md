@@ -37,6 +37,7 @@
    - [Persistencia](#persistencia)
    - [Acceso a los datos](#acceso)
    - [Maquetación y CSS](#maqueta)
+   - [Rutas y Simulación del Front con Handlebars](#rutas)
    - [Comentarios en el código](#comentarios)
 4. [Credenciales - .env](#environment)
 5. [Instalación en local](#instalacion)
@@ -134,6 +135,37 @@ El diseño de la interfaz sigue una estructura sencilla pero organizada, asegura
 [Volver al menú](#top)
 
 <hr>
+
+<a name="rutas"></a>
+
+### 🟢 RUTAS Y SIMULACION DEL FRONT CON HANDLEBARS
+
+En esta aplicación, se utilizan rutas tanto para la interacción con el backend como para la simulación del frontend mediante vistas renderizadas con **Handlebars**. Algunas rutas están diseñadas para renderizar directamente vistas de Handlebars en lugar de devolver respuestas en formato JSON, lo que es un enfoque común en una API RESTful.
+
+### Rutas que renderizan vistas de Handlebars
+
+En lugar de enviar una respuesta en formato JSON, algunas rutas procesan la información y la pasan a una vista de Handlebars para ser renderizada directamente en el navegador. Este enfoque se utiliza en aquellas rutas que sirven para visualizar el frontend de la aplicación, como la visualización de productos, carritos, y formularios de creación o edición de productos. Estas rutas son responsables de generar las vistas de la aplicación que interactúan con el usuario de manera visual.
+
+Por ejemplo, una ruta como:
+
+```js
+router.get('/products', async (req, res) => {
+  const products = await ProductsMongoManager.get();
+  res.render('products', { products });
+});
+```
+
+En este caso, la ruta /products obtiene los productos desde la base de datos y luego los pasa a la vista products.handlebars, la cual será renderizada en el navegador, mostrando la lista de productos.
+
+Simulación del Frontend
+
+Si bien las rutas deberían devolver un objeto JSON para ser utilizadas como una API convencional, el uso de Handlebars y el renderizado directo en el servidor ayuda a simular el comportamiento completo de una aplicación en un entorno controlado. Esto también simplifica el proceso de pruebas y demostración en un entorno sin necesidad de depender de un frontend separado, ya que las vistas son generadas y gestionadas directamente desde el backend.
+
+
+[Volver al menú](#top)
+
+<hr>
+
 
 <a name="comentarios"></a>
 
